@@ -1,15 +1,176 @@
-html {
-    height: 100%;
-}
-
-body {
-    background: rgb(19, 25, 37);
-    background: linear-gradient(357deg, rgba(19, 25, 37, 1) 0%, rgba(15, 36, 78, 1) 100%);
-    background-size: cover;
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-html {}
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        height: 100%;
+        background: rgba(19, 25, 37, 1);
+    }
+    
+    body {
+        background: rgba(19, 25, 37, 1);
+        background-size: cover;
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+    
+    img {
+        width: 25vh;
+        border-radius: 50%;
+        box-shadow: 3px 3px 10px rgba(255, 255, 255, .3);
+        margin-bottom: .5rem;
+    }
+    
+    #Vert {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #Horz {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #name {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 40vh;
+        padding-top: 1rem;
+    }
+    
+    #name h1 {
+        font-size: 1.8em;
+    }
+    
+    #name h3 {
+        padding: .5em;
+    }
+    
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 55vh;
+    }
+    
+    li {
+        list-style-type: none;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px solid white;
+        border-radius: .75em;
+        width: 20rem;
+        height: 3rem;
+        font-size: 2.5vh;
+        font-weight: bold;
+        color: white;
+        transition: .2s;
+    }
+    
+    li p {
+        width: 90%;
+        margin-right: 1.25rem;
+        text-align: center;
+    }
+    
+    i {
+        font-size: 3.5vh;
+        margin-left: 1rem;
+    }
+    
+    li:hover {
+        transform: translateY(-.25em);
+    }
+    
+    li:nth-of-type(1):hover {
+        background-color: white;
+        color: black;
+        box-shadow: 0em .5em .5em rgba(255, 255, 255, .25);
+    }
+    
+    li:nth-of-type(2):hover {
+        background-color: #0a66c2;
+        color: white;
+        border: #0a66c2;
+        box-shadow: 0em .5em .5em rgba(10, 102, 194, .5);
+    }
+    
+    li:nth-of-type(3):hover {
+        background-color: white;
+        color: black;
+        box-shadow: 0em .5em .5em rgba(255, 255, 255, .25);
+    }
+    
+    li:nth-of-type(4):hover {
+        background-color: #6a80ca;
+        border: 1px solid #6a80ca;
+        box-shadow: 0em .5em .5em rgba(106, 128, 202, .5);
+    }
+    
+    li:nth-of-type(5):hover {
+        background: #f09433;
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+        border: none;
+        box-shadow: 0em .5em .5em rgba(220, 39, 67, .25);
+    }
+    
+    li:nth-of-type(6):hover {
+        border: #9147ff;
+        background-color: #9147ff;
+        box-shadow: 0em .5em .5em rgba(145, 71, 255, .5);
+    }
+    /* @media (min-width: 500px) {
+        body {
+            background-color: black;
+        }
+        #Horz {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 90%;
+        }
+        #name {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 35vh;
+            margin-top: 20vh;
+            padding-top: 1rem;
+            width: 20%;
+            background-color: pink;
+        }
+        #buttons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+        }
+    } */
