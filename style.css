@@ -157,6 +157,10 @@ body {
     color: white;
 }
 
+.profilePicture {
+    border-radius: 100%;
+}
+
 @media (min-width: 993px) {
     body {}
 }
@@ -166,5 +170,29 @@ body {
 }
 
 @media (max-width: 500px) {
-    body {}
+    .ver {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .hor {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 100%;
+    }
+    .profilePicture {
+        height: 25vh;
+    }
+    .name {
+        text-align: center;
+        font-weight: 700;
+        padding: 6vh 0;
+        font-size: 3vh;
+    }
+    .name h1,
+    h3 {
+        margin: 1rem;
+    }
 }
