@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html,
@@ -144,7 +144,6 @@ html {
 
 body {
     background: rgba(19, 25, 37, 1);
-    height: 100vh;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -167,7 +166,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     width: 100vw;
 }
 
@@ -178,7 +176,7 @@ body {
     justify-content: space-evenly;
     height: 45vh;
     width: 65vw;
-    font-size: 4vw;
+    font-size: 6vw;
     font-weight: 700;
     text-align: center;
 }
@@ -213,13 +211,13 @@ h3 {
 
 .icon {
     width: 25vw;
-    font-size: 3vh;
+    font-size: 5vw;
 }
 
 .website {
     width: 75vw;
     text-align: center;
-    font-size: 2vh;
+    font-size: 4.5vw;
     font-weight: 700;
 }
 
@@ -280,19 +278,30 @@ h3 {
     box-shadow: 0em .5em .5em rgba(145, 71, 255, .5);
 }
 
+@media (min-width: 575px) {
+    .profile {
+        height: 25rem;
+        width: 25rem;
+    }
+    .app {
+        width: 21rem;
+    }
+    .profile {
+        font-size: 2rem;
+    }
+    .website {
+        font-size: 1.5rem;
+    }
+    .icon {
+        font-size: 1.5rem;
+    }
+}
 
-/* 
-@media (min-width: 993px) {
+
+/* @media (min-width: 993px) {
     body {}
 }
 
 @media (max-width: 992px) {
     body {}
-}
-
-@media (max-width: 575px) {
-    .profile{ */
-
-
-/* }
 } */
