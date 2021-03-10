@@ -137,11 +137,6 @@ table {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-}
-
 html {
     height: 100%;
     background: rgba(19, 25, 37, 1);
@@ -157,10 +152,75 @@ body {
     color: white;
 }
 
-.profilePicture {
-    border-radius: 100%;
+.name {
+    font-size: 2vw;
 }
 
+.hor {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin-top: 2vh;
+}
+
+.ver {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 45vh;
+    font-size: 7vw;
+    font-weight: 700;
+}
+
+.profile h1,
+h3 {
+    height: 2vh 0;
+}
+
+.profilePicture {
+    border-radius: 100%;
+    width: 27vh;
+}
+
+.apps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+.app {
+    border: .125em white solid;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 75vw;
+    padding: 1.35vh;
+}
+
+.icon {
+    width: 25vw;
+}
+
+.website {
+    width: 75vw;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+}
+
+
+/* 
 @media (min-width: 993px) {
     body {}
 }
@@ -169,30 +229,9 @@ body {
     body {}
 }
 
-@media (max-width: 500px) {
-    .ver {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
-    }
-    .hor {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        height: 100%;
-    }
-    .profilePicture {
-        height: 25vh;
-    }
-    .name {
-        text-align: center;
-        font-weight: 700;
-        padding: 6vh 0;
-        font-size: 3vh;
-    }
-    .name h1,
-    h3 {
-        margin: 1rem;
-    }
-}
+@media (max-width: 575px) {
+    .profile{ */
+
+
+/* }
+} */
