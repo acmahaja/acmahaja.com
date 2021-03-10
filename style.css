@@ -207,6 +207,7 @@ h3 {
     align-items: center;
     width: 60vw;
     padding: 1.35vh;
+    cursor: pointer;
 }
 
 .icon {
