@@ -159,7 +159,6 @@ body {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    margin-top: 2vh;
 }
 
 .ver {
