@@ -360,6 +360,7 @@ h3 {
     .profile {
         height: 25rem;
         width: 22rem;
+        height: 45vh;
     }
     .bio {
         visibility: collapse;
@@ -368,7 +369,7 @@ h3 {
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: space-around;
-        height: 55vh;
+        height: 50vh;
     }
     .app {
         width: 275px;
