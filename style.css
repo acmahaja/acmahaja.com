@@ -176,7 +176,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 45vh;
+    height: 50vh;
     width: 65vw;
     font-size: 6vw;
     font-weight: 700;
@@ -357,14 +357,18 @@ h3 {
 }
 
 @media (min-width: 1000px) {
+    .profile {
+        width: 25rem;
+        height: 20rem;
+    }
     .bio {
-        visibility: c;
+        visibility: collapse;
     }
     .apps {
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: space-around;
-        height: 65vh;
+        height: 55vh;
     }
     .app {
         width: 275px;
