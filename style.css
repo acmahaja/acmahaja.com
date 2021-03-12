@@ -225,7 +225,7 @@ h3 {
 
 .profile:hover {
     background: #f09433;
-    background: -moz-linear-gradient(45deg, rgb(24, 24, 88) 0%, #0a66c2 100%);
+    background: -moz-linear-gradient(45deg, rgb(36, 24, 88) 0%, #0a66c2 100%);
     background: -webkit-linear-gradient(45deg, rgb(24, 24, 88) 0%, #0a66c2 100%);
     background: linear-gradient(45deg, rgb(24, 24, 88) 0%, #0a66c2 100%);
     color: white;
@@ -330,8 +330,8 @@ h3 {
         width: 10vw;
     }
     .profile {
-        height: 18rem;
-        width: 25rem;
+        height: 25rem;
+        width: 23rem;
         margin-top: 1rem;
     }
     .app {
@@ -358,8 +358,8 @@ h3 {
 
 @media (min-width: 1000px) {
     .profile {
-        width: 25rem;
-        height: 20rem;
+        height: 25rem;
+        width: 22rem;
     }
     .bio {
         visibility: collapse;
