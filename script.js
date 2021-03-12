@@ -36,4 +36,11 @@ window.addEventListener('resize', () => {
     }
 })
 
+
+if (self.innerWidth > 729 && self.innerWidth < 999) {
+    console.log(window.innerWidth);
+    document.querySelector('.bio').hidden = false;
+} else {
+    document.querySelector('.bio').hidden = true;
+}
 // self.addEventListener('')
