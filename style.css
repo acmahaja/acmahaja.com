@@ -138,13 +138,14 @@ table {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html {
-    height: 100%;
+    height: 100vh;
     background: rgba(19, 25, 37, 1);
 }
 
 body {
     background: rgba(19, 25, 37, 1);
     margin: 0;
+    height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Montserrat', sans-serif;
@@ -159,6 +160,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 100vw;
+    height: 100vh;
 }
 
 .ver {
@@ -166,6 +168,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    height: 100vh;
 }
 
 .profile {
@@ -192,14 +195,13 @@ h3 {
 
 .apps {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 50vh;
+    flex-wrap: nowrap;
 }
 
 .app {
-    border: .125em white solid;
+    border: 3px white solid;
     border-radius: .5rem;
     display: flex;
     flex-direction: row;
@@ -278,10 +280,59 @@ h3 {
     box-shadow: 0em .5em .5em rgba(145, 71, 255, .5);
 }
 
-@media (min-width: 575px) {
+@media (min-width: 500px) and (max-width: 729px) {
+    .profile h1,
+    h3 {
+        font-size: 2rem;
+    }
+    .app {
+        width: 275px;
+        height: 1.5rem;
+    }
+    .icon {
+        font-size: 1.5em;
+    }
+    .website {
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width: 729px) {
+    .bio {
+        visibility: collapse;
+        height: 0vh;
+        height: 0vh;
+    }
+    .apps {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 65vh;
+    }
+}
+
+@media (min-width: 730px) {
+    .bio {
+        visibility: c;
+        height: fit-content;
+        width: 85vw;
+        text-align: center;
+        margin: 1rem 0;
+        font-size: 2.5vw;
+    }
+    .apps {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 40vh;
+    }
+    .app {
+        width: 10vw;
+    }
     .profile {
-        height: 25rem;
+        height: 18rem;
         width: 25rem;
+        margin-top: 1rem;
     }
     .app {
         width: 21rem;
@@ -297,11 +348,32 @@ h3 {
     }
 }
 
-
-/* @media (min-width: 993px) {
-    body {}
+@media (min-width: 800px) {
+    .bio {
+        visibility: c;
+        font-size: 1.25em;
+        width: 40rem;
+    }
 }
 
-@media (max-width: 992px) {
-    body {}
-} */
+@media (min-width: 1000px) {
+    .bio {
+        visibility: c;
+    }
+    .apps {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 65vh;
+    }
+    .app {
+        width: 275px;
+        height: 1.5rem;
+    }
+    .icon {
+        font-size: 1.5em;
+    }
+    .website {
+        font-size: 1.25em;
+    }
+}
