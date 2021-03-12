@@ -230,13 +230,15 @@ h3 {
     background: linear-gradient(45deg, rgb(24, 24, 88) 0%, #0a66c2 100%);
     color: white;
     border-radius: 2rem;
-    transform: translateY(-.75vh);
+    transform: translateY(-.25vh);
+    transition: transform .25s;
     margin-bottom: .5em;
     box-shadow: 0em .5em .5em rgba(10, 102, 194, .25);
 }
 
 .app:hover {
     transform: translateY(-.75vh);
+    transition: transform .25s;
 }
 
 .envelope:nth-of-type(1):hover {
