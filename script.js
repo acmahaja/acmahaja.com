@@ -28,7 +28,7 @@ const redirect = (name) => {
 }
 
 window.addEventListener('resize', () => {
-    if (self.innerWidth > 729 && self.innerWidth < 999) {
+    if (self.innerWidth > 729) {
         console.log(window.innerWidth);
         document.querySelector('.bio').hidden = false;
     } else {
@@ -36,7 +36,7 @@ window.addEventListener('resize', () => {
     }
 })
 
-if (self.innerWidth > 729 && self.innerWidth < 999) {
+if (self.innerWidth > 729) {
     console.log(window.innerWidth);
     document.querySelector('.bio').hidden = false;
 } else {

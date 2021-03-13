@@ -315,7 +315,7 @@ h3 {
 
 @media (min-width: 730px) {
     .bio {
-        visibility: c;
+        visibility: visible;
         height: fit-content;
         width: 85vw;
         text-align: center;
@@ -328,16 +328,13 @@ h3 {
         justify-content: space-evenly;
         height: 40vh;
     }
-    .app {
-        width: 10vw;
-    }
     .profile {
         height: 25rem;
         width: 23rem;
         margin-top: 1rem;
     }
     .app {
-        width: 21rem;
+        width: 20rem;
     }
     .profile {
         font-size: 2rem;
@@ -359,28 +356,40 @@ h3 {
 }
 
 @media (min-width: 1000px) {
+    .ver {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     .profile {
         height: 25rem;
         width: 22rem;
-        height: 45vh;
+        height: 100vh;
+        padding: 25vh 0;
+        width: 35vw;
     }
     .bio {
-        visibility: collapse;
+        visibility: visible;
+        height: 15vh;
+        width: 65vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .apps {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 50vh;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60vw;
+        height: 80vh;
     }
     .app {
-        width: 275px;
+        width: 250px;
         height: 1.5rem;
     }
     .icon {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     .website {
-        font-size: 1.25em;
+        font-size: 1.2em;
     }
 }
