@@ -43,4 +43,20 @@ if (self.innerWidth > 729) {
     document.querySelector('.bio').hidden = true;
 }
 
+window.addEventListener('resize', () => {
+    if (self.innerWidth > 1000) {
+        console.log(window.innerWidth);
+        document.querySelector('.dropdown').hidden = false;
+    } else {
+        document.querySelector('.dropdown').hidden = true;
+    }
+})
+
+if (self.innerWidth > 1000) {
+    console.log(window.innerWidth);
+    document.querySelector('.dropdown').hidden = false;
+} else {
+    document.querySelector('.dropdown').hidden = true;
+}
+
 // self.addEventListener('')
