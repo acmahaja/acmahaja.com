@@ -221,7 +221,7 @@ h3 {
 .website {
     width: 75vw;
     text-align: center;
-    font-size: 4.5vw;
+    font-size: 4vw;
     font-weight: 700;
 }
 
@@ -288,8 +288,7 @@ h3 {
         font-size: 2rem;
     }
     .app {
-        width: 275px;
-        height: 1.5rem;
+        width: 300px;
     }
     .icon {
         font-size: 1.5em;
@@ -327,6 +326,7 @@ h3 {
         flex-direction: row;
         justify-content: space-evenly;
         height: 40vh;
+        padding: 1rem;
     }
     .app {
         width: 10vw;
@@ -374,8 +374,8 @@ h3 {
         height: 50vh;
     }
     .app {
-        width: 275px;
-        height: 1.5rem;
+        width: 325px;
+        height: 3rem;
     }
     .icon {
         font-size: 1.5em;

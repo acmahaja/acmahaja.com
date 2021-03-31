@@ -1,0 +1,58 @@
+<%- include('../partials/header.ejs')-%>
+
+
+    <body>
+        <div class="hor animate__animated animate__backInDown">
+            <div class="ver">
+                <div class="profile">
+                    <img src="./images/avatar.png" alt=" Profile Picture " class=" profilePicture ">
+                    <h1 class="font-weight-bold ">Anjaney C Mahajan</h1>
+                    <h3 class="font-weight-bold ">@acmahaja</h3>
+                </div>
+
+                <div class="bio">
+
+                    <p>
+                        I am a graduate software engineering student who has a passion for product design and its innovation. I work well with people who are passionate about advancing consumer products and pushing for increased access to essential technologies for lower and
+                        middle-income communities
+
+                    </p>
+                </div>
+                <div class="apps">
+                    <div class="app envelope" ondclick="redirect(this)">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <div class="website">
+                            acmahaja@gmail.com
+                        </div>
+                    </div>
+                    <div id="linkedin" class="app linkedin" onclick="redirect(this)">
+                        <div class="icon linkedin"><i class="fab fa-linkedin"></i></div>
+                        <div class="website">
+                            /in/acmahaja </div>
+                    </div>
+                    <div class="app github" onclick="redirect(this)">
+                        <div class="icon"><i class="fab fa-github"></i></div>
+                        <div class="website">
+                            /acmahaja </div>
+                    </div>
+                    <div class="app discord" onclick="redirect(this)">
+                        <div class="icon"><i class="fab fa-discord" aria-hidden="true"></i></div>
+                        <div class="website">
+                            acmahaja#0052 </div>
+                    </div>
+                    <div class="app instagram" onclick="redirect(this)">
+                        <div class="icon"><i class="fab fa-instagram"></i></div>
+                        <div class="website">
+                            @acmahaja </div>
+                    </div>
+                    <div class="app twitch" onclick="redirect(this)">
+                        <div class="icon"><i class="fab fa-twitch"></i></div>
+                        <div class="website">
+                            tv/acmahaja </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+
+        <%- include('../partials/bottom.ejs')-%>
