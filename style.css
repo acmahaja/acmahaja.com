@@ -146,6 +146,7 @@ body {
     background: rgba(19, 25, 37, 1);
     margin: 0;
     height: 100vh;
+    width: 100vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Montserrat', sans-serif;
@@ -351,16 +352,20 @@ h3 {
 }
 
 @media (min-width: 1000px) {
+    .hor {
+        padding: 0rem;
+    }
     .ver {
         flex-direction: column;
         flex-wrap: wrap;
-        padding: 1rem;
         height: 100vh;
+        padding: 0rem;
     }
     .profile {
         height: 46vh;
-        width: 25vw;
+        width: 30vw;
         margin: 25vh 0vw 25vh 0vh;
+        font-size: 2rem;
     }
     .bio {
         visibility: visible;
@@ -369,17 +374,18 @@ h3 {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        font-size: 1.25rem;
     }
     .apps {
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-between;
-        width: 60vw;
+        justify-content: space-evenly;
+        width: 70vw;
         height: 80vh;
     }
     .app {
-        height: 23vh;
-        width: 28vw;
+        height: 20vh;
+        width: 30vw;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -398,18 +404,18 @@ h3 {
     .website {
         font-size: 1.2em;
         height: fit-content;
-        width: 22vw;
+        width: 23vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 6vh;
     }
-    .dropdown {
+    .linkDropdown {
         background: url("./images/linkedin-background.jpeg");
         background-repeat: no-repeat;
         background-size: contain;
-        height: 14vh;
-        width: 28vw;
+        height: 12vh;
+        width: 30vw;
         display: block;
         background-color: white;
         border-bottom-left-radius: .5rem;
@@ -423,17 +429,44 @@ h3 {
         border-radius: 50%;
         height: 9vh;
         margin-left: 1.25vw;
+        margin-bottom: 5vh;
     }
     .cvlink {
         text-decoration: none;
         display: flex;
         flex-direction: column-reverse;
-        justify-content: last baseline;
         flex-wrap: nowrap;
-        padding: 3vh 0;
+        padding: 2vh 1vw;
         width: 100vw;
         text-align: left;
         font-size: 1.15rem;
+    }
+    .linkDropdown {
+        background: url("./images/linkedin-background.jpeg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 12vh;
+        width: 30vw;
+        display: block;
+        background-color: white;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        padding-top: 3vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .dropdown {
+        height: 12vh;
+        width: 30vw;
+        display: block;
+        background-color: white;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        padding-top: 3vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
     .envelope:nth-of-type(1) {
         background-color: white;
