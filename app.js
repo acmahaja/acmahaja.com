@@ -21,7 +21,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/script'));
 
-client.login(process.env.TOKEN)
+//client.login(process.env.TOKEN)
 
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}!`)
