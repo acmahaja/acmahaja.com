@@ -36,18 +36,26 @@ client.on("message", msg => {
 })
 
 
-app.use(function(req, res, next) {
-    var ip = req.ip;
-    var geo = geoip.lookup(ip);
+// app.use(async function(req, res, next) {
+//     var ip = req.ip;
+//     var geo = geoip.lookup(ip);
+//     try {
 
-    //var geo = geoip.lookup(req.ip);
-    //console.log(geo);
-    client.channels.cache.get(process.env.SERVER).send(`You have a vistor! on www.acmahaja.com @ ${new Date().toString()} w/ @ ${geo.city}, ${geo.region},${geo.country}`);
-    next()
-})
+//         await client.channels.cache.get(process.env.SERVER).send(`You have a vistor! on www.acmahaja.com @ ${new Date().toString()} w/ @ ${geo.city}, ${geo.area},${geo.country}`);
+//     } catch (error) {
+
+//         next()
+//     }
+//     next()
+// })
 
 
 app.get('/', (req, res) => {
+    //var ip = req.ip;
+    //var geo = geoip.lookup(ip);
+    //client.channels.cache.get(process.env.SERVER).send(`You have a vistor! on www.acmahaja.com @ ${new Date().toString()} w/ @ ${geo.city}, ${geo.area},${geo.country}`);
+    //console.log(geo);
+
     res.render('pages/index');
 })
 
