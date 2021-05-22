@@ -1,3 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --nav-height: 5vh;
+    --body-height: 95vh;
+}
+
 body {
     background-color: rgb(19, 25, 37);
+    color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    height: var(--nav-height);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.links {
+    width: 15rem;
+    display: flex;
+    flex-direction: row;
+    vertical-align: center;
+    justify-content: space-evenly;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main {
+    width: 100vw;
+    height: var(--body-height);
+}
+
+.ver {
+    width: 100vw;
+    height: var(--body-height);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+.hor {
+    width: 100vw;
+    height: var(--body-height);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.bio {
+    width: 30vw;
+    height: var(--body-height);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.profile {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 20rem;
+    justify-content: space-evenly;
+}
+
+.profile h1,
+h3 {
+    text-align: center;
+    margin: 0em;
+}
+
+.descr {
+    text-align: center;
+}
+
+.profile img {
+    height: 10em;
+    border-radius: 100em;
+}
+
+.websites {
+    width: 75vw;
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 46% 46%;
+    grid-column-gap: 2%;
+    grid-template-rows: 30% 30% 30%;
+    justify-content: center;
+}
+
+.website {
+    width: 95%;
+    height: 85%;
+    align-self: center;
+    border-radius: 1rem;
+}
+
+.fas,
+.fab {
+    font-size: 1.5rem;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    height: 5vh;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.web-content {
+    height: 80%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.email .banner {
+    background-color: #ffffff;
+    color: rgb(19, 25, 37)
+}
+
+.email .banner em {
+    color: rgb(19, 25, 37)
+}
+
+.email .web-content {
+    background-color: #f1f1f1
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+.email .web-content form {
+    width: 100%;
+    height: 100%;
+    padding: 0.25em 1em;
+}
+
+.email-form {
+    color: black;
+    padding: .25rem 0;
+}
+
+.email-form input[type=text] {
+    background-color: #fafafa;
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: .3em;
+    width: 14rem;
+}
+
+#comment {
+    width: 12.5rem;
+}
+
+.email-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.email-button * {
+    margin: .5em 1em;
+    padding: .45em .75em;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: .4em;
+    cursor: pointer;
+}
+
+.discord .banner {
+    background-color: #7485D6;
+}
+
+.discord .web-content {
+    background-color: #616eb1;
+}
+
+.linkedin .banner {
+    background-color: rgb(10, 102, 194);
+}
+
+.linkedin .web-content {
+    background-color: #ffffff;
+}
+
+.github .banner {
+    background-color: rgb(36, 41, 46);
+}
+
+.github .web-content {
+    background-color: rgb(246, 248, 250);
+}
+
+.instagram .banner {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    border: none;
+    box-shadow: 0em .5em .5em rgba(220, 39, 67, .25);
+}
+
+.instagram .web-content {
+    background-color: #ffffff;
+}
+
+.medium .banner {
+    background-color: #000;
+}
+
+.medium .web-content {
+    background-color: #ffffff;
 }
