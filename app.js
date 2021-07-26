@@ -4,9 +4,7 @@ const app = express();
 //const puppeteer = require('puppeteer');
 
 
-
 var path = require('path');
-
 
 app.set('view engine', 'ejs');
 
