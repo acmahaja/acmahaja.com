@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@acmahaja</title>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@2.2.7/dist/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../public/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="container  h-screen  flex flex-col justify-center items-center">
+    <div class="container text-white p-5 h-screen w-96 flex flex-col justify-between">
+        <div class="flex flex-col h-auto justify-between items-center justify-center">
+            <div
+                class="rounded-2xl p-2 transition duration-200 ease-in-out bg-gradient-to-r hover:from-blue-900 hover:to-indigo-700 transform hover:-translate-y-2 hover:scale-103">
+                <div class="profile-img  m-3 h-56 w-56 rounded-full"></div>
+                <div class="text-center m-2 text-2xl font-bold">Anjaney C Mahajan</div>
+                <div class="text-center m-2 text-lg">@acmahaja</div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center justify-evenly ju w-full h-2/3 font-medium	click">
+            <div class="envelope container p-2 border-2 border-white rounded-lg w-4/5 flex justify-between
+                        transition duration-150 ease-in-out hover:bg-white hover:border-transparent hover:text-black transform hover:-translate-y-1.5 hover:scale-103
+            " onclick="redirect(this)">
+                <div class="icon w-1/5"><i class="fa fa-envelope fa-lg"></i></div>
+                <div class="website w-5/6 text-center">acmahaja@gmail.com</div>
+            </div>
+            <div class="linkedin container p-2 border-2 border-white rounded-lg w-4/5 flex justify-between
+                        transition duration-150 ease-in-out hover:bg-blue-700 hover:border-transparent transform hover:-translate-y-1.5 hover:scale-103
+            " onclick="redirect(this)">
+                <div class="icon w-1/6"><i class="fab fa-linkedin fa-lg"></i></div>
+                <div class="website w-5/6 text-center">/in/acmahaja</div>
+            </div>
+            <div class="github container p-2 border-2 border-white rounded-lg w-4/5 flex justify-between
+                        transition duration-150 ease-in-out hover:bg-white hover:text-black hover:border-transparent hover:to-indigo-700 transform hover:-translate-y-1.5 hover:scale-103
+            " onclick="redirect(this)">
+                <div class="icon w-1/6"><i class="fab fa-github fa-lg"></i></div>
+                <div class="website w-5/6 text-center">/acmahaja</div>
+            </div>
+            <div class="discord container p-2 border-2 border-white rounded-lg w-4/5 flex justify-between 
+                        transition duration-150 ease-in-out bg-gradient-to-r hover:border-transparent transform hover:-translate-y-1.5 hover:scale-103
+            " onclick="redirect(this)">
+                <div class="icon w-1/6"><i class="fab fa-discord fa-lg"></i></div>
+                <div class="website w-5/6 text-center">acmahaja#0052</div>
+            </div>
+            <div class="instagram container p-2 border-2 border-white rounded-lg w-4/5 flex justify-between  
+                        transition duration-150 ease-in-out bg-gradient-to-r hover:border-transparent transform hover:-translate-y-1.5 hover:scale-103
+            " onclick="redirect(this)">
+                <div class="icon w-1/6"><i class="fab fa-instagram fa-lg"></i></div>
+                <div class="website w-5/6 text-center">@acmahaja</div>
+            </div>
+            <div class="twitch container p-2 border-2 border-white rounded-lg w-4/5 flex justify-between  
+                        transition duration-150 ease-in-out bg-gradient-to-r hover:border-transparent transform hover:-translate-y-1.5 hover:scale-103
+            " onclick="redirect(this)">
+                <div class="icon w-1/6 "><i class="fab fa-twitch fa-lg"></i></div>
+                <div class="website w-5/6 text-center">tv/acmahaja</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const redirect = (name) => {
+                switch (name.classList[0]) {
+                    case "envelope":
+                        console.log("envelope");
+                        window.location.href = "mailto:acmahaja@gmail.com";
+
+                        break;
+                    case "linkedin":
+                        window.location.href = "https://www.linkedin.com/in/acmahaja/";
+                        break;
+                    case "github":
+                        window.location.href = "https://github.com/acmahaja";
+                        break;
+                    case "discord":
+                        window.location.href = "https://discordapp.com/users/209521176303763467/";
+                        break;
+                    case "instagram":
+                        window.location.href = "https://www.instagram.com/acmahaja/";
+                        break;
+                    case "twitch":
+                        window.location.href = "https://www.twitch.tv/acmahaja";
+                        break;
+                    default:
+                        break;
+                }
+
+            }
+
+    </script>
+
+</body>
+
+</html>
