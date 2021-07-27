@@ -1,22 +1,29 @@
 const express = require('express');
 const app = express();
 
-//const puppeteer = require('puppeteer');
+require('custom-env').env('staging')
+
+app.set('trust proxy', true);
 
 
-var path = require('path');
+const path = require('path')
 
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs')
+app.set('trust proxy', true);
 
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/script'));
 
+app.get('/', (req, res) => {
 
-app.get('/', async(req, res) => {
     res.render('pages/index');
-});
+})
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}`);
-});
+app.all('*', (req, res) => {
+    res.redirect('/');
+})
+
+app.listen(process.env.PORT || 3000, () => {
+    console.log("Listening on port 3000");
+})
