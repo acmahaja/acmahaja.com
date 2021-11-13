@@ -18,6 +18,7 @@
     },
     "homepage": "https://github.com/acmahaja/acmahaja.github.io#readme",
     "dependencies": {
+        "axios": "^0.21.1",
         "custom-env": "^2.0.1",
         "discord.js": "^12.5.3",
         "ejs": "^3.1.6",
