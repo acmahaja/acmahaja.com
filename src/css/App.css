@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0em;
+  padding: 0em;
+}
+
+html {
+  background-color: #0f172a;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(141, 141, 141, 0.05)
+    ),
+    url("../images/grid.png");
+  background-repeat: repeat;
+  background-size: 500px auto;
+}
+
+body {
+  box-shadow: inset 0px 0px 50px 50px #0f172a;
+  overflow: hidden;
+}
+
+.App {
+  width: 100px;
+  height: 1000px;
+  overflow-y:hidden;
+
+}
+
+.cloudBlur {
+  position: absolute;
+  top: -25vw;
+  left: 40vh;
+  width: 100vw;
+  height: 100vw;
+  background-image: url("../images/Coloured-Cloud.png");
+  background-size: cover;
+  background-position: 0;
+}
