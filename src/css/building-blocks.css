@@ -3,7 +3,7 @@
   *
   * @author jh3y - jheytompkins.com
 */
-@-webkit-keyframes building-blocks {
+/* @-webkit-keyframes building-blocks {
   0%,
   20% {
     opacity: 0;
@@ -22,7 +22,8 @@
     -webkit-transform: translateY(300%);
     transform: translateY(300%);
   }
-}
+} */
+
 @keyframes building-blocks {
   0%,
   20% {
@@ -46,12 +47,18 @@
 
 .building-blocks {
   position: relative;
-  background-color: red;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
 }
 .building-blocks div {
-  height: 20px;
+  height: 100px;
   position: absolute;
-  width: 20px;
+  background-color: white;
+  width: 100px;
 }
 .building-blocks div:after {
   -webkit-animation: building-blocks 2.1s ease infinite backwards;
