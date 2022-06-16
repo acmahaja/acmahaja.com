@@ -106,3 +106,26 @@ body {
   display: inline-flex;
   align-items: center;
 }
+
+@media only screen and (max-width: 700px) {
+  .App {
+    padding: 5em;
+  }
+
+  .App h2 {
+    font-size: 35px;
+    line-height: 50px;
+
+  }
+  .App h1 {
+    font-size: 100px;
+    line-height: 120px;
+
+  }
+
+  .App p {
+    line-height: 50px;
+    position: fixed;
+    bottom: 5em;
+  }
+}
