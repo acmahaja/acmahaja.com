@@ -5,7 +5,7 @@ import "./css/App.css";
 import "./css/Dark.css";
 import "./css/Light.css";
 
-const App = () => {
+const Home = () => {
   const [darkMode, setDarkMode] = useState(
     JSON.parse(localStorage.getItem("darkMode")) || "true"
   );
@@ -31,4 +31,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
