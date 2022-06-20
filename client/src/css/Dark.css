@@ -11,3 +11,15 @@
     
 }
 
+
+.Dark nav a.Logo {
+    color: white !important;
+}
+
+.Dark nav a {
+    color: white;
+}
+
+.Dark nav a.active {
+    color: white;
+}

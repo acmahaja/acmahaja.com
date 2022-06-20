@@ -43,6 +43,7 @@ const App = () => {
       <Router>
         <Navbar color={color} updateColor={updateColor} />
         <button onClick={randColor}>Change color</button>
+        <button onClick={toggleDarkMode}>Change theme</button>
         <Routes>
           <Route index element={<Home toggleDarkMode={toggleDarkMode} />} />
           <Route path="*" element={<NoMatch />} />
