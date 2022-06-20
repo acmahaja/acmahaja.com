@@ -1,0 +1,6 @@
+dispatch:
+  - url: "acmahaja.com/api*"
+    service: server
+
+  - url: "acmahaja.com/*"
+    service: default
