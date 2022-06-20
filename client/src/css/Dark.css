@@ -1,6 +1,13 @@
-.App.Dark {
-    background-color: black;
+.Dark {
+    background-color: #111111;
     background-image: url('../images/grid.png');
     background-size: contain;
-    background-size: 30%;
+    background-size: 650px;
 }
+
+.Dark header {
+    background: #191919;
+    border-bottom-color: rgba(255, 255, 255, 0.2);;
+    
+}
+
