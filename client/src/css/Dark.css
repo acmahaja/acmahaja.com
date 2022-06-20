@@ -1,0 +1,6 @@
+.App.Dark {
+    background-color: black;
+    background-image: url('../images/grid.png');
+    background-size: contain;
+    background-size: 30%;
+}
