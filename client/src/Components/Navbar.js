@@ -11,13 +11,13 @@ const Navbar = ({ color, updateColor, currPage }) => {
     document.documentElement.style.setProperty("--theme-color", `${color} `);
   });
 
-  const setColor = () => {
-    updateColor(
-      `${Math.floor(Math.random() * 255)},${Math.floor(
-        Math.random() * 255
-      )}, ${Math.floor(Math.random() * 255)}`
-    );
-  };
+//   const setColor = () => {
+//     updateColor(
+//       `${Math.floor(Math.random() * 255)},${Math.floor(
+//         Math.random() * 255
+//       )}, ${Math.floor(Math.random() * 255)}`
+//     );
+//   };
 
 
   return (
@@ -35,7 +35,6 @@ const Navbar = ({ color, updateColor, currPage }) => {
           <FiSettings color="white" fontSize={20}/>
         </ul>
       </nav>
-      {/* <button onClick={setColor}>Change color</button> */}
     </header>
   );
 };

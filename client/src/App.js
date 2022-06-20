@@ -1,14 +1,12 @@
-import React from "react";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NoMatch from "./NoMatch";
 import Home from "./Home";
-import Navbar from "./Components/Navbar"
+import Navbar from "./Components/Navbar";
 
-import './css/App.css'
-import './css/Dark.css'
-import './css/Light.css'
-
+import "./css/App.css";
+import "./css/Dark.css";
+import "./css/Light.css";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(
@@ -32,13 +30,21 @@ const App = () => {
     setColor(newColor);
   };
 
+  const randColor = () => {
+    updateColor(
+      `${Math.floor(Math.random() * 255)},${Math.floor(
+        Math.random() * 255
+      )}, ${Math.floor(Math.random() * 255)}`
+    );
+  };
 
   return (
     <div className={`App ${darkMode === "true" ? "Dark" : "Light"}`}>
       <Router>
-      <Navbar color={color} updateColor={updateColor} />
+        <Navbar color={color} updateColor={updateColor} />
+        <button onClick={randColor}>Change color</button>
         <Routes>
-          <Route index element={<Home toggleDarkMode={toggleDarkMode}/>} />
+          <Route index element={<Home toggleDarkMode={toggleDarkMode} />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </Router>

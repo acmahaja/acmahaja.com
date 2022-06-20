@@ -75,8 +75,8 @@ nav a.Logo {
 }
 
 nav ul {
-  width: 375px;
-    display: flex;
+  width: 425px;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -94,6 +94,27 @@ nav ul a {
 
 nav ul a.active {
   background: #303030;
-  padding: 5px 15px;
+  padding: 5px 10px;
   border-radius: 5px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+nav ul a:hover {
+  background: rgb(var(--theme-color));
+  color: white;
+  border-radius: 5px;
+  outline: solid 8px rgb(var(--theme-color));
+  box-sizing: border-box;
+}
+
+nav ul a.active:hover {
+  background: #303030;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: solid 3px rgb(var(--theme-color));
+  background: rgb(var(--theme-color));
 }
