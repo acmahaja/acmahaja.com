@@ -11,28 +11,20 @@ const Navbar = ({ color, updateColor, currPage }) => {
     document.documentElement.style.setProperty("--theme-color", `${color} `);
   });
 
-//   const setColor = () => {
-//     updateColor(
-//       `${Math.floor(Math.random() * 255)},${Math.floor(
-//         Math.random() * 255
-//       )}, ${Math.floor(Math.random() * 255)}`
-//     );
-//   };
-
-
   return (
     <header>
       <div className="Highlight"></div>
       <nav>
-        <NavLink to="/" className="Logo">
+        <NavLink to="/" id="Logo">
           <span>/</span>acmahaja
         </NavLink>
         <ul>
           <NavLink activeClassName="active" to="/" className={`${currPage === "home" ? 'selected' : null}`} >Home</NavLink>
           <NavLink activeClassName="active" to="/about" className={`${currPage === "about" ? 'selected' : null}`}>About</NavLink>
           <NavLink activeClassName="active" to="/projects" className={`${currPage === "projects" ? 'selected' : null}`}>Projects</NavLink>
+          <NavLink activeClassName="active" to="/blog" className={`${currPage === "resume" ? 'selected' : null}`}>Resume</NavLink>
           <NavLink activeClassName="active" to="/resume" className={`${currPage === "resume" ? 'selected' : null}`}>Resume</NavLink>
-          <FiSettings color="white" fontSize={20}/>
+          <FiSettings id="settingsIcon" fontSize={20}/>
         </ul>
       </nav>
     </header>

@@ -1,25 +1,32 @@
 .Dark {
-    background-color: #111111;
-    background-image: url('../images/grid.png');
-    background-size: contain;
-    background-size: 550px;
+  background-color: #111111;
+  background-image: url("../images/grid.png");
+  background-size: contain;
+  background-size: 550px;
 }
 
 .Dark header {
-    background: #191919;
-    border-bottom-color: rgba(255, 255, 255, 0.2);;
-    
+  background: #191919;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
-
-.Dark nav a.Logo {
-    color: white !important;
+.Dark nav a#Logo {
+  color: white !important;
 }
 
 .Dark nav a {
-    color: white;
+  color: white;
 }
 
 .Dark nav a.active {
+  color: white;
+  background-color: #303030;
+}
+
+nav ul a:hover {
+    border-radius: 5px;
+}
+
+.Dark #settingsIcon {
     color: white;
 }

@@ -4,19 +4,25 @@
 
 
 .Light header {
-    background: rgba(255, 255, 255, 0.8);
+    background: #FEFEFE;
     border-bottom-color: #e6e6e6;
     
 }
 
-.Light nav a.Logo {
+.Light nav a#Logo {
     color: black !important;
+    background: none;
 }
 
 .Light nav a {
-    color: black;
+    color: #616161;
 }
 
 .Light nav a.active {
     color: white;
+    background: #616161;
+}
+
+.Light #settingsIcon {
+    color: #616161;
 }
