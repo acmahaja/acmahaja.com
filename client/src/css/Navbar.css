@@ -23,7 +23,7 @@ header .Highlight {
 header nav {
   height: 65px;
   width: 100%;
-  padding: 0px 50px;
+  padding: 0px 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -64,7 +64,7 @@ nav a#Logo {
   background: linear-gradient(
       220.52deg,
       rgba(var(--theme-color), 1) 0%,
-      rgba(var(--theme-color), 0.5) 100%
+      rgba(var(--theme-color), 0.75) 100%
     ),
     black;
   -webkit-background-clip: text;
@@ -98,16 +98,44 @@ nav ul a.active {
   border-radius: 5px;
 }
 
+@keyframes colorHover {
+  from {
+    background-color: rgba(var(--theme-color),0);
+  }
+
+  100% {
+    background-color: rgba(var(--theme-color),1);
+  }
+}
+
+
 nav ul a:hover {
-  background-color: rgba(var(--theme-color), 1);
   color: white;
+  background-color: rgba(var(--theme-color), 1);
+  animation-name: colorHover;
+  animation-duration: 300ms;
 }
 
 nav ul a.active:hover {
   background-color: rgba(var(--theme-color), 1);
   color: white;
+  animation-name: colorHover;
+  animation-duration: 300ms;
 }
 
 #settingsIcon {
   margin-left: 10px;
+}
+
+
+#settingsIcon:hover {
+  background-color: rgba(var(--theme-color), 1);
+  color: white;
+  padding: 7px 6px;
+  margin-left: 3px;
+  margin-right: -5px;
+  border-radius: 5px;
+  cursor: pointer;
+  animation-name: colorHover;
+  animation-duration: 300ms;
 }

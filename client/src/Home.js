@@ -7,12 +7,8 @@ import 'aos/dist/aos.css'
 const Home = ({toggleDarkMode}) => {
     AOS.init()
     return (
-        <div
-        data-aos="fade-up"
-        data-aos-duration="600"
-        >
+        <div>
 
-            <button onClick={toggleDarkMode}>Toggle Dark Theme</button>
         </div>
     )
 }

@@ -12,6 +12,7 @@
 
 .Dark nav a#Logo {
   color: white !important;
+  background: none;
 }
 
 .Dark nav a {
@@ -29,4 +30,12 @@ nav ul a:hover {
 
 .Dark #settingsIcon {
     color: white;
+}
+
+.Dark #settings h5 {
+  color: white;
+}
+
+.Dark #settings span {
+  color: white !important;
 }
