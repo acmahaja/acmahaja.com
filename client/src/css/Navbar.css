@@ -139,3 +139,31 @@ nav ul a.active:hover {
   animation-name: colorHover;
   animation-duration: 300ms;
 }
+
+
+@media screen and (max-width:700px) {
+  header {
+    flex-direction: column-reverse;
+    outline: none;
+    border: none;
+    position: fixed;
+    bottom: 0rem;
+  }
+
+  nav {
+    padding: 0px 5px !important;
+  }
+
+  nav ul a {
+    font-size: 13px;
+    padding: 5px 5px;
+  }
+
+  #Logo {
+    display: none;
+  }
+  nav ul {
+    padding: 0px;
+    width: 100%;
+  }
+}
