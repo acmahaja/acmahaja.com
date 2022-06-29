@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NoMatch from "./NoMatch";
-import Home from "./Home";
+import Home from "./pages/Home";
 import Navbar from "./Components/Navbar";
 import Settings from "./Components/Settings";
 

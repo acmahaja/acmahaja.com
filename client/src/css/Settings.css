@@ -10,7 +10,7 @@
 }
 
 #settings.show {
-  position: relative;
+  position: fixed;
   height: fit-content;
   width: 200px;
   left: calc(100vw - 200px - 55px);
@@ -22,6 +22,7 @@
   padding-bottom: 0px;
   display: block;
 
+  z-index: 1000;
 
   animation-name: showHover;
   animation-duration: 200ms;

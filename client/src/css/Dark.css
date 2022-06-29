@@ -39,3 +39,7 @@ nav ul a:hover {
 .Dark #settings span {
   color: white !important;
 }
+
+.Dark main h3 {
+  color: white;
+}

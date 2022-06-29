@@ -6,5 +6,20 @@
 .App {
     width: 100vw;
     height: 100vh;
-    
+    position: absolute;
+}
+
+main {
+    width: 100vw;
+    min-height: calc(100vh - 100px);
+    position: relative;
+    top: 55px
+}
+
+@media screen and (max-width:700px) {
+    main {
+        min-height: calc(100vh - 70px);
+        position: relative;
+        top: -20px
+    }
 }
