@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <main className="useBorderBox">
       <h3>Hi, my name is ...</h3>
-      <h1>Anjaney C Mahajan</h1>
+      <h1>What? /My name is / Who? / My name is / Chika-chika / Slim Shady</h1>
       <div className="typewriter">
           <h2></h2>
       </div>
