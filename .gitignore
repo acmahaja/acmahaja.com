@@ -29,3 +29,4 @@ client/build/*
 client/build/static/css/main.4336c3c2.chunk.css
 *.env
 gcloud-key-file.json
+.next
