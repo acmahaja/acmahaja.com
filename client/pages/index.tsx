@@ -7,7 +7,7 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://github.com/acmahaja">acmahaja.com</a>
+          Welcome to <a href="https://github.com/acmahaja">acmahaja</a>
         </h1>
       </main>
     </div>
