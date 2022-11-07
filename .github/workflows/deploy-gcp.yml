@@ -11,8 +11,7 @@ jobs:
       run:
         working-directory: ./client
     env:
-      IMAGE_NAME: client
-      PROJECT_ID: devopsbyexample-325402
+      PROJECT_ID: acmahaja
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -27,7 +26,7 @@ jobs:
       run: docker build -t $IMAGE_NAME:latest .
 
     - name: Build Docker Google Cloud Build
-      run: gcloud builds submit --tag gcr.io/$IMAGE_NAME/$IMAGE_NAME --project $IMAGE_NAME 
+      run: gcloud builds submit --tag gcr.io/$PROJECT_ID/$PROJECT_ID --project $PROJECT_ID 
 
     - name: Deploy Google Cloud Build
-      run: gcloud run deploy --image gcr.io/$IMAGE_NAME/$IMAGE_NAME --project $IMAGE_NAME --platform managed
+      run: gcloud run deploy --image gcr.io/$PROJECT_ID/$PROJECT_ID --project $PROJECT_ID --platform managed
