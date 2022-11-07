@@ -7,9 +7,7 @@ jobs:
   build-push-gcr:
     name: Build and Push to GCP
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./client
+    
     env:
       PROJECT_ID: acmahaja
     steps:
@@ -24,10 +22,9 @@ jobs:
 
     - name: Build Docker Image
       working-directory: ./client
-      run: docker build -t client .
+      run: docker build -t acmahaja .
 
     - name: Build Docker Google Cloud Build
-      working-directory: ./client
       run: gcloud builds submit --tag gcr.io/acmahaja/acmahaja --project acmahaja 
 
     - name: Deploy Google Cloud Build
