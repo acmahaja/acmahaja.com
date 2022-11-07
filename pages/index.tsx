@@ -1,11 +1,18 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { AiFillGithub } from 'react-icons/ai';
+
 
 export default function Home() {
   return (
-    <div className="Home">
-      asd
+    <div className={styles.Home}>
+      <h2>Hi, my name is ...</h2>
+      <h1>Anjaney C Mahajan</h1>
+      <p>
+        I am overhauling my personal website, track my progress here on
+        <a href="http://github.com/acmahaja">Github <AiFillGithub size={20}/></a>
+      </p>
     </div>
   )
 }
