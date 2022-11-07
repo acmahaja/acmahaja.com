@@ -2,7 +2,7 @@
 name: Build and Push GCP Image to Google Cloud Platform
 on:
   push:
-    branches: [ main ]
+    branches: [ 2023 ]
 jobs:
   build-push-gcr:
     name: Build and Push to GCP
