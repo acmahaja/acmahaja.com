@@ -17,7 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      working-directory: ./client
       uses: actions/checkout@v2
     # This step is where our service account will be authenticated
     - uses: google-github-actions/setup-gcloud@v0.2.0
