@@ -1,18 +1,22 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
-import { AiFillGithub } from 'react-icons/ai';
+import Navbar from './components/Navbar'
 
 
 export default function Home() {
+  const [accentColour, setAccentColour] = useState<string>('234, 76, 137');
+
+  useEffect(()=>{
+    setAccent(accentColour);
+  })
+
+  function setAccent(color: string) {
+    document.documentElement.style.setProperty('--accent', color)
+  }
+
   return (
     <div className={styles.Home}>
-      <h2>Hi, my name is ...</h2>
-      <h1>Anjaney C Mahajan</h1>
-      <p>
-        I am overhauling my personal website, track my progress here on
-        <a href="http://github.com/acmahaja">Github <AiFillGithub size={20}/></a>
-      </p>
+      <Navbar {...{AccentColour: accentColour}} />
     </div>
   )
 }
