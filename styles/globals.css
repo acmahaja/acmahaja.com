@@ -15,8 +15,9 @@ body, html, #__next{
 
 #__next{
   background: rgb(var(--black)) url(/wireframe.png);
-  background-size: 130px;
+  background-size: 170px;
   display: grid;
   place-items: center;
+  box-shadow: inset 0px 0px 45px 45px rgb(var(--black));
 }
 

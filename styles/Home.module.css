@@ -1,6 +1,6 @@
 .Home {
-  width: 900px;
-  height: 500px;
+  width: 950px;
+  height: 450px;
   background-color: rgb(var(--black));
   border: 2px rgb(var(--white)) solid;
   border: solid 5px rgba(--white, 0.75);
