@@ -16,6 +16,23 @@
     background: linear-gradient(90deg, rgb(var(--accent)) 75%, rgba(var(--accent), 0.5) 100%);
 }
 
+.content {
+    width: 100%;
+    height: calc(100% - 7px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    padding: 13px 49px;
+    box-sizing: border-box;
+}
+
+.Logo {
+    box-sizing: border-box;
+}
+
 @media screen and (max-width: 650px) {
     .Navbar {
         top: unset;
