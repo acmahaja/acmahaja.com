@@ -8,19 +8,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  display: grid;
-  place-content: center;
+  padding: 20px;
   
+  box-sizing: border-box;
 }
 
-.App section {
-  width: 85ch;
-  height: 33rem;
+.App > section {
+  width: 100%;
+  height: 100%;
+  max-width: 39ch;
+  max-height: 36rem;
   background: rgb(var(--pale-green));
   padding: 20px;
   box-sizing: border-box;
-  position: relative;
   border: 1px solid rgb(var(--black));
 
 }
@@ -28,8 +28,7 @@
 .App section img{
   height: 20.625rem;
   width: auto;
-  position: absolute;
   bottom: 0;
-  right: 0;
-  
+  right: 0; 
 }
+
