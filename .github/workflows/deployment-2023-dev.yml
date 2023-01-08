@@ -30,13 +30,13 @@ jobs:
           uses: actions/checkout@v2
 
         - name: Build Docker image
-          run: docker build -t $IMAGE_NAME ./client
+          run: docker build -t $IMAGE_NAME ./${{ secrets.GCP_APP_NAME }}-dev
 
         - name: Push Docker image
           run: docker push $IMAGE_NAME
 
         - name: Deploy Docker image
-          run: gcloud run deploy client --image $IMAGE_NAME --region us-east1 --platform managed
+          run: gcloud run deploy ${{ secrets.GCP_APP_NAME }}-dev --image $IMAGE_NAME --region us-east1 --platform managed
 
         - name: Show Output
           run: echo ${{ steps.deploy.outputs.url }}
