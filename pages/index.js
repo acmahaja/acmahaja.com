@@ -5,6 +5,11 @@ import styles from "../styles/Home.module.css";
 import { AiFillGithub } from "react-icons/ai";
 
 export default function Home() {
+
+  function goToRepo() {
+    window.location.href = "https://github.com/acmahaja/acmahaja.com"
+  }
+
   return (
     <>
       <Head>
@@ -24,7 +29,7 @@ export default function Home() {
             <h1 className={styles.Name}>Anjaney C Mahajan</h1>
             <h6 className={styles.Description}>
               I am overhauling my personal website, track my progress here on{" "}
-              <span>
+              <span onClick={goToRepo}>
                 Github{" "}<AiFillGithub size={20} />
               </span>
             </h6>
