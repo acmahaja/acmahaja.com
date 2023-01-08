@@ -1,8 +1,101 @@
-.main {
+.Main {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+
+  /* Css fallback */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  box-sizing: border-box;
   background-color: rgb(var(--pale-green));
   opacity: 1;
   background-image: radial-gradient(#000000 1px, rgb(var(--pale-green)) 1px);
-  background-size: 18px 18px;
+  background-size: 20px 20px;
+}
+
+.Section {
+  width: fit-content;
+  height: fit-content;
+
+  max-width: 39ch;
+  max-height: 39rem;
+  background: rgb(var(--pale-green));
+  padding: 1.25rem 1rem;
+  box-sizing: border-box;
+  border: 1px solid rgb(var(--black));
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.ConstructionWorker {
+  height: auto;
   width: 100%;
-  height: 100%;
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  z-index: 1;
+  
+}
+
+.Description {
+  font-weight: 400;
+  font-size: 1.1875rem;
+  line-height: 2rem;
+  margin: 0px;
+  width: fit-content;
+}
+
+.Description span {
+  height: 1.25rem;
+  width: 8.5ch;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Description span:hover {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.Name {
+  margin: 1.25rem 0px;
+}
+
+@media screen and (min-width: 658px) {
+  .Section {
+    width: 100%;
+    height: 100%;
+    max-width: 90ch;
+    max-height: 36rem;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .Text {
+    position: absolute;
+    top: 8ch;
+    left: 8ch;
+    width: 56ch;
+    height: 15.5rem;
+  }
+
+  .ConstructionWorker {
+    height: 20.625rem;
+    width: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
 }
