@@ -10,6 +10,8 @@ export default function Home() {
     window.location.href = "https://github.com/acmahaja/acmahaja.com"
   }
 
+
+  
   return (
     <>
       <Head>
