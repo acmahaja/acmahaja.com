@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 import { AiFillGithub } from "react-icons/ai";
@@ -15,6 +14,31 @@ export default function Home() {
   return (
     <>
       <Head>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        // Primary Meta Tags
+        <title>@acmahaja</title>
+        <meta name="title" content="@acmahaja"></meta>
+        <meta name="description" content="I am a software engineering with business student at the University of Melbourne, I completed my undergraduate degree in Computer Engineering at North Carolina State University. "></meta>
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:image" content="/android-chrome-192x192.png"></meta>
+
+        // Open Graph / Facebook
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:url" content="https://www.acmahaja.com/"></meta>
+        <meta property="og:title" content="@acmahaja"></meta>
+        <meta property="og:description" content="I am a software engineering with business student at the University of Melbourne, I completed my undergraduate degree in Computer Engineering at North Carolina State University."></meta>
+        <meta property="og:image" content="https://www.acmahaja.com/android-chrome-512x512.png"></meta>
+      
+        // Twitter
+        <meta property="twitter:card" content="summary_large_image"></meta>
+        <meta property="twitter:url" content="https://www.acmahaja.com/"></meta>
+        <meta property="twitter:title" content="@acmahaja"></meta>
+        <meta property="twitter:description" content="I am a software engineering with business student at the University of Melbourne, I completed my undergraduate degree in Computer Engineering at North Carolina State University."></meta>
+        <meta property="twitter:image" content="https://www.acmahaja.com/android-chrome-512x512.png"></meta>
+        
+
       </Head>
 
       <main className={styles.Main}>
