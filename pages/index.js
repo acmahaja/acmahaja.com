@@ -3,6 +3,8 @@ import styles from "../styles/Home.module.css";
 
 import { AiFillGithub } from "react-icons/ai";
 
+import Navbar from "../Components/Navbar";
+
 export default function Home() {
 
   function goToRepo() {
@@ -10,7 +12,6 @@ export default function Home() {
   }
 
 
-  
   return (
     <>
       <Head>
@@ -42,12 +43,14 @@ export default function Home() {
         <meta property="twitter:title" content="@acmahaja"></meta>
         <meta property="twitter:description" content="I am a software engineering with business student at the University of Melbourne, I completed my undergraduate degree in Computer Engineering at North Carolina State University."></meta>
         <meta property="twitter:image" content="https://www.acmahaja.com/android-chrome-512x512.png"></meta>
-        
-
       </Head>
 
       <main className={styles.Main}>
-
+        <Navbar />
+        <div id="Home">Home</div>
+        <div id="About">About</div>
+        <div id="Projects">Projects</div>
+        <div id="Resume">Resume</div>
       </main>
     </>
   );
