@@ -1,9 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-import { AiFillGithub } from "react-icons/ai";
-
 import Navbar from "../Components/Navbar";
+import HomeSection from "../Components/Home";
 
 
 export default function Home() {
@@ -48,12 +47,7 @@ export default function Home() {
 
       <main className={styles.Main}>
         <Navbar />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div id="Home">Home</div>
+        <HomeSection />
         <div id="About">About</div>
         <div id="Projects">Projects</div>
         <div id="Resume">Resume</div>

@@ -9,7 +9,7 @@
   padding: 0px calc((100% - 1200px) / 2);
   padding-bottom: 15px;
 
-  position: absolute;
+  position: fixed;
   /* padding: 0px; */
 }
 

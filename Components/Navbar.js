@@ -7,7 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Navbar() {
-  const [toggleNav, setToggleNav] = useState(true);
+  const [toggleNav, setToggleNav] = useState(false);
 
   function toggleNavBar() {
     setToggleNav(!toggleNav);

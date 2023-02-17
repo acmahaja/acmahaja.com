@@ -29,6 +29,7 @@ body, #__next {
 
 
 #Home, #About, #Projects, #Resume {
-  background: pink;
   height: 100vh;
 }
+
+
