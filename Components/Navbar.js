@@ -41,17 +41,17 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link className={styles.NavLink} href="#About">
+            <Link disabled className={`${styles.NavLink} ${styles.NavLinkDisabled}`} href="#">
               About
             </Link>
           </li>
           <li>
-            <Link className={styles.NavLink} href="#Projects">
+            <Link disabled className={`${styles.NavLink} ${styles.NavLinkDisabled}`} href="#">
               Projects
             </Link>
           </li>
           <li>
-            <Link className={styles.NavLink} href="#Resume">
+            <Link disabled className={`${styles.NavLink} ${styles.NavLinkDisabled}`} href="#">
               Resume
             </Link>
           </li>

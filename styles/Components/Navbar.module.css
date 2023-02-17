@@ -38,6 +38,8 @@
   display: none;
 }
 
+
+
 .NavLink {
   text-decoration: none;
   font-family: "Karla", sans-serif;
@@ -71,6 +73,34 @@
 .NavLink:hover::after {
   transform: scaleX(1);
   transform-origin: bottom center;
+}
+
+.NavLinkDisabled{
+  opacity: 0.5;
+}
+
+.NavLinkDisabled:hover {
+  cursor: not-allowed;
+}
+
+.NavLinkDisabled::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+
+  background-color: none;
+
+  transform-origin: none;
+  transition: none;
+}
+
+.NavLinkDisabled:hover::after {
+  transform: scaleX(0);
+  transform-origin: none;
 }
 
 @media only screen and (max-width: 1200px) {
