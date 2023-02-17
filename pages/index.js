@@ -5,6 +5,7 @@ import { AiFillGithub } from "react-icons/ai";
 
 import Navbar from "../Components/Navbar";
 
+
 export default function Home() {
 
   function goToRepo() {
@@ -47,6 +48,11 @@ export default function Home() {
 
       <main className={styles.Main}>
         <Navbar />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <div id="Home">Home</div>
         <div id="About">About</div>
         <div id="Projects">Projects</div>
