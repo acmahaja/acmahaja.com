@@ -8,6 +8,7 @@
   align-items: flex-end;
   padding: 0px calc((100% - 1200px) / 2);
   padding-bottom: 15px;
+  /* padding: 0px; */
 }
 
 .Brand {
@@ -37,4 +38,46 @@
   line-height: 22px;
   letter-spacing: -0.5px;
 
+  padding-bottom: 5px;
+  display: inline-block;
+  position: relative;
+  color: rgb(var(--black));
+
+}
+
+.NavLink::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(var(--black));
+  
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out; 
+}
+
+.NavLink:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .Navbar{
+        padding: 0px 15px;
+        padding-bottom: 15px;
+
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .Navbar{
+        padding: 0px 15px;
+        padding-bottom: 15px;
+
+    }
 }
