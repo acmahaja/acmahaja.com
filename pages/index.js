@@ -1,16 +1,9 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-
-import Navbar from "../Components/Navbar";
 import HomeSection from "../Components/Home";
 
 
 export default function Home() {
-
-  function goToRepo() {
-    window.location.href = "https://github.com/acmahaja/acmahaja.com"
-  }
-
 
   return (
     <>
@@ -46,11 +39,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.Main}>
-        <Navbar />
+        {/* <Navbar /> */}
         <HomeSection />
-        <div id="About">About</div>
-        <div id="Projects">Projects</div>
-        <div id="Resume">Resume</div>
+        {/* <div id="About">About</div> */}
+        {/* <div id="Projects">Projects</div>
+        <div id="Resume">Resume</div> */}
       </main>
     </>
   );

@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300family=Karla:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400family=Karla:wght@100;200;300;400;500;600;700&display=swap');
 
 /* font-family: 'JetBrains Mono', monospace;
 font-family: 'Karla', sans-serif; */
 
 :root {
-  --pale-green: 232, 245, 226;
   --black: 0, 0, 0;
-
+  --pale-green: 232, 245, 226;
+  --saphire-blue: 16, 22, 47;
   --wheat :255, 240, 229;
   --white :255, 255, 255;
+
 }
 
 html {
@@ -18,6 +19,8 @@ html {
   margin: 0px;
   padding: 0px;
   font-size: 16px;
+  /* background: rgb(var(--wheat)); */
+  background: rgb(var(--saphire-blue));
 }
 
 body, #__next {
@@ -25,11 +28,5 @@ body, #__next {
   height: 100%;
   margin: 0px;
   padding: 0px;
+  background: inherit;
 }
-
-
-#Home, #About, #Projects, #Resume {
-  height: 100vh;
-}
-
-
