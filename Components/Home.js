@@ -1,5 +1,7 @@
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
+import { useRouter } from "next/router";
+
 
 import { FaDiscord } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
@@ -7,6 +9,13 @@ import { MdEmail } from "react-icons/md";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 function HomeSection() {
+
+  const router = useRouter()
+
+  const redirectSocial = (link) =>{
+    router.push(link)
+  }
+
   return (
     <section id="Home" className={styles.HomeSection}>
       <div className={styles.About}>
@@ -23,21 +32,21 @@ function HomeSection() {
         <div className={styles.Socials}>
           <p className={styles.ContactMe}>Contact me!</p>
           <div className={styles.SocialsList}>
-            <div className={`${styles.Social} ${styles.EmailLogo}`}>
+            <div onClick={()=>redirectSocial("mailto: acmahaja@gmail.com")} className={`${styles.Social} ${styles.EmailLogo}`}>
               <MdEmail size={22} />
             </div>
 
-            <div className={`${styles.Social} ${styles.LinkedinLogo}`}>
+            <div onClick={()=>redirectSocial("https://www.linkedin.com/in/acmahaja/")} className={`${styles.Social} ${styles.LinkedinLogo}`}>
               <AiFillLinkedin size={22} />
             </div>
 
-            <div className={`${styles.Social} ${styles.GithubLogo}`}>
+            <div onClick={()=>redirectSocial("https://github.com/acmahaja")} className={`${styles.Social} ${styles.GithubLogo}`}>
               <AiFillGithub size={22} />
             </div>
-            <div className={`${styles.Social} ${styles.InstagramLogo}`}>
+            <div onClick={()=>redirectSocial("https://instagram.com/acmahaja")} className={`${styles.Social} ${styles.InstagramLogo}`}>
               <BsInstagram size={22} />
             </div>
-            <div className={`${styles.Social} ${styles.DiscordLogo}`}>
+            <div onClick={()=>redirectSocial("https://discordapp.com/users/349311189454553092")} className={`${styles.Social} ${styles.DiscordLogo}`}>
               <FaDiscord size={22} />
             </div>
           </div>
@@ -60,43 +69,3 @@ function HomeSection() {
 
 export default HomeSection;
 
-// function HomeSection() {
-//   return (
-//     <section id="Home" className={styles.HomeSection}>
-//       <div className={styles.Content}>
-//         <div className={styles.HomeSummary}>
-//             <p className={styles.HiMessage}>Hi, my name is ...</p>
-//             <h1 className={styles.Name}>Anjaney C Mahajan</h1>
-//             <h2 className={styles.Fields}>Student/Dev/Engineer...</h2>
-//             <p className={styles.Description}>I am a software engineering with business student at the University of Melbourne, I completed my undergraduate degree in Computer Engineering at North Carolina State University.</p>
-//         </div>
-// <div>
-//     <p className={styles.ContactMessage}>Contact Me!</p>
-//     <div className={styles.Socials}>
-//     <div className={`${styles.Social} ${styles.EmailLogo}`}>
-//         <MdEmail/>
-//     </div>
-
-//     <div className={`${styles.Social} ${styles.LinkedinLogo}`}>
-//         <AiFillLinkedin />
-//     </div>
-
-//     <div className={`${styles.Social} ${styles.GithubLogo}`}>
-//         <AiFillGithub />
-//     </div>
-//     <div className={`${styles.Social} ${styles.InstagramLogo}`}>
-//         <BsInstagram />
-//     </div>
-//     <div className={`${styles.Social} ${styles.DiscordLogo}`}>
-//         <FaDiscord />
-//     </div>
-// </div>
-
-// </div>
-//       </div>
-//       <div className={styles.Boat}></div>
-//     </section>
-//   );
-// }
-
-// export default HomeSection;
