@@ -1,10 +1,168 @@
 .HomeSection {
-    padding: 120px;
-    height: 900px;
-    width: 100vw;
-    background: rgb(var(--wheat));
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  height: 90vh;
+  width: 100vw;
+  padding: 10% 8% 5% 9%;
+  background: rgb(var(--wheat));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
 }
+
+.About {
+  font-family: "Karla", sans-serif;
+  height: 550px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.About h3 {
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  height: fit-content;
+  margin: 0px;
+}
+
+.About h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 5rem;
+  height: fit-content;
+  margin: 0px;
+}
+
+.About h2 {
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  height: fit-content;
+  margin: 0px;
+}
+
+.About p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  height: fit-content;
+  font-family: "JetBrains Mono", monospace;
+  margin: 0px;
+}
+
+.ContactMe {
+  font-weight: 400;
+}
+
+.SocialsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: fit-content;
+  width: 370px;
+  margin-top: 10px;
+}
+
+.Social {
+  background: white;
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.Social:hover {
+  left: 3px;
+  top: -3px;
+  box-shadow: -3px 3px black;
+  cursor: pointer;
+}
+
+.Social:hover > svg {
+  color: white;
+}
+
+/* Email Logo */
+.EmailLogo:hover {
+  background: #dc3636;
+}
+
+/* Linkedin Logo */
+.LinkedinLogo:hover {
+  background: #0a66c2;
+}
+
+/* Github Logo */
+.GithubLogo:hover {
+  background: #24292f;
+}
+
+/* Instagram Logo */
+.InstagramLogo:hover {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+/* Discord Logo */
+.DiscordLogo:hover {
+  background: #5661f5;
+}
+
+.Image {
+  width: calc(37.5vw + 16px);
+  height: calc(37.5vw + 16px);
+  position: relative;
+}
+
+.BoatImage {
+    height: 37.5vw !important;
+    width: 37.5vw !important;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.ImagePattern {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  z-index: 1;
+  width: 37.5vw;
+  height: 37.5vw;
+  border-radius: 5px;
+  background-color: rgba(255, 240, 229, 1);
+  opacity: 0.8;
+  background-size: 7px 7px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0,
+    rgba(0, 0, 0, 1) 0.7000000000000001px,
+    rgba(255, 240, 229, 1) 0,
+    rgba(255, 240, 229, 1) 50%
+  );
+}
+
+.BoatImage:hover {
+    top: 0px;
+    right: 0px;
+    box-shadow: -16px 10px 0px rgba(0, 0, 0, 100%);
+
+}
+
