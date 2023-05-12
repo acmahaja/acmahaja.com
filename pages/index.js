@@ -1,4 +1,6 @@
 import Head from "next/head";
+import {styles} from "../styles/Home.module.css"
+import Welcome from "../sections/Welcome";
 
 export default function Home() {
   return (
@@ -65,8 +67,8 @@ export default function Home() {
           ></meta>
         </Head>
 
-      <main className={styles.Main}>
-
+      <main>
+        <Welcome />
       </main>
     </>
   );
