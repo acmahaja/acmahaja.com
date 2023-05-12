@@ -1,2 +1,5 @@
 .About {
+    background: rgb(var(--saphire-blue));
+    width: 100%;
+    height: 100%;
 }

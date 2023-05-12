@@ -1,6 +1,7 @@
+import styles from '@/styles/sections/Resume.module.css'
 
 export default function Resume(){
-    return <section>
+    return <section className={styles.Resume}>
         Resume
     </section>
 }
