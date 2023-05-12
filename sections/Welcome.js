@@ -1,7 +1,7 @@
-import {styles} from '@/styles/sections/Welcome.module.css'
+import styles from '@/styles/sections/Welcome.module.css'
 
 export default function Welcome(){
-    return <div>
+    return <section className={styles.Welcome}>
         Welcome
-    </div>
+    </section>
 }

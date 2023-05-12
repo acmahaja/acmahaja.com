@@ -1,5 +1,5 @@
 import Head from "next/head";
-import {styles} from "@/styles/Home.module.css"
+import styles from "@/styles/Home.module.css"
 import Welcome from "@/sections/Welcome";
 import About from "@/sections/About";
 import Projects from "@/sections/Projects";
@@ -70,7 +70,7 @@ export default function Home() {
           ></meta>
         </Head>
 
-      <main>
+      <main className={styles.Main}>
         <Welcome />
         <About />
         <Projects />

@@ -1,3 +1,9 @@
 .Main {
-    background-color: red;
+    height: fit-content;
+    min-height: inherit;
+    height: 100%;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
 }
+

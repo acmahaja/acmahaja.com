@@ -1,6 +1,6 @@
 
 export default function Resume(){
-    return <div>
+    return <section>
         Resume
-    </div>
+    </section>
 }

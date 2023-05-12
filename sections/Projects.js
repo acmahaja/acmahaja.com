@@ -1,6 +1,6 @@
 
 export default function Projects(){
-    return <div>
+    return <section>
         Projects
-    </div>
+    </section>
 }
