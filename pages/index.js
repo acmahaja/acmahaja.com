@@ -1,6 +1,9 @@
 import Head from "next/head";
-import {styles} from "../styles/Home.module.css"
-import Welcome from "../sections/Welcome";
+import {styles} from "@/styles/Home.module.css"
+import Welcome from "@/sections/Welcome";
+import About from "@/sections/About";
+import Projects from "@/sections/Projects";
+import Resume from "@/sections/Resume";
 
 export default function Home() {
   return (
@@ -69,6 +72,9 @@ export default function Home() {
 
       <main>
         <Welcome />
+        <About />
+        <Projects />
+        <Resume />
       </main>
     </>
   );
