@@ -42,6 +42,11 @@
   letter-spacing: -0.5px;
 }
 
+.NavLink:hover {
+    border-bottom: 3px solid black;
+}
+
+
 @media screen and (width < 600px) {
   .SideBar {
     display: block;
@@ -49,4 +54,5 @@
   .Side {
     display: block;
   }
+  
 }
