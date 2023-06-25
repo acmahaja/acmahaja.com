@@ -69,10 +69,9 @@ export default function Home() {
             content="https://www.acmahaja.com/android-chrome-512x512.png"
           ></meta>
         </Head>
-
       <main className={styles.Main}>
         <Welcome />
-        <About />
+        <About/>
         <Projects />
         <Resume />
       </main>
