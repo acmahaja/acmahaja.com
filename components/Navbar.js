@@ -2,8 +2,9 @@ import styles from "@/styles/components/Navbar.module.css";
 import Image from "next/image";
 import LogoMobile from "../assets/LogoMobile.svg";
 import LogoDesktop from "../assets/LogoDesktop.svg";
-import SideBar from "../assets/SideBar.svg";
 import Link from "next/link";
+
+import SideBar from "./Sidebar";
 
 export default function Navbar() {
   return (
@@ -19,14 +20,12 @@ export default function Navbar() {
       <Image
         priority
         src={LogoMobile.src}
-        height={55}
-        width={55}
+        height={60}
+        width={60}
         alt="Logo"
         className={styles.LogoMobile}
       />{" "}
 
-
-      
       <ul className={styles.Links}>
         <li>
           <Link className={styles.NavLink} href="/">
@@ -50,14 +49,8 @@ export default function Navbar() {
         </li>
       </ul>
 
-      <Image
-        priority
-        src={SideBar.src}
-        height={30}
-        width={20}
-        alt="Logo"
-        className={styles.SideBar}
-      />{" "}
+    <SideBar />
+
     </div>
   );
 }

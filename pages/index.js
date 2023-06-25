@@ -4,6 +4,8 @@ import Welcome from "@/sections/Welcome";
 import About from "@/sections/About";
 import Projects from "@/sections/Projects";
 import Resume from "@/sections/Resume";
+import Navbar from "@/components/Navbar";
+
 
 export default function Home() {
   return (
@@ -70,6 +72,7 @@ export default function Home() {
           ></meta>
         </Head>
       <main className={styles.Main}>
+        <Navbar />
         <Welcome />
         <About/>
         <Projects />
