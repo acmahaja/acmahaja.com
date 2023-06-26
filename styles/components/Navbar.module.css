@@ -8,12 +8,13 @@
   justify-content: space-between;
   align-items: center;
 
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .LogoDesktop {
@@ -32,13 +33,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
 }
 
 .NavLink {
   font-family: "Karla", sans-serif;
   text-decoration: none;
-  color: black;
   width: fit-content;
+
 }
 
 .NavLink:hover {

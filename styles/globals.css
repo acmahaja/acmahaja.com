@@ -15,5 +15,6 @@ html,body, #__next {
   padding: 0px;
   font-size: 16px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 

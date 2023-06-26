@@ -7,3 +7,10 @@
     box-sizing: border-box;
 }
 
+.Main > section {
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+    scroll-snap-type: both mandatory;
+}
+

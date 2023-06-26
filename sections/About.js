@@ -1,7 +1,8 @@
 import styles from '@/styles/sections/About.module.css'
+import Navbar from "@/components/Navbar";
 
 export default function About(){
     return <section id="About" className={styles.About}>
-        About
+        <Navbar color={'Dark'}/>
     </section>
 }

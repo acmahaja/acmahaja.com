@@ -72,7 +72,6 @@ export default function Home() {
           ></meta>
         </Head>
       <main className={styles.Main}>
-        <Navbar />
         <Welcome />
         <About/>
         <Projects />

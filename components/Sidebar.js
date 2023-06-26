@@ -1,11 +1,12 @@
 import styles from "@/styles/components/Sidebar.module.css";
-import SideBarIcon from "../assets/SideBarIcon.svg";
+import SideBarIconDark from "../assets/SideBarIconDark.svg";
+import SideBarIconWhite from "../assets/SideBarIconWhite.svg";
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 
-export default function SideBar() {
-  const [viewSideBar, setViewSideBar] = useState(true);
+export default function SideBar({color}) {
+  const [viewSideBar, setViewSideBar] = useState(false);
 
   const toggleSideBar = () => {
     console.log(viewSideBar);
@@ -15,7 +16,7 @@ export default function SideBar() {
   return (
     <div className={styles.SideBar}>
       <Image
-        src={SideBarIcon.src}
+        src={color=='Dark' ? SideBarIconDark.src : SideBarIconWhite.src}
         height={30}
         width={20}
         alt="Logo"
