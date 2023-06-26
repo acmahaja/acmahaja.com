@@ -5,12 +5,16 @@
     width: 100%;
     display: block;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+  
 }
 
 .Main > section {
     position: relative;
     overflow: hidden;
     clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
-    scroll-snap-type: both mandatory;
+    scroll-snap-align: start;
 }
 

@@ -3,6 +3,6 @@ import Navbar from "@/components/Navbar";
 
 export default function About(){
     return <section id="About" className={styles.About}>
-        <Navbar color={'Dark'}/>
+        <Navbar color={'Light'}/>
     </section>
 }
