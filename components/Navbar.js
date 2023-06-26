@@ -9,13 +9,13 @@ import Link from "next/link";
 
 import SideBar from "./Sidebar";
 
-export default function Navbar({color}) {
+export default function Navbar({ color }) {
   console.log(color);
   return (
     <div className={styles.Navbar}>
       <Image
         priority
-        src={color=='Dark' ? LogoDesktopDark.src : LogoDesktopWhite.src}
+        src={color == "Dark" ? LogoDesktopDark.src : LogoDesktopWhite.src}
         height={53}
         width={150}
         alt="Logo"
@@ -23,38 +23,55 @@ export default function Navbar({color}) {
       />{" "}
       <Image
         priority
-        src={color=='Dark' ? LogoMobileDark.src : LogoMobileWhite.src}
+        src={color == "Dark" ? LogoMobileDark.src : LogoMobileWhite.src}
         height={60}
         width={60}
         alt="Logo"
         className={styles.LogoMobile}
       />{" "}
-
-      <ul className={styles.Links} >
+      <ul className={styles.Links}>
         <li>
-          <Link style={{color: color == 'Dark' ? 'black' : '#47cca0'}} className={styles.NavLink} href="/">
+          <Link
+            className={`${styles.NavLink} ${
+              color == "Dark" ? styles.Dark : styles.Light
+            }`}
+            href="/"
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link style={{color: color == 'Dark' ? 'black' : '#47cca0'}} className={styles.NavLink} href="#About">
+          <Link
+            className={`${styles.NavLink} ${
+              color == "Dark" ? styles.Dark : styles.Light
+            }`}
+            href="#About"
+          >
             About
           </Link>
         </li>
         <li>
-          <Link style={{color: color == 'Dark' ? 'black' : '#47cca0'}} className={styles.NavLink} href="#Projects">
+          <Link
+            className={`${styles.NavLink} ${
+              color == "Dark" ? styles.Dark : styles.Light
+            }`}
+            href="#Projects"
+          >
             Projects
           </Link>
         </li>
         <li>
-          <Link style={{color: color == 'Dark' ? 'black' : '#47cca0'}} className={styles.NavLink} href="#Resume">
+          <Link
+            className={`${styles.NavLink} ${
+              color == "Dark" ? styles.Dark : styles.Light
+            }`}
+            href="#Resume"
+          >
             Resume
           </Link>
         </li>
       </ul>
-
-    <SideBar color={color}/>
-
+      <SideBar color={color} />
     </div>
   );
 }

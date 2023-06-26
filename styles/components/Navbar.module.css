@@ -40,11 +40,22 @@
   font-family: "Karla", sans-serif;
   text-decoration: none;
   width: fit-content;
+}
 
+.NavLink.Dark {
+  color: black;
+}
+
+.NavLink.Light {
+  color: #47cca0;
 }
 
 .NavLink:hover {
     border-bottom: 2px solid black;
+}
+
+.NavLink.Light:hover {
+  border-bottom-color: #47cca0;
 }
 
 .SideBarIcon {
