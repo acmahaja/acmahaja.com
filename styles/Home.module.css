@@ -3,7 +3,11 @@
     min-height: inherit;
     height: 100%;
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
     box-sizing: border-box;
     scroll-snap-type: y mandatory;
     overflow-y: scroll; 
@@ -11,7 +15,14 @@
   
 }
 
-.Main > section {
+.Main > article {
+    min-height: 895px;
+    width: 100%;
+
+    margin: 0 auto;
+    
+    box-sizing: border-box;
+    height: fit-content;
     position: relative;
     overflow: hidden;
     clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);

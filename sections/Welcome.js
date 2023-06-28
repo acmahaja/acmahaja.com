@@ -1,11 +1,16 @@
 import styles from "@/styles/sections/Welcome.module.css";
 import Navbar from "@/components/Navbar";
+import Breadcrumb from "@/components/Breadcrumb";
 
 
 export default function Welcome() {
   return (
-    <section className={styles.Welcome}>
+    <article className={styles.Welcome}>
       <Navbar color={'Dark'}/>
-    </section>
+      <section >
+        <Breadcrumb color={'Dark'} count={4} section={1}/>
+
+      </section>
+    </article>
   );
 }

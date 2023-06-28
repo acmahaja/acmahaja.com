@@ -4,5 +4,12 @@
     height: 100%;
     position: relative;
     scroll-snap-align: start;
+}
 
+.Welcome > section {
+    max-width: 1200px;
+    min-height: 100%;
+    height: fit-content;
+    background-color: red;
+    margin: 0 auto;
 }
