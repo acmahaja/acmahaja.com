@@ -9,7 +9,6 @@ import LogoMobileWhite from "../assets/LogoMobileWhite.svg";
 import SideBar from "./Sidebar";
 
 export default function Navbar({ color }) {
-  console.log(color);
   return (
     <div className={styles.Navbar}>
       <Image
@@ -23,8 +22,8 @@ export default function Navbar({ color }) {
       <Image
         priority
         src={color == "Dark" ? LogoMobileDark.src : LogoMobileWhite.src}
-        height={60}
-        width={60}
+        height={55}
+        width={55}
         alt="Logo"
         className={styles.LogoMobile}
       />{" "}

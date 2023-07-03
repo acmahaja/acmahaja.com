@@ -4,7 +4,7 @@
   left: 20px;
   display: flex;
   flex-direction: column;
-  height: 275px;
+  height: 300px;
   width: 58px;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
 
 .line {
   width: 10px;
-  height: 170px;
+  height: 195px;
   background-color: black;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -43,4 +43,25 @@
 
 .Light .line {
   background-color: #47cca0;
+}
+
+@media screen and (width < 600px) {
+  .Breadcrumb {
+    flex-direction: row;
+    height: 26px;
+    width: 100px;
+    position: 0px;
+    top: 35px;
+    left: calc(50% - 50px);
+  }
+
+  .line {
+    display: none;
+  }
+}
+
+@media screen and (width < 300px) {
+  .Breadcrumb {
+    display: none;
+  }
 }
