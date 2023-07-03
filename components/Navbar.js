@@ -5,7 +5,6 @@ import LogoDesktopWhite from "../assets/LogoDesktopWhite.svg";
 import LogoMobileDark from "../assets/LogoMobileDark.svg";
 import LogoMobileWhite from "../assets/LogoMobileWhite.svg";
 
-import Link from "next/link";
 
 import SideBar from "./Sidebar";
 
@@ -31,44 +30,44 @@ export default function Navbar({ color }) {
       />{" "}
       <ul className={styles.Links}>
         <li>
-          <Link
+          <a
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
             }`}
-            href="/"
+            href="#Welcome"
           >
             Home
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
+          <a
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
             }`}
             href="#About"
           >
             About
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
+          <a
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
             }`}
             href="#Projects"
           >
             Projects
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
+          <a
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
             }`}
             href="#Resume"
           >
             Resume
-          </Link>
+          </a>
         </li>
       </ul>
       <SideBar color={color} />

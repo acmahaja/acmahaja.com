@@ -5,7 +5,9 @@ import Breadcrumb from '@/components/Breadcrumb';
 export default function About(){
     return <article id="About" className={styles.About}>
         <Navbar color={'Light'}/>
-        <Breadcrumb color={'Light'} count={4} section={2}/>
+        <section >
+        <Breadcrumb color={'Light'} section={'About'}/>
 
+      </section>
     </article>
 }

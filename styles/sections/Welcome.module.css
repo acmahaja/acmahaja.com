@@ -8,8 +8,8 @@
 
 .Welcome > section {
     max-width: 1200px;
-    min-height: 100%;
     height: fit-content;
-    background-color: red;
+    height: 100%;
     margin: 0 auto;
+    position: relative;
 }

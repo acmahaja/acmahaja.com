@@ -3,8 +3,11 @@ import Navbar from "@/components/Navbar";
 import Breadcrumb from '@/components/Breadcrumb';
 
 export default function Resume(){
-    return <article className={styles.Resume}>
+    return <article id="Resume" className={styles.Resume}>
         <Navbar color={'Light'}/>
-        <Breadcrumb color={'Light'} count={4} section={4} />
+        <section >
+        <Breadcrumb color={'Light'} section={'Resume'}/>
+
+      </section>
     </article>
 }

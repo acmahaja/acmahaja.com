@@ -3,8 +3,11 @@ import Navbar from "@/components/Navbar";
 import Breadcrumb from '@/components/Breadcrumb';
 
 export default function Projects(){
-    return <article className={styles.Projects}>
+    return <article id="Projects" className={styles.Projects}>
         <Navbar color={'Dark'}/>
-        <Breadcrumb color={'Dark'} count={4} section={3}/>
+        <section >
+        <Breadcrumb color={'Dark'} section={'Projects'}/>
+
+      </section>
     </article>
 }

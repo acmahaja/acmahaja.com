@@ -1,0 +1,46 @@
+.Breadcrumb {
+  position: fixed;
+  bottom: 0px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 275px;
+  width: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0px 7.5px;
+}
+
+.selected {
+  outline: 3px solid black;
+  outline-offset: 2.5px;
+}
+
+.line {
+  width: 10px;
+  height: 170px;
+  background-color: black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.Light .dot {
+  background-color: #47cca0;
+}
+
+.Light .selected {
+  outline: 3px solid #47cca0;
+}
+
+.Light .line {
+  background-color: #47cca0;
+}
