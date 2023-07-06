@@ -5,12 +5,15 @@ import LogoDesktopWhite from "../assets/LogoDesktopWhite.svg";
 import LogoMobileDark from "../assets/LogoMobileDark.svg";
 import LogoMobileWhite from "../assets/LogoMobileWhite.svg";
 
-
 import SideBar from "./Sidebar";
 
 export default function Navbar({ color }) {
   return (
-    <div className={styles.Navbar}>
+    <div
+      className={`${styles.Navbar} ${
+        color == "Dark" ? styles.Light : styles.Dark
+      }`}
+    >
       <Image
         priority
         src={color == "Dark" ? LogoDesktopDark.src : LogoDesktopWhite.src}

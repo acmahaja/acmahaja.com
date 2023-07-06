@@ -50,9 +50,10 @@
     flex-direction: row;
     height: 26px;
     width: 100px;
-    position: 0px;
+    position: fixed;
     top: 35px;
     left: calc(50% - 50px);
+    z-index: 20;
   }
 
   .line {

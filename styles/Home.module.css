@@ -17,6 +17,7 @@
 
 .Main > article {
     min-height: 99vh;
+    height: fit-content;
     width: 100%;
 
     margin: 0 auto;
@@ -24,8 +25,9 @@
     box-sizing: border-box;
     height: fit-content;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
+    
     clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
-    scroll-snap-align: start;
+    scroll-snap-align: 0px;
 }
 
