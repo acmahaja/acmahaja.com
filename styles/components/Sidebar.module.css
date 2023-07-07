@@ -1,0 +1,58 @@
+.SideBar {
+  display: none;
+  cursor: pointer;
+}
+
+.Side {
+  display: none;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.Links {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 300px;
+  height: 100%;
+  background: white;
+  margin: 0px;
+  list-style-type: none;
+  text-align: right;
+  padding: 16px;
+  cursor: default;
+
+  box-sizing: border-box;
+}
+.Links > li {
+  padding: 16px;
+}
+
+.NavLink {
+  font-family: "Karla", sans-serif;
+  text-decoration: none;
+  color: #000;
+  text-align: right;
+  font-size: 33px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+.NavLink:hover {
+    border-bottom: 3px solid black;
+}
+
+
+@media screen and (width < 600px) {
+  .SideBar {
+    display: block;
+  }
+  .Side {
+    display: block;
+  }
+  
+}
