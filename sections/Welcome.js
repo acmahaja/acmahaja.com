@@ -29,9 +29,9 @@ export default function Welcome() {
               400,
               "I am a Dev...",
               1000,
-              "I am a ",
+              "I am ",
               400,
-              "I am a Engineer...",
+              "I am an Engineer...",
               1000,
             ]}
             wrapper="h2"

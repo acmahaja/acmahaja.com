@@ -7,6 +7,7 @@
 
   display: grid;
   place-items: center;
+  overflow: hidden;
 
 }
 
@@ -199,7 +200,6 @@
   position: absolute;
   top: 7px;
   right: 7px;
-  z-index: 1;
   border-radius: 5px;
   object-fit: cover;
   transition: 0.3s;

@@ -18,7 +18,7 @@ export default function Home() {
           <meta name="title" content="@acmahaja"></meta>
           <meta
             name="description"
-            content="I am a software engineering with business student at the University of Melbourne, I completed my undergraduate degree in Computer Engineering at North Carolina State University. "
+            content="I'm a software engineering student at the University of Melbourne experienced in React, Node.js, and Google Cloud. With strong UI/UX skills and business process understanding, I'm seeking graduate and career opportunities in the Australian software engineering industry. "
           ></meta>
           <link rel="icon" href="/favicon.ico" />
           <meta

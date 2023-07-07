@@ -28,5 +28,14 @@
     
     clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
     scroll-snap-align: 0px;
+    z-index: 1;
+    overflow-y: hidden;
+    z-index: 1;
+
 }
 
+@media screen and (width < 791px){
+    .Main > article {
+        overflow-y: scroll;
+    }
+}
