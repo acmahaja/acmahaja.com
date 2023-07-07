@@ -45,7 +45,7 @@
   background-color: #47cca0;
 }
 
-@media screen and (width < 600px) {
+@media screen and (width < 751px) {
   .Breadcrumb {
     flex-direction: row;
     height: 26px;

@@ -18,7 +18,7 @@
 }
 
 .Navbar.Light {
-  background: #FFF0E5;
+  /* background: #FFF0E5; */
   box-shadow: 1px 1px 1px black;
 
 }
@@ -56,6 +56,10 @@
   position: relative;
 }
 
+.Disabled{
+  color: #787878 !important; 
+}
+
 .NavLink.Dark::before {
   content: "";
   position: absolute;
@@ -87,6 +91,11 @@
   transform: scaleX(1);
 }
 
+.NavLink.Disabled:hover::before {
+  transform: scaleX(0);
+}
+
+
 .NavLink.Dark {
   color: black;
 }
@@ -103,7 +112,7 @@
     display: none;
 }
 
-@media screen and (width < 600px) {
+@media screen and (width < 751px) {
   .Navbar {
     padding: 20px 20px 20px 20px;
   }

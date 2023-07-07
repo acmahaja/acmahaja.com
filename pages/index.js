@@ -73,9 +73,9 @@ export default function Home() {
         </Head>
       <main className={styles.Main}>
         <Welcome />
-        <About/>
+        {/* <About/>
         <Projects />
-        <Resume />
+        <Resume /> */}
       </main>
     </>
   );

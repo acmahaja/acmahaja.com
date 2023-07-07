@@ -45,8 +45,9 @@ export default function Navbar({ color }) {
           <a
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
-            }`}
+            } ${styles.Disabled}`}
             href="#About"
+            disabled
           >
             About
           </a>
@@ -55,8 +56,9 @@ export default function Navbar({ color }) {
           <a
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
-            }`}
+            } ${styles.Disabled}`}
             href="#Projects"
+            disabled
           >
             Projects
           </a>
@@ -65,8 +67,9 @@ export default function Navbar({ color }) {
           <a
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
-            }`}
+            } ${styles.Disabled}`}
             href="#Resume"
+            disabled
           >
             Resume
           </a>
