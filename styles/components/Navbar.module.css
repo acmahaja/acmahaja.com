@@ -13,12 +13,12 @@
   right: 0px;
   margin: 0px auto;
 
-  z-index: 10;
+  z-index: 2;
 
 }
 
 .Navbar.Light {
-  /* background: #FFF0E5; */
+  background: #FFF0E5 !important;
   box-shadow: 1px 1px 1px black;
 
 }
