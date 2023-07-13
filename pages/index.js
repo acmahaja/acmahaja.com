@@ -72,9 +72,9 @@ export default function Home() {
           ></meta>
         </Head>
       <main className={styles.Main}>
-        <Welcome />
-        {/* <About/>
-        <Projects />
+        {/* <Welcome /> */}
+        <About/>
+        {/* <Projects />
         <Resume /> */}
       </main>
     </>

@@ -45,7 +45,7 @@ export default function Navbar({ color }) {
           <a
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
-            } ${styles.Disabled}`}
+            }`}
             href="#About"
             disabled
           >
