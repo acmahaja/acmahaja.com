@@ -34,7 +34,7 @@ export default function Welcome() {
               "I am an Engineer...",
               1000,
             ]}
-            wrapper="h2"
+            wrapper="h3"
             speed={30}
             style={{ fontSize: "2em", display: "inline-block" }}
             repeat={Infinity}
@@ -86,7 +86,7 @@ export default function Welcome() {
           <div className={styles.Pattern}></div>
           <Image
             src="/canoe.jpg"
-            alt="Picture of the author"
+            alt="Picture of the me on a canoe"
             width={466}
             height={466}
           />
