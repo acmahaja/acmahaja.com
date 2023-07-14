@@ -4,10 +4,12 @@ import LogoDesktopDark from "../assets/LogoDesktopDark.svg";
 import LogoDesktopWhite from "../assets/LogoDesktopWhite.svg";
 import LogoMobileDark from "../assets/LogoMobileDark.svg";
 import LogoMobileWhite from "../assets/LogoMobileWhite.svg";
+import Breadcrumb from "@/components/Breadcrumb";
+
 
 import SideBar from "./Sidebar";
 
-export default function Navbar({ color }) {
+export default function Navbar({ color, section }) {
   return (
     <div
       className={`${styles.Navbar} ${
@@ -30,6 +32,9 @@ export default function Navbar({ color }) {
         alt="Logo"
         className={styles.LogoMobile}
       />{" "}
+
+      <Breadcrumb color={color} section={section}/>
+
       <ul className={styles.Links}>
         <li>
           <a

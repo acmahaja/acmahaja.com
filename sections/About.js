@@ -1,6 +1,5 @@
 import styles from "@/styles/sections/About.module.css";
 import Navbar from "@/components/Navbar";
-import Breadcrumb from "@/components/Breadcrumb";
 import Image from "next/image";
 import {BiLogoNodejs, BiLogoReact, BiLogoMongodb} from "react-icons/bi"
 import {SiExpress, SiGooglecloud, SiSvelte} from "react-icons/si"
@@ -9,8 +8,8 @@ import {GrMysql} from "react-icons/gr"
 export default function About() {
   return (
     <article id="About" className={styles.About}>
-       <Navbar color={'Light'}/>
-      <Breadcrumb color={'Light'} section={'About'}/>
+       <Navbar color={'Light'} section={"About"} />
+
       <section>
         <h2 className={styles.SectionTitle}>About Me</h2>
         <div className={styles.Content}>

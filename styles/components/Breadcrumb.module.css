@@ -1,5 +1,4 @@
 .Breadcrumb {
-  position: fixed;
   bottom: 0px;
   left: 20px;
   display: flex;
@@ -10,6 +9,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  position: fixed;
+
 }
 
 .dot {
@@ -50,16 +52,22 @@
     flex-direction: row;
     height: 26px;
     width: 100px;
-    position: fixed;
     top: 35px;
     left: calc(50% - 50px);
-    /* z-index: 20; */
+    position: static;
   }
 
   .line {
     display: none;
   }
 }
+
+@media screen and (width < 300px) {
+  .Breadcrumb {
+    display: none;
+  }
+}
+
 
 @media screen and (width < 300px) {
   .Breadcrumb {

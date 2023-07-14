@@ -1,6 +1,5 @@
 import styles from "@/styles/sections/Welcome.module.css";
 import Navbar from "@/components/Navbar";
-import Breadcrumb from "@/components/Breadcrumb";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
@@ -15,8 +14,7 @@ import {
 export default function Welcome() {
   return (
     <article id="Welcome" className={styles.Welcome}>
-      <Navbar color={"Dark"} />
-      <Breadcrumb color={"Dark"} section={"Welcome"} />
+      <Navbar color={"Dark"} section={"Welcome"}/>
       <section>
         <div className={styles.Overview}>
           <p>Hi, my name is</p>
