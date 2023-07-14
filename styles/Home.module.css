@@ -19,10 +19,15 @@
   width: 100%;
   scroll-snap-align: start;
 
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
 
   clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
   z-index: 1;
+}
 
+.Main > article::-webkit-scrollbar{
+  display: none;
 }
 
 @media screen and (width < 791px) {
