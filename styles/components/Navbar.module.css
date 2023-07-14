@@ -19,13 +19,11 @@
 
 .Navbar.Light {
   background: #FFF0E5 !important;
-  box-shadow: 1px 1px 1px black;
 
 }
 
 .Navbar.Dark {
   background: #10162f;
-  box-shadow: 1px 1px 1px #47cca0;
 
 }
 

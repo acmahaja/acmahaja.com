@@ -9,8 +9,8 @@ import {GrMysql} from "react-icons/gr"
 export default function About() {
   return (
     <article id="About" className={styles.About}>
-      {/* <Navbar color={'Light'}/> */}
-      {/* <Breadcrumb color={'Light'} section={'About'}/> */}
+       <Navbar color={'Light'}/>
+      <Breadcrumb color={'Light'} section={'About'}/>
       <section>
         <h2 className={styles.SectionTitle}>About Me</h2>
         <div className={styles.Content}>
@@ -37,9 +37,8 @@ export default function About() {
               my skills and make an impact in the industry. <br />
               <br />
               Here are a few technologies I’ve been working with recently:
-              <br />
-              <br />
-              <div className={styles.TechList}>
+            </p>
+            <div className={styles.TechList}>
                 <div className={styles.Tech}><BiLogoNodejs /> Node JS</div>
                 <div className={styles.Tech}><SiExpress /> express.js</div>
                 <div className={styles.Tech}><BiLogoReact /> React</div>
@@ -48,7 +47,7 @@ export default function About() {
                 <div className={styles.Tech}><SiSvelte /> Svelte</div>
                 <div className={styles.Tech}><GrMysql /> MySQL</div>
               </div>
-            </p>
+
           </div>
         </div>
       </section>

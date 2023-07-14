@@ -3,12 +3,12 @@
   width: 100%;
   height: 100%;
   position: relative;
-  scroll-snap-align: start;
+
 
   display: grid;
   place-items: center;
-  overflow: hidden;
-
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .Welcome > section {
