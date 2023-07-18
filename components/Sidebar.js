@@ -36,7 +36,7 @@ export default function SideBar({color}) {
             </Link>
           </li>
           <li>
-            <Link className={styles.NavLink} href="#Projects">
+            <Link className={`${styles.NavLink} ${styles.LinkDisabled}`} href="#Projects" disabled>
               Projects
             </Link>
           </li>

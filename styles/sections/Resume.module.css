@@ -1,5 +1,335 @@
 .Resume {
-    background: rgb(var(--saphire-blue));
+  background: rgb(var(--saphire-blue));
+  width: 100%;
+  height: fit-content;
+  min-height: 100%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-top: 100px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  box-sizing: border-box;
+
+  scroll-snap-align: none !important;
+
+}
+
+.Resume > section {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: -100px;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.SectionTitle {
+  width: 100%;
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+
+  margin: 0px;
+}
+
+.Content {
+  height: fit-content;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 1em;
+}
+
+.Overview {
+  height: 100%;
+  width: 53%;
+  max-width: 550px;
+
+  margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between ;
+}
+
+.Overview h3 {
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 39px; /* 150% */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.Overview h3 a {
+  text-decoration: none;
+  color: #47cca0;
+}
+
+.Overview p {
+  color: #868686;
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.Overview p b {
+  text-decoration: none;
+  color: #47cca0;
+}
+
+.ContactList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  height: 324px;
+}
+
+.Contact {
+  border-radius: 3px;
+  background: #fff;
+  width: 319px;
+  max-width: 319px;
+  height: 49px;
+
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: black;
+  text-decoration: none;
+  padding: 12.5px;
+
+  font-family: "Karla", sans-serif;
+
+  box-sizing: border-box;
+  transition: ease 0.5s;
+  position: relative;
+  
+
+}
+
+.Contact *{
+  margin-right: 10px;
+}
+
+.Contact .Logo {
+  font-size: 25px;
+}
+
+.Contact:hover {
+  bottom: 3px;
+  left: 3px;
+  box-shadow: -3px 3px 0px white;
+  transition: ease 0.3s;
+  font-weight: bold;
+
+}
+
+.Mail:hover {
+  color: white;
+  background: #dc3636;
+}
+
+.Linkedin:hover {
+  color: white;
+  background: #0a66c2;
+}
+
+.Github:hover {
+  color: white;
+  background: #24292f;
+}
+
+.Instagram:hover {
+  color: white;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.Discord:hover {
+  color: white;
+  background: #5661f5;
+}
+
+
+.Pattern {
+  width: 11.5vw;
+  height: 11.5vw;
+  max-width: 139.899px;
+  max-height: 139.899px;
+  position: absolute;
+  opacity: 1;
+
+  opacity: 1;
+  background-image: radial-gradient(
+    #ffffff 0.9500000000000001px,
+    #10162f00 0.9500000000000001px
+  );
+  background-size: 19px 19px;
+}
+
+.ResumeEmbed {
+  height: 72vh;
+  width: 42vw;
+  max-width: 719.899px;
+  max-height: 744.899px;
+
+  position: relative;
+}
+
+.ResumeEmbed object {
+  height: 90%;
+  width: 87%;
+  border-radius: 6px;
+  left: 2.5vw;
+  top: 1.9vw;
+
+    position: absolute;
+  transition: ease 0.3s;
+  cursor: pointer;
+  
+}
+
+.ResumeEmbed object:hover {
+  left: 2.25vw;
+  top: 1.75vw;
+  transition: ease 0.3s;
+  box-shadow: 13px 18px 0px white;
+}
+
+.Box {
+  height: 90%;
+  width: 87%;
+  border-radius: 6px;
+  left: 3vw;
+  top: 1.9vw;
+
+  border-radius: 5px;
+  border: 1px solid var(--white, #fff);
+
+  position: absolute;
+  right: 2.75vw;
+  top: 3vw;
+  z-index: -1;
+}
+
+.Pattern {
+  z-index: -1;
+}
+
+.Pattern:first-child {
+  top: 0px;
+  left: 0px;
+}
+
+.Pattern:last-child {
+  right: 0px;
+  bottom: 0px;
+}
+
+@media screen and (width < 1275px) {
+  .SectionTitle {
+    width: 90%;
+  }
+
+  .Content {
+    width: 90%;
+    padding-left: 40px;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+}
+
+.GithubLink {
+  position: absolute;
+  width: auto;
+  text-align: center;
+  height: auto;
+  bottom: 10px;
+  margin: 0px;
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+  padding: 0.25em 1em ;
+}
+
+.GithubLink a {
+  color: #47cca0;
+}
+
+@media screen and (width < 792px) {
+  
+  .Resume {
+    min-height: 860px !important;
+  }
+
+  .Resume > section {
+    width: 90%;
+    height: fit-content;
+  }
+  
+  .ResumeEmbed {
+    display: none;
+  }
+
+  .Content {
+    width: 90% !important;
+    min-height: 625px;
+    height: auto;
+    padding: 0px;
+    padding-top: 15px;
+  }
+  .Content > *{
     width: 100%;
-    height: 100%;
+    margin: 10px 0px;
+  }
+
+  .ContactList{
+    align-items: center;
+    width: 90%;
+
+  }
+
+  .Contact {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .Contact *{
+    width: fit-content;
+  }
 }

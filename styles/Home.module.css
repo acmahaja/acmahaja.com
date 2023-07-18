@@ -1,5 +1,4 @@
 .Main {
-  height: fit-content;
   min-height: inherit;
   height: 100%;
   width: 100%;
@@ -8,23 +7,25 @@
   justify-content: flex-start;
   align-items: center;
 
+  scroll-snap-type: y proximity;
 
   overflow-x: hidden;
-  scroll-snap-type: y mandatory;
 }
 
 .Main > article {
   min-height: 100vh;
   height: fit-content;
   width: 100%;
-  scroll-snap-align: start;
+  scroll-behavior: smooth;
 
-  scrollbar-width: none; /* for Firefox */
+  scrollbar-width: none;
   overflow-y: scroll; 
 
   clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
   z-index: 1;
+  scroll-snap-align: start;
 }
+
 
 .Main > article::-webkit-scrollbar{
   display: none;
