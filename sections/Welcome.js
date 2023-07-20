@@ -1,6 +1,9 @@
 import styles from "@/styles/sections/Welcome.module.css";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import canoePic from '../public/canoe.jpg'
+
+
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 import { MdEmail } from "react-icons/md";
@@ -83,7 +86,7 @@ export default function Welcome() {
         <div className={styles.Image}>
           <div className={styles.Pattern}></div>
           <Image
-            src="/canoe.jpg"
+            src={canoePic}
             alt="Picture of the me on a canoe"
             width={466}
             height={466}
