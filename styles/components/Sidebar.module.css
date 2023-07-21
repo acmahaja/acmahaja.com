@@ -1,0 +1,58 @@
+.SideBarIcon {
+  cursor: pointer;
+}
+
+.Side {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--black), 0.5);
+  cursor: pointer;
+
+  box-sizing: border-box;
+}
+
+.Links {
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+
+  margin: 0px -19px;
+
+  background: rgb(var(--white));
+  transition: ease 0.3s;
+  list-style-type: none;
+  padding: 0px;
+
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.NavLink {
+  color: #000;
+  text-align: right;
+  font-family: "Karla", sans-serif;
+
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: -0.03125rem;
+  text-decoration: none;
+  text-align: right;
+}
+
+.Links.Block {
+  width: 70%;
+  max-width: 304px;
+  padding: 32px;
+  display: block;
+}
+
+.Links.None {
+  width: 0%;
+  display: none;
+}
