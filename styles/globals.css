@@ -7,7 +7,71 @@
   --saphire-blue: 16, 22, 47;
 }
 
-html, body, #__next {
+html,
+body,
+#__next {
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* For screens up to 320px wide (e.g., iPhone 4 & 5) */
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* For screens between 321px and 767px wide */
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* For screens between 768px and 1023px wide (e.g., iPad portrait) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 19px;
+  }
+}
+
+/* For screens between 1024px and 1279px wide (e.g., iPad landscape) */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* For screens between 1280px and 1535px wide */
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+  body {
+    font-size: 21px;
+  }
+}
+
+/* For screens between 1536px and 1919px wide */
+@media screen and (min-width: 1536px) and (max-width: 1919px) {
+  body {
+    font-size: 23px;
+  }
+}
+
+/* For screens between 1920px and 2559px wide */
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+  body {
+    font-size: 25px;
+  }
+}
+
+/* For screens 2560px and wider */
+@media screen and (min-width: 2560px) {
+  body {
+    font-size: 25px; /* You can adjust this as desired for larger screens */
+  }
 }
