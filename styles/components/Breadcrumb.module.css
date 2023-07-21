@@ -15,7 +15,7 @@
 }
 
 .dot {
-  background: black;
+  background: rgb(var(--black));
   width: 10px;
   height: 10px;
 
@@ -24,7 +24,7 @@
 }
 
 .selected {
-  outline: 3px solid black;
+  outline: 3px solid rgb(var(--black));
   outline-offset: 2.5px;
 }
 
@@ -59,7 +59,7 @@
     display: block;
     width: 10px;
     height: 195px;
-    background-color: black;
+    background-color: rgb(var(--black));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }

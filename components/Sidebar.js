@@ -6,7 +6,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 export default function SideBar({ color }) {
-  const [viewSideBar, setViewSideBar] = useState(true);
+  const [viewSideBar, setViewSideBar] = useState(false);
 
   const toggleSideBar = () => {
     console.log(viewSideBar);

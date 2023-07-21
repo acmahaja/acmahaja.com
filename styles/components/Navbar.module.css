@@ -1,25 +1,139 @@
 .Navbar {
-    position: fixed;
-    top: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0px 12px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.LogoDesktop {
+  display: none;
+}
+
+.LogoMobile {
+  display: block;
+}
+
+.Links {
+  display: none;
+}
+
+@media screen and (min-width: 751px) {
+  .SideBar {
+    display: none;
+  }
+
+  .LogoDesktop {
+    display: block;
+  }
+
+  .LogoMobile {
+    display: none;
+  }
+
+  .Links {
+    display: block;
+  }
+
+  .Navbar {
+    height: fit-content;
     width: 100%;
-    height: 70px;
+    max-width: 1200px;
+
+    padding: 25px 24px 16px 24px;
+    box-sizing: border-box;
+  }
+
+  .Links {
+    width: 21.5rem;
+    height: fit-content;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
-    padding: 0px 12px;
+    padding: 0px;
 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+    list-style-type: none;
+  }
 
-.LogoDesktop {
-    display: none;
-}
+  .NavLink {
+    width: fit-content;
+    
+      color: rgb(var(--black));
+    text-align: right;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: "Karla", sans-serif;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.03125rem;
 
-.Links {
-    display: none;
+    
+    text-decoration: none;
+    position: relative;
+
+  }
+
+  .Light.NavLink {
+    color: rgb(var(--green));
+  }
+
+  .Dark.NavLink::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    bottom: -4px;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .Light.NavLink::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    bottom: -4px;
+    left: 0;
+    background-color: #47cca0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .NavLink:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .NavLink.Disabled:hover::before {
+    transform: scaleX(0);
+  }
+
+  .LinkDisabled {
+    color: grey !important;
+  }
+
+  .LinkDisabled:hover::before {
+    transform: scaleX(0) !important;
+  }
+
+  .Dark .LinkDisabled {
+    color: rgb(26, 93, 71)!important;
+  }
 }
