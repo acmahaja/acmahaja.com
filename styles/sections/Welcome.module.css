@@ -42,14 +42,14 @@
   font-size: 1.75rem;
   font-weight: 400;
   line-height: 110%;
-  margin: 0.25em 0px;
+  margin: 0.25rem 0px;
 }
 
 .Overview h1 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 125%;
-  margin: 0.25em 0px;
+  margin: 0.25rem 0px;
 }
 
 .Overview h3 {
@@ -153,17 +153,11 @@
 }
 
 .Image {
-  width: 480px;
-  height: 480px;
-  position: relative;
-}
-
-.Image {
-  position: relative;
-
   width: 82vw;
   height: 82vw;
+  position: relative;
 }
+
 
 .Pattern {
   width: 80vw;
@@ -209,7 +203,7 @@
 .Image img:hover {
   top: 0vw;
   right: 0vw;
-  box-shadow: -1.5vw 1.5vw 0px rgba(0, 0, 0, 1);
+  box-shadow: -7px 7px 0px rgba(var(--black), 1);
   outline: solid 3px rgb(var(--black));
 }
 
@@ -254,7 +248,14 @@
 @media screen and (min-width: 1300px) {
   .Welcome section {
     padding: 80px 24px 0px 24px;
+    max-width: 1248px;
   }
+
+  .Welcome .Overview {
+    width: 55%;
+  }
+
+
 }
 
 @media screen and (max-height: 600px) {

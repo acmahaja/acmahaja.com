@@ -40,7 +40,7 @@ export default function SideBar({ color }) {
             </Link>
           </li>
           <li>
-            <Link className={`${styles.NavLink} ${styles.LinkDisabled}`}href="#About">
+            <Link className={`${styles.NavLink}`}href="#About">
               About
             </Link>
           </li>
