@@ -43,14 +43,14 @@ export default function Navbar({ color, section }) {
             }`}
             href="#Welcome"
           >
-            Home
+            Welcome
           </a>
         </li>
         <li>
           <a
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
-            }`}
+            } ${styles.LinkDisabled}`}
             href="#About"
             disabled
           >
@@ -72,7 +72,7 @@ export default function Navbar({ color, section }) {
           <a
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
-            }`}
+            } ${styles.LinkDisabled}`}
             href="#Resume"
             disabled
           >

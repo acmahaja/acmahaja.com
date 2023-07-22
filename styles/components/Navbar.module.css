@@ -28,6 +28,14 @@
   display: none;
 }
 
+.Light.Navbar {
+  background: rgb(var(--beige));
+}
+
+.Dark.Navbar {
+  background: rgb(var(--saphire-blue));
+}
+
 @media screen and (min-width: 751px) {
   .SideBar {
     display: none;
@@ -50,7 +58,7 @@
     width: 100%;
     max-width: 1200px;
 
-    padding: 25px 24px 16px 24px;
+    padding: 25px 0px 16px 0px;
     box-sizing: border-box;
   }
 

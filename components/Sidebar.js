@@ -36,11 +36,11 @@ export default function SideBar({ color }) {
         >
           <li>
             <Link className={styles.NavLink} href="/">
-              Home
+              Welcome
             </Link>
           </li>
           <li>
-            <Link className={styles.NavLink} href="#About">
+            <Link className={`${styles.NavLink} ${styles.LinkDisabled}`}href="#About">
               About
             </Link>
           </li>
@@ -54,7 +54,7 @@ export default function SideBar({ color }) {
             </Link>
           </li>
           <li>
-            <Link className={styles.NavLink} href="#Resume">
+            <Link className={`${styles.NavLink} ${styles.LinkDisabled}`}href="#Resume">
               Resume
             </Link>
           </li>

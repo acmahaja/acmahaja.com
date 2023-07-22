@@ -1,0 +1,9 @@
+.Projects {
+    background: rgb(var(--beige));
+    /* max-height: 895px; */
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

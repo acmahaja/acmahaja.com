@@ -9,7 +9,8 @@ export default function About() {
   return (
     <article id="About" className={styles.About}>
        <Navbar color={'Light'} section={"About"} />
-
+      About
+{/* 
       <section>
         <h2 className={styles.SectionTitle}>About Me</h2>
         <div className={styles.Content}>
@@ -49,7 +50,7 @@ export default function About() {
 
           </div>
         </div>
-      </section>
+      </section> */}
     </article>
   );
 }

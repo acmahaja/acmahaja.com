@@ -14,8 +14,9 @@ import {
 export default function Resume() {
   return (
     <article id="Resume" className={styles.Resume}>
-      <Navbar color={"Light"} section={"Resume"} />
-      <section>
+      Resume
+       <Navbar color={"Light"} section={"Resume"} />
+      {/*<section>
         <h2 className={styles.SectionTitle}>Resume</h2>
         <div className={styles.Content}>
           <div className={styles.Overview}>
@@ -83,7 +84,7 @@ export default function Resume() {
         ><AiOutlineFork className={styles.Logo}/>Github
         </Link>
         !
-      </p>
+      </p> */}
     </article>
   );
 }

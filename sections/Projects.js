@@ -1,13 +1,15 @@
-import styles from '@/styles/sections/Project.module.css'
+import styles from "@/styles/sections/Project.module.css";
 import Navbar from "@/components/Navbar";
-import Breadcrumb from '@/components/Breadcrumb';
+import Breadcrumb from "@/components/Breadcrumb";
 
-export default function Projects(){
-    return <article id="Projects" className={styles.Projects}>
-        <Navbar color={'Dark'}/>
-        <section >
+export default function Projects() {
+  return (
+    <article id="Projects" className={styles.Projects}>
+      Projects
+      <Navbar color={'Dark'} section={"Projects"}/>
+      {/*   <section >
         <Breadcrumb color={'Dark'} section={'Projects'}/>
-
-      </section>
+      </section> */}
     </article>
+  );
 }
