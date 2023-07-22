@@ -125,6 +125,12 @@
   box-shadow: -5px 5px 0px rgba(0, 0, 0, 1);
 }
 
+.Mail:hover {
+  color: white;
+  background: #dc3636;
+}
+
+
 .Linkedin:hover {
   color: white;
   background: #0a66c2;

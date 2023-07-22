@@ -62,10 +62,10 @@ export default function Home() {
           content="https://www.acmahaja.com/android-chrome-512x512.png"
         ></meta>
       </Head>
-      <About />
+      <Resume /> 
       <Welcome />
-      {/* <Projects />
-      <Resume /> */}
+      <About />
+      {/* <Projects />*/}
     </>
   );
 }

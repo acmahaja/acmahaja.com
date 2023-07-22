@@ -1,9 +1,207 @@
 .Resume {
-    background: rgb(var(--saphire-blue));
-    /* max-height: 895px; */
-    height: 99%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background: rgb(var(--saphire-blue));
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Resume section {
+  width: 100%;
+  min-height: 100%;
+  height: fit-content;
+
+  padding: 24px;
+  padding-top: 70px;
+    padding-bottom: 0px;
+
+  max-width: 1248px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+.SectionTitle {
+  width: 100%;
+  height: fit-content;
+
+  font-family: "Karla", sans-serif;
+  color: rgb(var(--white));
+  font-feature-settings: "clig" off, "liga" off;
+  font-style: normal;
+
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 125%;
+
+  margin: 0.25rem 0px;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+
+  border-bottom: 2px solid rgb(var(--white));
+}
+
+.Content {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ResumeEmbed {
+  display: none;
+}
+
+.Overview h3 {
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.875rem;
+
+  color: rgb(var(--white));
+}
+
+.Overview h3 > a {
+  text-decoration: none;
+  color: rgb(var(--green));
+}
+
+.Overview p {
+  color: rgba(var(--white), 0.6);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.15rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1.5rem;
+}
+
+.Overview b {
+  color: rgb(var(--green));
+  font-weight: 100;
+}
+
+.ContactList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Contact {
+  height: 35px;
+  width: 100%;
+  max-width: 20rem;
+  background: rgb(var(--white));
+
+  margin: 1rem 0px;
+  padding: 1rem;
+
+  box-sizing: border-box;
+
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  text-decoration: none;
+  color: rgb(var(--black));
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Karla", sans-serif;
+
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.3125rem;
+
+  position: relative;
+
+  transition: ease 0.3s;
+
+}
+
+.Contact:hover {
+    bottom: 3px;
+    left: 3px;
+    box-shadow: -3px 3px 0px white;
+    transition: ease 0.3s;
+    font-weight: bold;
+  
+  }
+
+.Contact svg {
+  margin-right: 0.75rem;
+  font-size: 1.75rem;
+}
+
+.Mail:hover {
+  color: white;
+  background: #dc3636;
+}
+
+.Linkedin:hover {
+  color: white;
+  background: #0a66c2;
+}
+
+.Github:hover {
+  color: white;
+  background: #24292f;
+}
+
+.Instagram:hover {
+  color: white;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.Discord:hover {
+  color: white;
+  background: #5661f5;
+}
+
+
+.GithubLink {
+    color: #868686;
+    width: 100%;
+    word-wrap:normal;
+
+    padding: 0.5em 24px 0.5em 24px;
+    box-sizing: border-box;    
+
+    text-align: center;
+    text-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.25);
+    font-family: JetBrains Mono;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 223.885%; /* 1.25938rem */
+    letter-spacing: 0.05625rem;   
+}
+
+.GithubLink a {
+    color: rgb(var(--green));
+    text-decoration: none;
 }
