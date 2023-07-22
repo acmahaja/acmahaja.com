@@ -1,7 +1,8 @@
 import styles from "@/styles/sections/Welcome.module.css";
 import Navbar from "@/components/Navbar";
-import Breadcrumb from "@/components/Breadcrumb";
 import Image from "next/image";
+import canoePic from "../public/canoe.jpg";
+
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 import { MdEmail } from "react-icons/md";
@@ -15,12 +16,13 @@ import {
 export default function Welcome() {
   return (
     <article id="Welcome" className={styles.Welcome}>
-      <Navbar color={"Dark"} />
-      <Breadcrumb color={"Dark"} section={"Welcome"} />
+      <Navbar color={"Dark"} section={"Welcome"} />
       <section>
         <div className={styles.Overview}>
           <p>Hi, my name is</p>
+
           <h1>Anjaney C Mahajan</h1>
+
           <TypeAnimation
             sequence={[
               "I am a Student...",
@@ -34,11 +36,12 @@ export default function Welcome() {
               "I am an Engineer...",
               1000,
             ]}
-            wrapper="h2"
+            wrapper="h3"
             speed={30}
             style={{ fontSize: "2em", display: "inline-block" }}
             repeat={Infinity}
           />
+
           <p className={styles.Description}>
             I'm a software engineering student at the University of Melbourne
             experienced in React, Node.js, and Google Cloud. With strong UI/UX
@@ -46,6 +49,7 @@ export default function Welcome() {
             career opportunities in the Australian software engineering
             industry.
           </p>
+
           <div className={styles.ContactInfo}>
             <p>Contact me!</p>
             <div className={styles.ContactList}>
@@ -85,8 +89,8 @@ export default function Welcome() {
         <div className={styles.Image}>
           <div className={styles.Pattern}></div>
           <Image
-            src="/canoe.jpg"
-            alt="Picture of the author"
+            src={canoePic}
+            alt="Picture of the me on a canoe"
             width={466}
             height={466}
           />

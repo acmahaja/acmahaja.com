@@ -1,136 +1,149 @@
 .Navbar {
-  width: 100%;
-  padding: 20px 50px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
   position: fixed;
   top: 0px;
-  left: 0px;
-  right: 0px;
-  margin: 0px auto;
+  width: 100%;
+  height: 70px;
 
-  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
+  padding: 0px 12px;
+
+  z-index: 5;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-.Navbar.Light {
-  background: #FFF0E5 !important;
-  box-shadow: 1px 1px 1px black;
-
-}
-
-.Navbar.Dark {
-  background: #10162f;
-  box-shadow: 1px 1px 1px #47cca0;
-
-}
-
 
 .LogoDesktop {
-  display: block;
+  display: none;
 }
 
 .LogoMobile {
-  display: none;
+  display: block;
 }
 
 .Links {
-  height: 22px;
-  width: 344px;
-
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-
-.NavLink {
-  font-family: "Karla", sans-serif;
-  text-decoration: none;
-  width: fit-content;
-  position: relative;
-}
-
-.Disabled{
-  color: #787878 !important; 
-}
-
-.NavLink.Dark::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 1.5px;
-  bottom: -4px;
-  left: 0;
-  background-color: #000;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.NavLink.Light::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 1.5px;
-  bottom: -4px;
-  left: 0;
-  background-color: #47cca0;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-
-.NavLink:hover::before {
-  transform: scaleX(1);
-}
-
-.NavLink.Disabled:hover::before {
-  transform: scaleX(0);
-}
-
-
-.NavLink.Dark {
-  color: black;
-}
-
-.NavLink.Light {
-  color: #47cca0;
-}
-
-.SideBarIcon {
   display: none;
 }
 
-.SideBar {
-    display: none;
+.Light.Navbar {
+  background: rgb(var(--beige));
 }
 
-@media screen and (width < 751px) {
-  .Navbar {
-    padding: 20px 20px 20px 20px;
-  }
+.Dark.Navbar {
+  background: rgb(var(--saphire-blue));
+}
 
-  .Links {
+@media screen and (min-width: 751px) {
+  .SideBar {
     display: none;
   }
 
   .LogoDesktop {
-    display: none;
+    display: block;
   }
 
   .LogoMobile {
+    display: none;
+  }
+
+  .Links {
     display: block;
   }
 
-  .SideBarIcon {
-    display: block;
+  .Navbar {
+    height: fit-content;
+    width: 100%;
+    max-width: 1248px;
+
+    padding: 25px 24px 16px 24px;
+    box-sizing: border-box;
   }
 
+  .Links {
+    width: 21.5rem;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px;
+
+    list-style-type: none;
+  }
+
+  .NavLink {
+    width: fit-content;
+    
+      color: rgb(var(--black));
+    text-align: right;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: "Karla", sans-serif;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.03125rem;
+
+    
+    text-decoration: none;
+    position: relative;
+
+  }
+
+  .Light.NavLink {
+    color: rgb(var(--green));
+  }
+
+  .Dark.NavLink::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    bottom: -4px;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .Light.NavLink::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    bottom: -4px;
+    left: 0;
+    background-color: #47cca0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .NavLink:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .NavLink.Disabled:hover::before {
+    transform: scaleX(0);
+  }
+
+  .LinkDisabled {
+    color: grey !important;
+  }
+
+  .LinkDisabled:hover::before {
+    transform: scaleX(0) !important;
+  }
+
+  .Dark .LinkDisabled {
+    color: rgb(26, 93, 71)!important;
+  }
 }

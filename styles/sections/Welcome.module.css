@@ -1,143 +1,128 @@
 .Welcome {
   background: rgb(var(--beige));
-  width: 100%;
-  height: 100%;
-  position: relative;
-  scroll-snap-align: start;
-
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.Welcome > section {
-  display: block;
-  width: 90%;
-  max-width: 1200px;
-  height: 100%;
+.Welcome section {
+  width: 100%;
+  min-height: 100%;
+  height: fit-content;
 
-  padding-left: 83px;
-
-  position: absolute;
-  color: black;
+  padding: 24px;
+  padding-top: 80px;
 
   box-sizing: border-box;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
 .Overview {
-  height: fit-content;
   width: 100%;
-  max-width: 622px;
-}
+  height: fit-content;
 
-.Overview * {
-  margin: 10px 0px;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 
-.Overview {
   font-family: "Karla", sans-serif;
+  color: var(--black, #000);
+  font-feature-settings: "clig" off, "liga" off;
   font-style: normal;
 }
 
 .Overview p {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
-  width: fit-content;
-  height: 50px;
+  line-height: 110%;
+  margin: 0.25em 0px;
 }
 
 .Overview h1 {
-  font-size: 51px;
+  font-size: 3rem;
   font-weight: 700;
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: fit-content;
+  line-height: 125%;
+  margin: 0.25em 0px;
 }
 
-.Overview h2 {
-  font-size: 28px;
-  font-style: normal;
+.Overview h3 {
+  font-size: 1.75rem;
   font-weight: 700;
-  height: 39px;
-  width: fit-content;
+  line-height: 139.286%;
+  margin: 0.25em 0px;
 }
 
 .Overview .Description {
-  width: 100%;
-  font-size: 18px;
   font-family: "JetBrains Mono", monospace;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 29.5px;
-  height: fit-content;
+  line-height: 165%;
 }
 
 .ContactInfo {
+  width: 100%;
   height: fit-content;
-  width: fit-content;
-  margin-top: 30px;
 }
 
 .ContactInfo p {
-  font-size: 19px;
   font-family: "JetBrains Mono", monospace;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
-  height: fit-content;
-  margin-bottom: -5px;
+  line-height: 165%;
 }
 
-.ContactList {
-  text-decoration: none;
-  width: 370px;
+.ContactInfo .ContactList {
+  width: fit-content;
   height: fit-content;
-  display: flex;
+
+  display: inline-flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding-bottom: 1.25rem;
 }
 
-.Contact {
-  text-decoration: none;
-  color: black;
+.ContactList .Contact {
+  width: 3.25rem;
+  height: 3.25rem;
 
-  height: 50px;
-  width: 50px;
-  background: white;
+  margin-top: 0.5rem;
+  margin-right: 1.25rem;
 
-  border-radius: 3px;
-  outline: 1px solid black;
+  background: rgb(var(--white));
+
+  color: rgb(var(--black));
+  font-size: 2rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  display: grid;
-  place-items: center;
+  border-radius: 5px;
 
-  font-size: 1.35em;
+  border: 1px solid rgb(var(--black));
+
+  box-sizing: border-box;
+  transition: ease 0.5s;
+
   position: relative;
-  transition: ease 0.3s;
 }
 
-.Contact:hover {
+.ContactList .Contact:hover {
   bottom: 3px;
   left: 3px;
-  box-shadow: -3px 3px 0px black;
-}
-
-.Mail:hover {
-  color: white;
-  background: #dc3636;
+  offset-position: bottom 10px left 20px;
+  box-shadow: -5px 5px 0px rgba(0, 0, 0, 1);
 }
 
 .Linkedin:hover {
@@ -173,178 +158,107 @@
   position: relative;
 }
 
+.Image {
+  position: relative;
+
+  width: 82vw;
+  height: 82vw;
+}
+
 .Pattern {
-  background-color: #fff0e5;
-  opacity: 0.8;
-  background-size: 9px 9px;
-  background-image: repeating-linear-gradient(
-    45deg,
-    #000000 0,
-    #000000 0.9px,
-    #fff0e5 0,
-    #fff0e5 50%
-  );
-  height: inherit;
-  width: inherit;
+  width: 80vw;
+  height: 80vw;
+
   position: absolute;
-  border-radius: 5px;
-  width: 466px;
-  height: 466px;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0vw;
+  left: 0vw;
+
+  background-color: rgba(255, 240, 229, 1);
+  opacity: 0.8;
+  background: repeating-linear-gradient(
+    45deg,
+    #000000,
+    #000000 1px,
+    rgba(255, 240, 229, 1) 2px,
+    rgba(255, 240, 229, 1) 7px
+  );
+
+  border-radius: 10px;
+  position: absolute;
 }
 
 .Image img {
-  width: 466px;
-  height: 466px;
+  width: 80vw;
+  height: 80vw;
+
   position: absolute;
-  top: 7px;
-  right: 7px;
-  border-radius: 5px;
-  object-fit: cover;
-  transition: 0.3s;
+  top: 0.5vw;
+  right: 0.5vw;
+
+  outline: solid 2px rgb(var(--black));
+
+  background: rgb(var(--beige));
+  border-radius: 10px;
+
+  transition: ease 0.3s;
+  z-index: 2;
+
+  cursor: pointer;
 }
 
 .Image img:hover {
-  top: 3px;
-  right: 3px;
-  transition: 0.3s;
-  cursor: pointer;
-  box-shadow: -11px 11px 0px rgba(0, 0, 0, 1);
-  outline: 2px solid black;
+  top: 0vw;
+  right: 0vw;
+  box-shadow: -1.5vw 1.5vw 0px rgba(0, 0, 0, 1);
+  outline: solid 3px rgb(var(--black));
 }
 
-@media screen and (width < 1330px) {
+@media screen and (min-width: 751px) {
+  .Welcome {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+  }
+
+  .Welcome section {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1248px;
+    width: 100%;
+
+    padding: 80px 24px 0px 70px;
+  }
+
   .Overview {
-    width: 50%;
+    width: calc(100% - 44vw);
+    height: auto;
+    box-sizing: border-box;
   }
 
   .Image {
     width: 40vw;
     height: 40vw;
+    max-height: 500px;
+    max-width: 500px;
   }
 
-  .Pattern {
-    width: 37vw;
-    height: 37vw;
-  }
-
+  .Pattern,
   .Image img {
-    width: 37vw;
-    height: 37vw;
-    top: 2vw;
-    right: 2vw;
-  }
-
-  .Image img:hover {
-    top: 1vw;
-    right: 1vw;
-    box-shadow: -2vw 2vw 0px rgba(0, 0, 0, 1);
+    width: 38vw;
+    height: 38vw;
+    max-height: 470px;
+    max-width: 470px;
   }
 }
 
-@media screen and (width < 1330px) {
-  .Overview {
-    width: 49%;
+@media screen and (min-width: 1300px) {
+  .Welcome section {
+    padding: 80px 24px 0px 24px;
   }
-  
-  .Overview p {
-    font-size: 22px;
-    font-style: normal;
-    line-height: 16px;
-    width: fit-content;
-    height: fit-content;
-  }
-
-  .Overview h1 {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px;
-
-    height: fit-content;
-  }
-
-  .Overview h2 {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 39px;
-
-    width: fit-content;
-  }
-
-  .Overview .Description {
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 23px;
-    margin: 10px 0px;
-
-    height: fit-content;
-  }
-
-  .ContactList {
-    display: inline-flex;
-    flex-wrap: wrap;
-    height: fit-content;
-    gap: 15px ;
-    justify-content: flex-start;
-    width: 100%;
-  }
-
-
 }
 
-@media screen and (width < 792px) {
+@media screen and (max-height: 600px) {
   .Welcome {
-    height: fit-content;
-  }
-
-  .Welcome > section {
-    flex-direction: column;
-    width: calc(90% - 95px);
-    height: fit-content;
-    position: relative;
-    top: 100px;
-    left: 10px;
-    padding: 0px;
-  }
-
-  .Overview {
-    width: 100%;
-    height: auto;
-    display: block;
-    overflow: visible;
-  }
-
-  .Image {
-    display: block;
-    margin-bottom: 25px;
-    width: 80vw;
-    height: 80vw;
-  }
-
-  .Pattern {
-    width: 75vw;
-    height: 75vw;
-  }
-
-  .Image img {
-    width: 75vw;
-    height: 75vw;
-    top: 3vw;
-    right: 3vw;
-  }
-
-  .Image img:hover {
-    top: 1vw;
-    right: 1vw;
-  }
-  
-  .Welcome > section {
-    flex-direction: column;
-    width: 90%;
-    left: 0px;
+    min-height: 600px;
   }
 }

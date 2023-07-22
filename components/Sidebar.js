@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 
-export default function SideBar({color}) {
+export default function SideBar({ color }) {
   const [viewSideBar, setViewSideBar] = useState(false);
 
   const toggleSideBar = () => {
@@ -16,32 +16,45 @@ export default function SideBar({color}) {
   return (
     <div className={styles.SideBar}>
       <Image
-        src={color=='Dark' ? SideBarIconDark.src : SideBarIconWhite.src}
+        src={color == "Dark" ? SideBarIconDark.src : SideBarIconWhite.src}
         height={30}
         width={20}
         alt="Logo"
         className={styles.SideBarIcon}
         onClick={toggleSideBar}
-      />{" "}
-      <div className={styles.Side} style={{display: viewSideBar ? `block` : `none`}} onClick={toggleSideBar}>
-        <ul className={styles.Links} onClick={null}>
+      />
+      <div
+        className={styles.Side}
+        style={{ display: viewSideBar ? `block` : `none` }}
+        onClick={toggleSideBar}
+      >
+        <ul
+          className={`${styles.Links} ${
+            viewSideBar ? styles.Block : styles.None
+          }`}
+          onClick={null}
+        >
           <li>
             <Link className={styles.NavLink} href="/">
-              Home
+              Welcome
             </Link>
           </li>
           <li>
-            <Link className={styles.NavLink} href="#About">
+            <Link className={`${styles.NavLink} ${styles.LinkDisabled}`}href="#About">
               About
             </Link>
           </li>
           <li>
-            <Link className={styles.NavLink} href="#Projects">
+            <Link
+              className={`${styles.NavLink} ${styles.LinkDisabled}`}
+              href="#Projects"
+              disabled
+            >
               Projects
             </Link>
           </li>
           <li>
-            <Link className={styles.NavLink} href="#Resume">
+            <Link className={`${styles.NavLink} ${styles.LinkDisabled}`}href="#Resume">
               Resume
             </Link>
           </li>

@@ -1,58 +1,68 @@
-.SideBar {
-  display: none;
+.SideBarIcon {
   cursor: pointer;
 }
 
 .Side {
-  display: none;
   position: fixed;
-  right: 0px;
   top: 0px;
+  left: 0px;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.25); 
+  background: rgba(var(--black), 0.5);
+  cursor: pointer;
+
+  box-sizing: border-box;
 }
 
 .Links {
+  height: 100%;
   position: absolute;
   right: 0px;
   top: 0px;
-  width: 300px;
-  height: 100%;
-  background: white;
-  margin: 0px;
+
+  margin: 0px -19px;
+
+  background: rgb(var(--white));
+  transition: ease 0.3s;
   list-style-type: none;
-  text-align: right;
-  padding: 16px;
-  cursor: default;
-  z-index: 99;
+  padding: 0px;
+
   box-sizing: border-box;
-}
-.Links > li {
-  padding: 16px;
+  text-align: right;
 }
 
 .NavLink {
-  font-family: "Karla", sans-serif;
-  text-decoration: none;
   color: #000;
   text-align: right;
-  font-size: 33px;
+  font-family: "Karla", sans-serif;
+
+  font-size: 2rem;
+  font-style: normal;
   font-weight: 300;
-  letter-spacing: -0.5px;
+  line-height: 175%;
+  letter-spacing: -0.03125rem;
+  text-decoration: none;
+  text-align: right;
 }
 
-.NavLink:hover {
-    border-bottom: 3px solid black;
+.Links.Block {
+  width: 70%;
+  max-width: 304px;
+  padding: 32px;
+  display: block;
 }
 
+.Links.None {
+  width: 0%;
+  display: none;
+}
 
-@media screen and (width < 751px) {
+.LinkDisabled {
+    color: grey;
+}
+
+@media screen and (min-width: 751px) {
   .SideBar {
-    display: block;
+    display: none;
   }
-  .Side {
-    display: block;
-  }
-  
 }
