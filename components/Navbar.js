@@ -19,8 +19,8 @@ export default function Navbar({ color, section }) {
       <Image
         priority
         src={color == "Dark" ? LogoDesktopDark.src : LogoDesktopWhite.src}
-        height={53}
-        width={150}
+        height={44}
+        width={125}
         alt="Logo"
         className={styles.LogoDesktop}
       />{" "}

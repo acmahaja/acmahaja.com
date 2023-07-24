@@ -14,7 +14,6 @@ import {
 export default function Resume() {
   return (
     <article id="Resume" className={styles.Resume}>
-      Resume
       <Navbar color={"Light"} section={"Resume"} />
       <section>
         <h2 className={styles.SectionTitle}>Resume</h2>
@@ -65,7 +64,7 @@ export default function Resume() {
               </Link>
             </div>
           </div>
-          <div className={styles.ResumeEmbed}>
+          <div className={styles.ResumeContent}>
             <object
               data="/Resume.pdf"
               type="application/pdf"
