@@ -2,7 +2,8 @@
   background: rgb(var(--beige));
   height: fit-content;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
+  align-items: center;
 }
 
 .Projects section {
@@ -55,19 +56,72 @@
 
 .FeaturedProjectList {
   width: 100%;
-  height: fit-content;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
 .OtherProjectList {
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-auto-flow: column;
   overflow-x: scroll;
+
   grid-gap: 1rem;
 
   padding: 5px;
+
+  overflow-x: scroll;
+
+}
+
+@media screen and (min-width: 751px) {
+  .Projects {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+  }
+
+  .Projects section {
+    max-width: 1248px;
+    width: 100%;
+
+    padding: 80px 24px 0px 70px;
+  }
+
+  .Projects {
+    width: calc(100% - 44vw);
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .FeaturedProjectList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .OtherProjectList {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .Projects section {
+    padding: 80px 24px 0px 24px;
+    max-width: 1248px;
+  }
+
+  .Projects .Overview {
+    width: 55%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .Projects {
+    min-height: 600px;
+  }
 }

@@ -17,9 +17,9 @@ export default function FeaturedProject() {
         <div className={styles.Overview}>
 
             <h3 className={styles.Title}>Lorem ipsum</h3>
-            <p className={styles.Description}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi officiis fugiat corporis perspiciatis? Exercitationem officiis laborum libero? Assumenda earum debitis ea inventore libero harum hic ad suscipit, recusandae quidem reiciendis!</p>
+            <p className={styles.Description}></p>
         </div>
-        <div className="Image"></div>
+        <div className={styles.Image}></div>
       </div>
       <div className={styles.Footer}>
         <BiLogoNodejs /> <BiLogoReact /> <BiLogoMongodb />

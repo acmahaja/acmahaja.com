@@ -63,9 +63,9 @@ export default function Home() {
         ></meta>
       </Head>
       <Projects />
-      <Welcome />
+      {/* <Welcome />
       <About />
-      <Resume /> 
+      <Resume />  */}
     </>
   );
 }
