@@ -4,25 +4,21 @@ import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 import { BiLogoNodejs, BiLogoReact, BiLogoMongodb } from "react-icons/bi";
 
-export default function FeaturedProject() {
+export default function FeaturedProject({ id, name, link, description, technologies }) {
   return (
-    <div className={styles.FeaturedProject}>
+    <div className={styles.FeaturedProject} key={id}>
       <div className={styles.Header}>
         <p>Featured Project</p>
-        <Link className={styles.Github} href="#">
+        <Link className={styles.Github} href={link}>
           <AiFillGithub />
         </Link>
       </div>
       <div className={styles.About}>
         <div className={styles.Overview}>
-
-            <h3 className={styles.Title}>Lorem ipsum</h3>
-            <p className={styles.Description}></p>
+          <h3 className={styles.Title}>{name}</h3>
+          <p className={styles.Description}>{description}</p>
         </div>
-        <div className={styles.Image}></div>
-      </div>
-      <div className={styles.Footer}>
-        <BiLogoNodejs /> <BiLogoReact /> <BiLogoMongodb />
+        <div className={styles.Footer}>{technologies.map((tech, key) => <div className={styles.Technology} key={`${id}${key}`}>{tech}</div>)}</div>
       </div>
     </div>
   );
