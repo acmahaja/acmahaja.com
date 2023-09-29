@@ -4,32 +4,36 @@ import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 import { BiLogoNodejs, BiLogoReact, BiLogoMongodb } from "react-icons/bi";
 
-export default function OtherProject() {
+export default function OtherProject({
+  id,
+  name,
+  link,
+  description,
+  technologies,
+}) {
   return (
-    <div className={styles.OtherProject}>
+    <div className={styles.OtherProject} key={id}>
       <div className={styles.Header}>
-        <p></p>
-        <Link className={styles.Github} href="#">
+        <p>Project</p>
+        <Link className={styles.Github} href={link}>
           <AiFillGithub />
         </Link>
       </div>
       <div className={styles.About}>
         <div className={styles.Overview}>
-          <h3 className={styles.Title}>asdasdasdasdasdasdasdasdasdasdasdasdasd</h3>
-            
-          <p className={styles.Description}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-            officiis fugiat corporis perspiciatis? Exercitationem officiis
-            laborum libero? Assumenda earum debitis ea inventore libero harum
-            hic ad suscipit, recusandae quidem reiciendis!             laborum libero? Assumenda earum debitis ea inventore libero harum
-          </p>
+          <h3 className={styles.Title}>{name}</h3>
+
+          <p className={styles.Description}>{description}</p>
           <div className={styles.DescriptionLine} />
         </div>
         <div className={styles.Footer}>
-          <BiLogoNodejs /> <BiLogoReact /> <BiLogoMongodb />
+          {technologies.map((tech, key) => (
+            <div className={styles.Technology} key={`${id}${key}`}>
+              {tech}
+            </div>
+          ))}
         </div>
       </div>
-      <div className={styles.Image}></div>
     </div>
   );
 }

@@ -20,20 +20,9 @@ export default function Projects() {
         </div>
         <h2 className={styles.SectionSubTitle}>Other Noteworthy Projects</h2>
         <div className={styles.OtherProjectList}>
-          <OtherProject />
-          <OtherProject />
-          <OtherProject />
-          <OtherProject />
-          <OtherProject />
-          <OtherProject />
-          <OtherProject />
-          <OtherProject />
-          <OtherProject />
-          <OtherProject />
-          <OtherProject />
-          <OtherProject />
-          <OtherProject />
-          <OtherProject />
+        {projectsList.notableProjects.map((project, key) => (
+            <OtherProject {...project} key={key}/>
+          ))}
         </div>
       </section>
     </article>
