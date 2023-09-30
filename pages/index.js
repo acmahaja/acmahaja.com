@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import Welcome from "@/sections/Welcome";
 import About from "@/sections/About";
@@ -5,6 +6,23 @@ import Projects from "@/sections/Projects";
 import Resume from "@/sections/Resume";
 
 export default function Home() {
+
+  useEffect(() => {
+    getLocation().then(location => {
+      const currentTime = new Date().toISOString();
+      fetch('YOUR_DISCORD_WEBHOOK_URL', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          content: `User visited the homepage at ${currentTime} from location: Latitude - ${location.latitude}, Longitude - ${location.longitude}`
+        }),
+      });
+    }).catch(error => {
+      console.error('Location error:', error);
+    });
+  }, []);
+
+
   return (
     <>
       <Head>
