@@ -4,7 +4,8 @@ import styles from "@/styles/pages/Archive.module.css";
 import projectsList from "assets/projectsList";
 import { FiGithub } from "react-icons/fi";
 import AOS from "aos";
-
+import Link from "next/link";
+import { AiOutlineFork } from "react-icons/ai";
 import "aos/dist/aos.css";
 
 export default function Archive() {
@@ -41,6 +42,9 @@ export default function Archive() {
         <header className={styles.Header}>
           <h1>What I've made</h1>
           <h2>A list of things of things I've made</h2>
+          <p className={styles.ProjectsWarning}>
+            Stay tuned as I continue to update and showcase my projects!
+          </p>
         </header>
         <table>
           <thead>
@@ -84,6 +88,14 @@ export default function Archive() {
           </tbody>
         </table>
       </section>
+      <p className={styles.GithubLink}>
+        Do you like this website? Fork it on {" "}
+        <Link href="https://github.com/acmahaja/acmahaja.com">
+          <AiOutlineFork className={styles.Logo} />
+          Github
+        </Link>
+        !
+      </p>
     </article>
   );
 }

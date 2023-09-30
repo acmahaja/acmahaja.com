@@ -19,13 +19,13 @@ export default function Projects() {
         </div>
         <h2 className={styles.SectionSubTitle}>Other Noteworthy Projects</h2>
         <Link className={styles.ProjectsPageLink} href={'/archive'}>View More Projects</Link>
+        <p className={styles.ProjectsWarning}>Stay tuned as I continue to update and showcase my projects!</p>
         <div className={styles.OtherProjectList}>
         {projectsList.notableProjects.slice(0,8).map((project, key) => (
             <OtherProject {...project} key={key}/>
           ))}
         </div>
       </section>
-      
     </article>
   );
 }

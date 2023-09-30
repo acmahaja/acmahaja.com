@@ -1,6 +1,7 @@
 import { BiLogoReact } from "react-icons/bi";
 import { CgCloud } from "react-icons/cg";
 import {
+  SiAssemblyscript,
   SiChartdotjs,
   SiEclipsevertdotx,
   SiExpress,
@@ -109,6 +110,33 @@ const projectsList = {
         { name: "Ruby on Rails", component: <SiRubyonrails /> },
       ],
       date: new Date("2020-04-27"),
+    },
+    {
+      id: "c488e304",
+      name: "Monaco",
+      link: "https://github.com/acmahaja/Monaco",
+      description:
+        "The program user will be able to direct their block through a race course, checking for crashes, and will be able to change the color of the block which is being moved.",
+      technologies: [{ name: "LC3", component: <SiAssemblyscript /> }],
+      date: new Date("2017-05-27"),
+    },
+    {
+      id: "63520121",
+      name: "BLOCKS_Project",
+      link: "https://github.com/acmahaja/BLOCKS_Project",
+      description:
+        "The function of this program is to draw and manipulate the location of a box on the screen",
+      technologies: [{ name: "LC3", component: <SiAssemblyscript /> }],
+      date: new Date("2017-04-27"),
+    },
+    {
+      id: "8e91ebda",
+      name: "ASCII to Binary Project",
+      link: "https://github.com/acmahaja/ASCIItoBinaryProject",
+      description:
+        "This LC-3 assembly language program will print the binary ASCII code for a single character typed by the user.",
+      technologies: [{ name: "LC3", component: <SiAssemblyscript /> }],
+      date: new Date("2017-03-27"),
     },
   ],
 };

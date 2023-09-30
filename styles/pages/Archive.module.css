@@ -1,16 +1,14 @@
 .Archive {
   background: rgb(var(--beige));
   height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
 }
 
 .Archive .ProjectList {
   width: 100%;
   min-height: 100%;
+  height: fit-content;
 
   padding: 2rem;
   padding-top: 6rem;
@@ -26,6 +24,8 @@
   gap: 1rem;
 
   box-sizing: border-box;
+
+  margin-bottom: 2vh;
 }
 
 header.Header {
@@ -50,87 +50,38 @@ header.Header {
   font-family: "JetBrains Mono", monospace;
 }
 
-.Archive table {
+.ProjectsWarning {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+
+
+.GithubLink {
+  color: #868686;
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 2rem;
-  font-family: "JetBrains Mono", monospace;
-  table-layout: auto;
+  word-wrap: normal;
+  height: fit-content;
+
+  padding: 0.5em 24px 0.5em 24px;
+  box-sizing: border-box;
+
+  text-align: center;
+  text-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.25);
+  font-family: JetBrains Mono;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 223.885%; /* 1.25938rem */
+  letter-spacing: 0.05625rem;
 }
 
-.Archive th,
-.Archive td {
-  padding: 0.75rem;
-  border-bottom: 1px solid rgba(var(--black), 0.1);
-  text-align: left;
-}
-
-.Archive th {
-  font-weight: 600;
-  color: rgba(var(--black), 0.8);
-  font-family: "JetBrains Mono", monospace;
-}
-
-.Archive td a {
-  color: rgba(var(--saphire-blue), 1);
+.GithubLink a {
+  color: rgb(var(--green));
   text-decoration: none;
-  display: flex;
-  align-items: center;
-}
-
-.Archive td a:hover {
-  text-decoration: underline;
-}
-
-.Archive .BsGithub {
-  margin-left: 0.5rem;
-  color: rgba(var(--black), 0.8);
-  transition: color 0.3s;
-}
-
-.Archive .BsGithub:hover {
-  color: rgba(var(--green), 1);
-}
-
-.Month {
-  display: none;
-}
-
-.TableName {
-  min-width: 40%;
-}
-
-.ProjectName {
-  font-weight: 700;
-}
-
-.TableTechnologies {
-  width: 30%;
-  display: none;
-}
-
-.TechList {
-  display: none;
-}
-
-.TechList div {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 4%;
-}
-
-.TechList div p {
-  width: fit-content;
-}
-
-.GitHubLink a {
-  font-size: 1.5rem;
-  transition: ease 0.3s;
-}
-
-.GitHubLink a:hover {
-  font-size: 1.75rem;
 }
 
 @media screen and (min-width: 550px) {
@@ -151,7 +102,6 @@ header.Header {
     margin-top: 5rem;
     margin-bottom: 2rem;
   }
-
 
   .TechList div {
     width: 100%;
