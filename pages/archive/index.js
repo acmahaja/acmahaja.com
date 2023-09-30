@@ -1,14 +1,13 @@
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import styles from "@/styles/pages/Archive.module.css";
 import projectsList from "assets/projectsList";
 import { FiGithub } from "react-icons/fi";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import AOS from "aos";
 
+import "aos/dist/aos.css";
 
 export default function Archive() {
-  AOS.init();
-
   let combinedProjects = [
     ...projectsList.featuredProjects,
     ...projectsList.notableProjects,
@@ -29,6 +28,10 @@ export default function Archive() {
     "November",
     "December",
   ];
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <article id="Archive" className={styles.Archive}>
@@ -51,10 +54,10 @@ export default function Archive() {
           <tbody>
             {combinedProjects.map((project) => {
               return (
-                <tr key={project.id} data-aos="fade-up">
+                <tr key={project.id} data-aos="fade-up" data-aos-delay="600">
                   <td>
                     <div className={styles.Month}>
-                    {months[project.date.getMonth()]}{" "}
+                      {months[project.date.getMonth()]}{" "}
                     </div>
                     {project.date.getFullYear()}
                   </td>
