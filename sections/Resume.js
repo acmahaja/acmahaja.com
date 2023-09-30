@@ -1,7 +1,6 @@
 import styles from "@/styles/sections/Resume.module.css";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { Document, Page } from "react-pdf";
 import { MdEmail } from "react-icons/md";
 import { BsDiscord } from "react-icons/bs";
 import {

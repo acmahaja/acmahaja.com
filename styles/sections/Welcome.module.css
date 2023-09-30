@@ -1,3 +1,4 @@
+/* Welcome.module.css */
 .Welcome {
   background: rgb(var(--beige));
   height: fit-content;
@@ -212,7 +213,7 @@
 .Image img:hover {
   top: 0vw;
   right: 0vw;
-  box-shadow: -7px 7px 0px rgba(var(--black), 1);
+  box-shadow: -1.25vw 1.25vw 0px rgba(var(--black), 1);
   outline: solid 3px rgb(var(--black));
 }
 

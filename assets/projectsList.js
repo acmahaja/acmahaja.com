@@ -1,6 +1,7 @@
 import { TbBrandNextjs } from "react-icons/tb";
 import { BiLogoReact } from "react-icons/bi";
 
+
 const projectsList = {
   featuredProjects: [
     {

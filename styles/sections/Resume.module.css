@@ -63,6 +63,10 @@
   display: none;
 }
 
+.Pattern {
+  display: none;
+}
+
 .Overview h3 {
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Karla", sans-serif;
@@ -141,8 +145,8 @@
   height: 12vw;
   width: 100%;
   
-  max-width: 250px;
-  max-height: 40px;
+  max-width: 300px;
+  max-height: 50px;
 
   background: rgb(var(--white));
 
@@ -163,7 +167,7 @@
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Karla", sans-serif;
 
-  font-size: 100%;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.3125rem;
@@ -284,10 +288,10 @@
 
   .ResumeContent {
     display: block;
-    width: 45vw;
+    width: 55vw;
     height: 70vh;
     max-height: 750px;
-    max-width: 500px;
+    max-width: 600px;
 
     position: relative;
   }
@@ -325,8 +329,8 @@
   }
 
   .Pattern {
-    max-height: 140px;
-    max-width: 140px;
+    max-height: 10vw;
+    max-width: 10vw;
     z-index: -1;
   }
 
@@ -356,6 +360,11 @@
   .GithubLink {
     margin-top: 0px;
   }
+
+  .Pattern {
+    display: block;
+  }
+  
 }
 
 @media screen and (min-width: 1300px) {
