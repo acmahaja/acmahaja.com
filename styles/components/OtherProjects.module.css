@@ -15,16 +15,16 @@
   font-family: "Karla", sans-serif;
   box-sizing: border-box;
 
-  position: relative;
   cursor: pointer;
-  transition: ease 0.5s;
+  transition: ease 0.3s;
   overflow: hidden;
+  position: relative;
 }
 
 .OtherProject:hover {
   bottom: 5px;
   left: 10px;
-  box-shadow: -5px 5px 0px black;
+  box-shadow: -0.45vw 0.45vw 0px black;
 }
 
 .Header {
@@ -96,6 +96,10 @@
   height: 2rem;
   box-sizing: border-box;
   font-size: 1.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
 }
 
 .Description {
@@ -106,8 +110,10 @@
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  word-break: break-all;
-  white-space: normal;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 
 }
 
@@ -128,7 +134,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   border-radius: 50%;
   outline: 1px solid black;
 }
@@ -137,5 +143,14 @@
   .OtherProject {
     width: 20rem;
     height: 20rem;
+  }
+
+  .Description {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
+    white-space: normal;
   }
 }

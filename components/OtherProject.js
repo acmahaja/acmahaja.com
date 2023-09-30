@@ -2,7 +2,6 @@ import styles from "@/styles/components/OtherProjects.module.css";
 import Link from "next/link";
 
 import { AiFillGithub } from "react-icons/ai";
-import { BiLogoNodejs, BiLogoReact, BiLogoMongodb } from "react-icons/bi";
 
 export default function OtherProject({
   id,

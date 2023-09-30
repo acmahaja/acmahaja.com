@@ -1,16 +1,25 @@
 import { BiLogoReact } from "react-icons/bi";
 import { CgCloud } from "react-icons/cg";
 import {
+  SiChartdotjs,
+  SiEclipsevertdotx,
+  SiExpress,
   SiFirebase,
   SiGoogledrive,
   SiGooglemaps,
+  SiHandlebarsdotjs,
+  SiMongodb,
+  SiNodedotjs,
   SiRaspberrypi,
+  SiReact,
   SiRuby,
   SiRubyonrails,
   SiTensorflow,
+  SiVercel,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { GiTexas } from "react-icons/gi";
+import { FiFigma } from "react-icons/fi";
 
 const projectsList = {
   featuredProjects: [
@@ -19,12 +28,42 @@ const projectsList = {
       name: "acmahaja.com",
       link: "https://github.com/acmahaja/acmahaja.com",
       description:
-        "Cumque ex exercitationem. Atque quis alias natus et illum unde soluta. Neque rem quia distinctio.",
+        "acmahaja.com is a personal portfolio website that showcases my web development projects, skills, and achievements. The website has been developed and maintained for the past three years.",
       technologies: [
         { name: "Next.JS", component: <TbBrandNextjs /> },
-        { name: "React", component: <BiLogoReact /> },
+        { name: "React", component: <SiReact /> },
+        { name: "Vercel", component: <SiVercel /> },
       ],
-      date: new Date(123),
+      date: new Date("2020-03-11"),
+    },
+    {
+      id: "48a12925",
+      name: "Diabetes @ Home",
+      link: "https://github.com/acmahaja/INFO30005_DIABETES_AT_HOME",
+      description:
+        "Diabetes @ Home is a full-stack health application designed to help doctors and patients manage diabetes in the convenience of their own home. The application allows patients to record data that can be remotely monitored by their clinician.",
+      technologies: [
+        { name: "MongoDB", component: <SiMongodb /> },
+        { name: "Node.js", component: <SiNodedotjs /> },
+        { name: "Chart.js", component: <SiChartdotjs /> },
+        { name: "Handlebars.js", component: <SiHandlebarsdotjs /> },
+        { name: "Figma", component: <FiFigma /> },
+      ],
+      date: new Date("2022-05-25"),
+    },
+    {
+      id: "5c1f9ef7",
+      name: "Airbiz Gating Tool",
+      link: "https://github.com/yingmao-cyber/swen13-g-boarding-brainiacs-frontend/",
+      description:
+        "Airbiz is an Australian global aviation consultancy specializing in international projects. They offer solutions for current and future airport projects globally. Airbiz is proposing an upgrade to their existing excel-based gating tool. The new tool should be easily deployable and offer comprehensive gating and visualization features. Customizability, like color-coded flights and adjustable Gantt bar labels, is essential.",
+      technologies: [
+        { name: "Java Vert.x", component: <SiEclipsevertdotx /> },
+        { name: "React", component: <SiReact /> },
+        { name: "MongoDB", component: <SiMongodb /> },
+        { name: "Figma", component: <FiFigma /> },
+      ],
+      date: new Date("2023-10-18"),
     },
   ],
   notableProjects: [
@@ -46,19 +85,21 @@ const projectsList = {
       date: new Date("2020-04-27"),
     },
     {
-      id: "f0719061",
-      name: "Expertiza",
-      link: "https://github.com/acmahaja/expertiza",
+      id: "431532b3",
+      name: "Reach",
+      link: "https://github.com/acmahaja/Reach",
       description:
-        "Expertiza is a web application where students can submit and peer-review learning objects (articles, code, web sites, etc). It is used in select courses at NC State and by professors at several other colleges and universities.",
+        "Reach is a website focused on mental health, which provides services such as allowing users to create personalised accounts, write & save journal entries, as well as plan and undertake meditation sessions.",
       technologies: [
-        { name: "Ruby", component: <SiRuby /> },
-        { name: "Ruby on Rails", component: <SiRubyonrails /> },
+        { name: "MongoDB", component: <SiMongodb /> },
+        { name: "Node.js", component: <SiNodedotjs /> },
+        { name: "Express", component: <SiExpress /> },
+        { name: "Figma", component: <FiFigma /> },
       ],
-      date: new Date("2020-04-27"),
+      date: new Date("2021-04-25"),
     },
     {
-      id: "70896fee",
+      id: "f0719061",
       name: "Expertiza",
       link: "https://github.com/acmahaja/expertiza",
       description:

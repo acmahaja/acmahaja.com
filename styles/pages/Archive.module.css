@@ -152,9 +152,17 @@ header.Header {
     margin-bottom: 2rem;
   }
 
-  
-  .TechList {
-    display: block;
+
+  .TechList div {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .TechList div p {
+    margin: 0px;
   }
 
   .TableTechnologies {

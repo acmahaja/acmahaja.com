@@ -12,7 +12,7 @@ export default function Archive() {
     ...projectsList.featuredProjects,
     ...projectsList.notableProjects,
   ];
-  combinedProjects = combinedProjects.sort((a, b) => a.date - b.date);
+  combinedProjects = combinedProjects.sort((a, b) => b.date - a.date);
 
   const months = [
     "January",
