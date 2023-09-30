@@ -18,7 +18,7 @@ export default function FeaturedProject({ id, name, link, description, technolog
           <h3 className={styles.Title}>{name}</h3>
           <p className={styles.Description}>{description}</p>
         </div>
-        <div className={styles.Footer}>{technologies.map((tech, key) => <div className={styles.Technology} key={`${id}${key}`}>{tech}</div>)}</div>
+        <div className={styles.Footer}>{technologies.map((tech, key) => <div className={styles.Technology} key={`${id}${key}`}>{tech.component}</div>)}</div>
       </div>
     </div>
   );

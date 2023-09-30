@@ -19,7 +19,6 @@
   cursor: pointer;
   transition: ease 0.5s;
   overflow: hidden;
-
 }
 
 .FeaturedProject:hover {
@@ -108,6 +107,8 @@
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  word-break: break-all;
+  white-space: normal;
 }
 
 .Footer {
@@ -147,6 +148,4 @@
   .Description {
     -webkit-line-clamp: 5;
   }
-  
 }
-

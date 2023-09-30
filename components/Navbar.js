@@ -5,9 +5,9 @@ import LogoDesktopWhite from "../assets/LogoDesktopWhite.svg";
 import LogoMobileDark from "../assets/LogoMobileDark.svg";
 import LogoMobileWhite from "../assets/LogoMobileWhite.svg";
 import Breadcrumb from "@/components/Breadcrumb";
-
-
 import SideBar from "./Sidebar";
+
+import Link from "next/link";
 
 export default function Navbar({ color, section }) {
   return (
@@ -37,45 +37,44 @@ export default function Navbar({ color, section }) {
 
       <ul className={styles.Links}>
         <li>
-          <a
+          <Link
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
             }`}
-            href="#Welcome"
+            href="/#Welcome"
           >
             Welcome
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
             }`}
-            href="#About"
+            href="/#About"
           >
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            className={`${styles.NavLink} ${
-              color == "Dark" ? styles.Dark : styles.Light
-            } ${styles.LinkDisabled}`}
-            href="#Projects"
-            disabled
-          >
-            Projects
-          </a>
-        </li>
-        <li>
-          <a
+          <Link
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
             }`}
-            href="#Resume"
+            href="/#Projects"
+          >
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={`${styles.NavLink} ${
+              color == "Dark" ? styles.Dark : styles.Light
+            }`}
+            href="/#Resume"
           >
             Resume
-          </a>
+          </Link>
         </li>
       </ul>
       <SideBar color={color} />

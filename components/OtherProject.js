@@ -29,7 +29,7 @@ export default function OtherProject({
         <div className={styles.Footer}>
           {technologies.map((tech, key) => (
             <div className={styles.Technology} key={`${id}${key}`}>
-              {tech}
+              {tech.component}
             </div>
           ))}
         </div>

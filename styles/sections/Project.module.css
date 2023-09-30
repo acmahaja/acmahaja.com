@@ -48,10 +48,25 @@
 
 .SectionSubTitle {
   font-family: "Karla", sans-serif;
-  font-size: 1.625rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2.4375rem;
+  margin-bottom: 0.5rem;
+}
+
+.ProjectsPageLink {
+  color: var(--Bright-Blue, #3a10e5);
+  font-feature-settings: "clig" off, "liga" off;
+
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem; /* 150% */
+
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 
 .FeaturedProjectList {
@@ -66,16 +81,15 @@
 .OtherProjectList {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr); 
-  gap: 1rem; 
-  overflow-x: auto; 
-  width: 100%; 
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  overflow-x: auto;
+  width: 100%;
   height: 35rem;
-  white-space: nowrap; 
+  white-space: nowrap;
 
   padding: 0.25rem;
 }
-
 
 @media screen and (min-width: 751px) {
   .Projects {
@@ -109,7 +123,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    column-gap:1rem;
+    column-gap: 1rem;
     overflow-y: scroll;
     width: 100%;
     height: 45rem;
@@ -119,8 +133,7 @@
 @media screen and (min-width: 1300px) {
   .OtherProjectList {
     width: 1200px;
-  }  
-
+  }
 }
 @media screen and (min-width: 1300px) {
   .Projects section {
