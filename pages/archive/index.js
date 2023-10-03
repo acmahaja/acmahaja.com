@@ -46,50 +46,48 @@ export default function Archive() {
             Stay tuned as I continue to update and showcase my projects!
           </p>
         </header>
-        <table>
-          <thead>
-            <tr>
-              <th>Year</th>
-              <th className={styles.TableName}>Name</th>
-              <th className={styles.TableTechnologies}>Built with</th>
-              <th>Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            {combinedProjects.map((project) => {
-              return (
-                <tr key={project.id} data-aos="fade-up" data-aos-delay="600">
-                  <td>
-                    <div className={styles.Month}>
-                      {months[project.date.getMonth()]}{" "}
-                    </div>
-                    {project.date.getFullYear()}
-                  </td>
-                  <td className={styles.ProjectName}>{project.name}</td>
-                  <td className={styles.TechList}>
-                    <div>
-                      {project.technologies.map((tech, key) => (
-                        <p key={key}>{tech.name}</p>
-                      ))}
-                    </div>
-                  </td>
-                  <td className={styles.GitHubLink}>
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FiGithub />
-                    </a>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+        <div className={styles.ProjectsContainer}>
+          {combinedProjects.map((project) => {
+            return (
+              <div
+                key={project.id}
+                className={styles.ProjectCard}
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <div className={styles.DateContainer}>
+                  <span className={styles.Month}>
+                    {months[project.date.getMonth()]}{" "}
+                  </span>
+                  {project.date.getFullYear()}
+                </div>
+
+                <h2 className={styles.ProjectName}>{project.name}</h2>
+
+                <div className={styles.TechList}>
+                  {project.technologies.map((tech, key) => (
+                    <span key={key} className={styles.TechName}>
+                      {tech.name}
+                    </span>
+                  ))}
+                </div>
+
+                <div className={styles.LinkContainer}>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FiGithub />
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </section>
       <p className={styles.GithubLink}>
-        Do you like this website? Fork it on {" "}
+        Do you like this website? Fork it on{" "}
         <Link href="https://github.com/acmahaja/acmahaja.com">
           <AiOutlineFork className={styles.Logo} />
           Github
