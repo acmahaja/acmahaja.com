@@ -130,18 +130,9 @@
   }
 
   .OtherProjectList {
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: auto;
-    grid-row-gap: 2rem;
-
-    overflow: visible;
-    width: 100%;
-    height: 50rem;
+    display: flex;
+    flex-wrap: wrap;
   }
-
 }
 
 @media screen and (min-width: 1300px) {
