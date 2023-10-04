@@ -15,6 +15,19 @@ export default function Home() {
         content: `User visited the homepage at ${currentTime}`,
       }),
     });
+    console.log("%cCongratulations! 🎉", "color: white; font-size: 20px;");
+    console.log(
+      "%cYou've found a secret message!",
+      "color: white; font-size: 16px;"
+    );
+    console.log(
+      "%cIf you're curious about how this website was built or want to see more of my work, check out my GitHub:",
+      "color: white; font-size: 14px;"
+    );
+    console.log(
+      "%chttps://github.com/acmahaja",
+      "color: orange; font-size: 14px; text-decoration: underline;"
+    );
   }, []);
 
   return (

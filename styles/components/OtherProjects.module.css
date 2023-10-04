@@ -1,5 +1,5 @@
 .OtherProject {
-  width: 20rem;
+  min-width: 25rem;
   height: 16.67rem;
   background-color: white;
 
@@ -13,18 +13,17 @@
   box-sizing: border-box;
 
   font-family: "Karla", sans-serif;
-  box-sizing: border-box;
 
   cursor: pointer;
   transition: ease 0.3s;
-  overflow: hidden;
   position: relative;
+  margin: 1rem 0rem;
 }
 
 .OtherProject:hover {
   bottom: 5px;
   left: 10px;
-  box-shadow: -0.45vw 0.45vw 0px black;
+  box-shadow: -0.5vw 0.5vw 0px black;
 }
 
 .Header {
@@ -99,7 +98,6 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-
 }
 
 .Description {
@@ -112,9 +110,8 @@
   overflow: hidden;
 
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: wrap;
   overflow: hidden;
-
 }
 
 .Footer {
