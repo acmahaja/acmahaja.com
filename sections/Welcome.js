@@ -93,6 +93,8 @@ export default function Welcome() {
             alt="Picture of the me on a canoe"
             width={466}
             height={466}
+            placeholder="blur"	
+            priority={true}
           />
         </div>
       </section>

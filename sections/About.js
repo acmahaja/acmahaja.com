@@ -18,6 +18,7 @@ export default function About() {
               alt="Picture of the me at Melbourne Cricket Ground"
               width={466}
               height={466}
+              priority={true}
             />
             <div className={styles.Box}></div>
             <div className={styles.Pattern}></div>
