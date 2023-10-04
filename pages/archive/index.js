@@ -3,8 +3,8 @@ import Navbar from "@/components/Navbar";
 import styles from "@/styles/pages/Archive.module.css";
 import projectsList from "assets/projectsList";
 import { FiGithub } from "react-icons/fi";
-import AOS from "aos";
 import Link from "next/link";
+import AOS from "aos";
 import { AiOutlineFork } from "react-icons/ai";
 import "aos/dist/aos.css";
 
@@ -47,39 +47,39 @@ export default function Archive() {
           </p>
         </header>
         <div className={styles.ProjectsContainer}>
+          <div className={styles.ProjectRow}>
+            <div className={styles.Date}>Date</div>
+            <div className={styles.Name}>Name</div>
+            <div className={styles.TechList}>Built with</div>
+            <div className={styles.Links}>Link</div>
+          </div>
           {combinedProjects.map((project) => {
             return (
               <div
                 key={project.id}
-                className={styles.ProjectCard}
+                className={styles.ProjectRow}
                 data-aos="fade-up"
                 data-aos-delay="600"
               >
-                <div className={styles.DateContainer}>
-                  <span className={styles.Month}>
+                <div className={styles.Date}>
+                  <div className={styles.Month}>
                     {months[project.date.getMonth()]}{" "}
-                  </span>
+                  </div>
                   {project.date.getFullYear()}
                 </div>
-
-                <h2 className={styles.ProjectName}>{project.name}</h2>
-
+                <div className={styles.Name}>{project.name}</div>
                 <div className={styles.TechList}>
                   {project.technologies.map((tech, key) => (
-                    <span key={key} className={styles.TechName}>
+                    <div className={styles.Tech} key={key}>
                       {tech.name}
-                    </span>
+                      {key !== project.technologies.length-1 ? " - " : ""}
+                    </div>
                   ))}
                 </div>
-
-                <div className={styles.LinkContainer}>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                <div className={styles.Links}>
+                  <Link href={project.link}>
                     <FiGithub />
-                  </a>
+                  </Link>
                 </div>
               </div>
             );

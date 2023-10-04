@@ -5,48 +5,16 @@ import About from "@/sections/About";
 import Projects from "@/sections/Projects";
 import Resume from "@/sections/Resume";
 
-
-function getLocation() {
-  return new Promise((resolve, reject) => {
-    if (!navigator.geolocation) {
-      reject('Geolocation not supported by your browser.');
-    } else {
-      navigator.geolocation.getCurrentPosition((position) => {
-        resolve({
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude,
-        });
-      }, () => {
-        reject('Unable to retrieve your location.');
-      });
-    }
-  });
-}
-
-
 export default function Home() {
   useEffect(() => {
-    getLocation()
-      .then((location) => {
-        const currentTime = new Date().toISOString();
-        fetch(process.env.NEXT_PUBLIC_DISCORD_SERVER, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            content: `User visited the homepage at ${currentTime} from location: Latitude - ${location.latitude}, Longitude - ${location.longitude}`,
-          }),
-        });
-      })
-      .catch((error) => {
-        const currentTime = new Date().toISOString();
-        fetch(process.env.NEXT_PUBLIC_DISCORD_SERVER, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            content: `User visited the homepage at ${currentTime}, couldn't get location.`,
-          }),
-        });
-      });
+    const currentTime = new Date().toISOString();
+    fetch(process.env.NEXT_PUBLIC_DISCORD_SERVER, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        content: `User visited the homepage at ${currentTime}`,
+      }),
+    });
   }, []);
 
   return (
