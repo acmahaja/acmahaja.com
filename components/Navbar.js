@@ -5,9 +5,9 @@ import LogoDesktopWhite from "../assets/LogoDesktopWhite.svg";
 import LogoMobileDark from "../assets/LogoMobileDark.svg";
 import LogoMobileWhite from "../assets/LogoMobileWhite.svg";
 import Breadcrumb from "@/components/Breadcrumb";
-
-
 import SideBar from "./Sidebar";
+
+import Link from "next/link";
 
 export default function Navbar({ color, section }) {
   return (
@@ -19,8 +19,8 @@ export default function Navbar({ color, section }) {
       <Image
         priority
         src={color == "Dark" ? LogoDesktopDark.src : LogoDesktopWhite.src}
-        height={53}
-        width={150}
+        height={44}
+        width={125}
         alt="Logo"
         className={styles.LogoDesktop}
       />{" "}
@@ -37,47 +37,44 @@ export default function Navbar({ color, section }) {
 
       <ul className={styles.Links}>
         <li>
-          <a
+          <Link
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
             }`}
-            href="#Welcome"
+            href="/#Welcome"
           >
             Welcome
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
-            } ${styles.LinkDisabled}`}
-            href="#About"
-            disabled
+            }`}
+            href="/#About"
           >
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
-            } ${styles.LinkDisabled}`}
-            href="#Projects"
-            disabled
+            }`}
+            href="/#Projects"
           >
             Projects
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             className={`${styles.NavLink} ${
               color == "Dark" ? styles.Dark : styles.Light
-            } ${styles.LinkDisabled}`}
-            href="#Resume"
-            disabled
+            }`}
+            href="/#Resume"
           >
             Resume
-          </a>
+          </Link>
         </li>
       </ul>
       <SideBar color={color} />

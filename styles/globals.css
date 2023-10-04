@@ -2,7 +2,7 @@
 
 :root {
   --green: 71, 204, 160;
-  --pale-green: 232, 245, 226;
+  --pale-green: 237, 252, 208;
   --black: 0, 0, 0;
   --white: 255, 255, 255;
   --beige: 255, 240, 229;
@@ -20,8 +20,9 @@ body,
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
+  scroll-behavior: smooth;
 
+}
 
 #__next {
   scroll-snap-type: y mandatory;

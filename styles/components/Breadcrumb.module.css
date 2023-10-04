@@ -48,6 +48,7 @@
     bottom: 0px;
     left: 0px;
     position: fixed;
+    
 
     display: flex;
     flex-direction: column;
@@ -62,5 +63,12 @@
     background-color: rgb(var(--black));
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+  }
+}
+
+
+@media screen and (min-width: 1400px) {
+  .Breadcrumb {
+    left: 20px;
   }
 }

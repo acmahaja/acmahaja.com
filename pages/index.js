@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import Welcome from "@/sections/Welcome";
 import About from "@/sections/About";
@@ -5,6 +6,17 @@ import Projects from "@/sections/Projects";
 import Resume from "@/sections/Resume";
 
 export default function Home() {
+  useEffect(() => {
+    const currentTime = new Date().toISOString();
+    fetch(process.env.NEXT_PUBLIC_DISCORD_SERVER, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        content: `User visited the homepage at ${currentTime}`,
+      }),
+    });
+  }, []);
+
   return (
     <>
       <Head>
@@ -63,9 +75,9 @@ export default function Home() {
         ></meta>
       </Head>
       <Welcome />
-      {/* <About />
+      <About />
       <Projects />
-      <Resume /> */}
+      <Resume />
     </>
   );
 }

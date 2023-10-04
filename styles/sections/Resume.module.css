@@ -1,9 +1,388 @@
 .Resume {
-    background: rgb(var(--saphire-blue));
-    /* max-height: 895px; */
-    height: 99%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background: rgb(var(--saphire-blue));
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Resume section {
+  width: 100%;
+  min-height: 100%;
+  height: fit-content;
+
+  padding: 24px;
+  padding-top: 70px;
+  padding-bottom: 0px;
+
+  max-width: 1248px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+.SectionTitle {
+  width: 100%;
+  height: fit-content;
+
+  font-family: "Karla", sans-serif;
+  color: rgb(var(--white));
+  font-feature-settings: "clig" off, "liga" off;
+  font-style: normal;
+
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 125%;
+
+  margin: 0.25rem 0px;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+
+  border-bottom: 2px solid rgb(var(--white));
+}
+
+.Content {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ResumeEmbed {
+  display: none;
+}
+
+.Pattern {
+  display: none;
+}
+
+.Overview h3 {
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.875rem;
+
+  color: rgb(var(--white));
+}
+
+.Overview h3 > a {
+  text-decoration: none;
+  color: rgb(var(--green));
+  position: relative;
+}
+
+.Overview h3 > a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  bottom: -4px;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.Overview h3 > a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  bottom: -4px;
+  left: 0;
+  background-color: #47cca0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.Overview h3 > a::before {
+  transform: scaleX(0);
+}
+
+.Overview h3 > a:hover::before {
+  transform: scaleX(1);
+}
+
+.Overview p {
+  color: rgba(var(--white), 0.6);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.15rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1.5rem;
+}
+
+.Overview b {
+  color: rgb(var(--green));
+  font-weight: 100;
+}
+
+.ContactList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Contact {
+  height: 12vw;
+  width: 100%;
+  
+  max-width: 300px;
+  max-height: 50px;
+
+  background: rgb(var(--white));
+
+  margin: 1rem 0px;
+  padding: 1rem;
+
+  box-sizing: border-box;
+
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  text-decoration: none;
+  color: rgb(var(--black));
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Karla", sans-serif;
+
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.3125rem;
+
+  position: relative;
+
+  transition: ease 0.3s;
+}
+
+.Contact:hover {
+  bottom: 3px;
+  left: 3px;
+  box-shadow: -3px 3px 0px white;
+  transition: ease 0.5s;
+  font-weight: bold;
+}
+
+.Contact svg {
+  margin-right: 2vw;
+  font-size: 175%;
+}
+
+.Mail:hover {
+  color: white;
+  background: #dc3636;
+}
+
+.Linkedin:hover {
+  color: white;
+  background: #0a66c2;
+}
+
+.Github:hover {
+  color: white;
+  background: #24292f;
+}
+
+.Instagram:hover {
+  color: white;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.Discord:hover {
+  color: white;
+  background: #5661f5;
+}
+
+.GithubLink {
+  color: #868686;
+  width: 100%;
+  word-wrap: normal;
+  height: fit-content;
+
+  padding: 0.5em 24px 0.5em 24px;
+  box-sizing: border-box;
+
+  text-align: center;
+  text-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.25);
+  font-family: JetBrains Mono;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 223.885%; /* 1.25938rem */
+  letter-spacing: 0.05625rem;
+}
+
+.GithubLink a {
+  color: rgb(var(--green));
+  text-decoration: none;
+}
+
+.Pattern {
+  width: 10vw;
+  height: 10vw;
+
+  position: absolute;
+
+  z-index: -1;
+
+  background-color: transparent;
+  opacity: 1;
+  background-image: radial-gradient(
+    rgb(var(--white)) 0.75px,
+    rgba(var(--saphire-blue), 0) 0.65px
+  );
+  background-size: 12px 12px;
+}
+
+.Pattern:last-child {
+  bottom: 0px;
+  right: 0px;
+  z-index: 2;
+}
+
+@media screen and (min-width: 751px) {
+  .Resume {
+    min-height: 100%;
+    width: 100%;
+  }
+
+  .Resume section {
+    padding: 80px 24px 0px 70px;
+  }
+
+  .Content {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ResumeContent {
+    display: block;
+    width: 55vw;
+    height: 70vh;
+    max-height: 750px;
+    max-width: 600px;
+
+    position: relative;
+  }
+
+  .ResumeEmbed,
+  .Box {
+    display: block;
+    width: 85%;
+    height: 90%;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 1.5rem;
+    left: 2.5rem;
+    z-index: 1;
+  }
+
+  .ResumeEmbed {
+    transition: ease 0.4s;
+  }
+
+  .ResumeEmbed:hover {
+    top: 1rem;
+    left: 2rem;
+    cursor: pointer;
+    box-shadow: 10px 15px 0px white;
+  }
+
+  .Box {
+    outline: 1px solid rgb(var(--white));
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    z-index: 0;
+  }
+
+  .Pattern {
+    max-height: 10vw;
+    max-width: 10vw;
+    z-index: -1;
+  }
+
+  .Overview {
+    width: calc(100% - 45vw);
+    padding-left: 1rem;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .ContactList {
+    align-items: flex-start;
+  }
+
+  .Contact {
+    max-width: 320px;
+    max-height: 40px;
+    font-size: 1.25rem;
+    margin: 0rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .Contact svg {
+    font-size: 1.4rem;
+  }
+
+  .GithubLink {
+    margin-top: 0px;
+  }
+
+  .Pattern {
+    display: block;
+  }
+  
+}
+
+@media screen and (min-width: 1300px) {
+  .Content {
+    max-width: 1248px;
+  }
+
+  .Resume section {
+    padding: 80px 24px 0px 24px;
+  }
+
+  .Overview {
+    width: 50%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .Resume {
+    min-height: fit-content;
+  }
 }

@@ -1,9 +1,167 @@
 .Projects {
-    background: rgb(var(--beige));
-    /* max-height: 895px; */
-    height: 99%;
+  background: rgb(var(--beige));
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Projects section {
+  width: 100%;
+  min-height: 100%;
+  height: fit-content;
+
+  padding: 24px;
+  padding-top: 50px;
+
+  max-width: 1248px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+.SectionTitle {
+  width: 100%;
+  height: fit-content;
+
+  font-family: "Karla", sans-serif;
+  color: rgb(var(--black));
+  font-feature-settings: "clig" off, "liga" off;
+  font-style: normal;
+  text-align: right;
+
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 125%;
+
+  margin: 0.25rem 0px;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+
+  border-bottom: 2px solid rgb(var(--black));
+}
+
+.SectionSubTitle {
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4375rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.ProjectsPageLink {
+  color: var(--Bright-Blue, #3a10e5);
+  font-feature-settings: "clig" off, "liga" off;
+
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+
+  text-decoration: none;
+}
+
+.FeaturedProjectList {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  
+}
+
+.OtherProjectList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  overflow-x: auto;
+  width: 100%;
+  height: 35rem;
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding: 0.25rem;
+  overflow-y: visible;
+  padding: 1rem 1rem 0rem 0.25rem;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 751px) {
+  .Projects {
+    height: 100%;
+    width: 100%;
+  }
+
+  .Projects section {
+    max-width: 1248px;
+    width: 100%;
+
+    padding: 80px 24px 0px 70px;
+  }
+
+  .Projects {
+    width: calc(100% - 44vw);
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .FeaturedProjectList {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .ProjectsWarning {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  .OtherProjectList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: auto;
+    grid-row-gap: 2rem;
+
+    overflow: visible;
+    width: 100%;
+    height: 45rem;
+  }
+
+}
+
+@media screen and (min-width: 1300px) {
+  .OtherProjectList {
+    width: 1200px;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .Projects section {
+    padding: 80px 24px 0px 24px;
+    max-width: 1248px;
+  }
+
+  .Projects .Overview {
+    width: 55%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .Projects {
+    min-height: 600px;
+  }
 }

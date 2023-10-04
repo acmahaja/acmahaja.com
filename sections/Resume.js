@@ -1,22 +1,20 @@
 import styles from "@/styles/sections/Resume.module.css";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import { Document, Page } from "react-pdf";
 import { MdEmail } from "react-icons/md";
 import { BsDiscord } from "react-icons/bs";
 import {
   AiFillLinkedin,
   AiFillGithub,
   AiOutlineInstagram,
-  AiOutlineFork
+  AiOutlineFork,
 } from "react-icons/ai";
 
 export default function Resume() {
   return (
     <article id="Resume" className={styles.Resume}>
-      Resume
-       <Navbar color={"Light"} section={"Resume"} />
-      {/*<section>
+      <Navbar color={"Light"} section={"Resume"} />
+      <section>
         <h2 className={styles.SectionTitle}>Resume</h2>
         <div className={styles.Content}>
           <div className={styles.Overview}>
@@ -28,7 +26,7 @@ export default function Resume() {
               Download my <a href="/Resume.pdf">Resume</a>!
             </h3>
             <p>
-              I’m currently looking for internship and work as a part time
+              I'm currently looking for internship and work as a part time
               developer experience, my inbox is always open! Feel Free to
               contact me on <b>social media</b> or my <b>email</b> below.
             </p>
@@ -65,7 +63,7 @@ export default function Resume() {
               </Link>
             </div>
           </div>
-          <div className={styles.ResumeEmbed}>
+          <div className={styles.ResumeContent}>
             <object
               data="/Resume.pdf"
               type="application/pdf"
@@ -79,12 +77,12 @@ export default function Resume() {
       </section>
       <p className={styles.GithubLink}>
         Do you like this website? Fork it on my{" "}
-        <Link
-          href="https://github.com/acmahaja/acmahaja.com"
-        ><AiOutlineFork className={styles.Logo}/>Github
+        <Link href="https://github.com/acmahaja/acmahaja.com">
+          <AiOutlineFork className={styles.Logo} />
+          Github
         </Link>
         !
-      </p> */}
+      </p>
     </article>
   );
 }

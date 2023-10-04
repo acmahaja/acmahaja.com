@@ -1,3 +1,4 @@
+/* Welcome.module.css */
 .Welcome {
   background: rgb(var(--beige));
   height: fit-content;
@@ -39,32 +40,35 @@
 }
 
 .Overview p {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 110%;
-  margin: 0.25em 0px;
+  margin: 0.25rem 0px;
 }
 
 .Overview h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 125%;
-  margin: 0.25em 0px;
+  margin: 0.25rem 0px;
 }
 
 .Overview h3 {
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 139.286%;
-  margin: 0.25em 0px;
+  margin: 0.25rem 0px;
+  margin-bottom: 0.5rem;
 }
 
 .Overview .Description {
   font-family: "JetBrains Mono", monospace;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-style: normal;
   font-weight: 400;
   line-height: 165%;
+  margin-bottom: 1rem;
+
 }
 
 .ContactInfo {
@@ -74,7 +78,7 @@
 
 .ContactInfo p {
   font-family: "JetBrains Mono", monospace;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 165%;
@@ -125,6 +129,12 @@
   box-shadow: -5px 5px 0px rgba(0, 0, 0, 1);
 }
 
+.Mail:hover {
+  color: white;
+  background: #dc3636;
+}
+
+
 .Linkedin:hover {
   color: white;
   background: #0a66c2;
@@ -153,17 +163,11 @@
 }
 
 .Image {
-  width: 480px;
-  height: 480px;
-  position: relative;
-}
-
-.Image {
-  position: relative;
-
   width: 82vw;
   height: 82vw;
+  position: relative;
 }
+
 
 .Pattern {
   width: 80vw;
@@ -174,7 +178,7 @@
   left: 0vw;
 
   background-color: rgba(255, 240, 229, 1);
-  opacity: 0.8;
+  opacity: 1;
   background: repeating-linear-gradient(
     45deg,
     #000000,
@@ -209,7 +213,7 @@
 .Image img:hover {
   top: 0vw;
   right: 0vw;
-  box-shadow: -1.5vw 1.5vw 0px rgba(0, 0, 0, 1);
+  box-shadow: -1.25vw 1.25vw 0px rgba(var(--black), 1);
   outline: solid 3px rgb(var(--black));
 }
 
@@ -254,7 +258,14 @@
 @media screen and (min-width: 1300px) {
   .Welcome section {
     padding: 80px 24px 0px 24px;
+    max-width: 1248px;
   }
+
+  .Welcome .Overview {
+    width: 55%;
+  }
+
+
 }
 
 @media screen and (max-height: 600px) {
