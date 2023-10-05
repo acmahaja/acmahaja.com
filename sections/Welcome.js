@@ -43,11 +43,11 @@ export default function Welcome() {
           />
 
           <p className={styles.Description}>
-            I'm a software engineering student at the University of Melbourne
-            experienced in React, Node.js, and Google Cloud. With strong UI/UX
-            skills and business process understanding, I'm seeking graduate and
-            career opportunities in the Australian software engineering
-            industry.
+            I'm a software engineering student at the University of Melbourne,
+            passionate about crafting human-centric applications.
+            Proficient in React, Node.js, and Google Cloud with a strong UI/UX
+            background, I'm keen to pursue opportunities in the Australian
+            software industry.
           </p>
 
           <div className={styles.ContactInfo}>
@@ -93,7 +93,7 @@ export default function Welcome() {
             alt="Picture of the me on a canoe"
             width={466}
             height={466}
-            placeholder="blur"	
+            placeholder="blur"
             priority={true}
           />
         </div>

@@ -160,7 +160,7 @@
 
 .Tech svg {
   color: rgb(var(--green));
-  font-size: 2rem;
+  font-size: 2.25rem;
   margin-right: 0.5rem;
 }
 
@@ -224,6 +224,11 @@
     padding-left: 1rem;
     height: auto;
     box-sizing: border-box;
+    font-weight: 300;
+  }
+
+  .Description b {
+    color: rgb(var(--green));
   }
 }
 
