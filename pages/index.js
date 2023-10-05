@@ -54,7 +54,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.acmahaja.com/" />
         <meta property="og:title" content="@acmahaja" />
-        
+
         <meta
           property="og:description"
           content="I'm a software engineering student at the University of Melbourne, passionate about crafting human-centric applications. Proficient in React, Node.js, and Google Cloud with a strong UI/UX background, I'm keen to pursue opportunities in the Australian software industry."
@@ -92,30 +92,7 @@ export default function Home() {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        // Open Graph / Facebook
-        <meta property="og:type" content="website"></meta>
-        <meta property="og:url" content="https://www.acmahaja.com/"></meta>
-        <meta property="og:title" content="@acmahaja"></meta>
-        <meta
-          property="og:description"
-          content="I am a software engineering with business student at the University of Melbourne, I completed my undergraduate degree in Computer Engineering at North Carolina State University."
-        ></meta>
-        <meta
-          property="og:image"
-          content="https://www.acmahaja.com/android-chrome-512x512.png"
-        ></meta>
-        // Twitter
-        <meta property="twitter:card" content="summary_large_image"></meta>
-        <meta property="twitter:url" content="https://www.acmahaja.com/"></meta>
-        <meta property="twitter:title" content="@acmahaja"></meta>
-        <meta
-          property="twitter:description"
-          content="I am a software engineering with business student at the University of Melbourne, I completed my undergraduate degree in Computer Engineering at North Carolina State University."
-        ></meta>
-        <meta
-          property="twitter:image"
-          content="https://www.acmahaja.com/android-chrome-512x512.png"
-        ></meta>
+       
       </Head>
       <Welcome />
       <About />
