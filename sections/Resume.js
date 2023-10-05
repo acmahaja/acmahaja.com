@@ -10,6 +10,9 @@ import {
   AiOutlineFork,
 } from "react-icons/ai";
 
+import { Document, Page } from 'react-pdf';
+
+
 export default function Resume() {
   return (
     <article id="Resume" className={styles.Resume}>
@@ -64,11 +67,10 @@ export default function Resume() {
             </div>
           </div>
           <div className={styles.ResumeContent}>
-            <object
-              data="/Resume.pdf"
-              type="application/pdf"
+            <iframe
+              src="/Resume.pdf"
               className={styles.ResumeEmbed}
-            ></object>
+            ></iframe>
             <div className={styles.Box}></div>
             <div className={styles.Pattern}></div>
             <div className={styles.Pattern}></div>
