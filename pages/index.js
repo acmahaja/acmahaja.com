@@ -33,9 +33,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        // Primary Meta Tags
+
         <meta name="title" content="acmahaja.com" />
         <meta
           name="description"
@@ -43,26 +42,30 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="Anjaney C Mahajan, Software Engineer, Full-stack applications,Melbourne, Australia, Computer Engineering, The University of Melbourne, Portfolio website, Next.js, Typescript, MongoDB, Google Cloud, Technical skills, Embedded System Programming, AutoCAD"
+          content="Anjaney C Mahajan, Software Engineer, Full-stack applications, Melbourne, Australia, Computer Engineering, The University of Melbourne, Portfolio website, Next.js, Typescript, MongoDB, Google Cloud, Technical skills, Embedded System Programming, AutoCAD"
         />
         <meta name="robots" content="index, follow" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="author" content="Anjaney C Mahajan" />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image" content="/android-chrome-192x192.png"></meta>
+
+        <meta
+          property="og:image"
+          content="https://www.acmahaja.com/banner.png"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.acmahaja.com/" />
         <meta property="og:title" content="@acmahaja" />
-
         <meta
           property="og:description"
           content="I'm a software engineering student at the University of Melbourne, passionate about crafting human-centric applications. Proficient in React, Node.js, and Google Cloud with a strong UI/UX background, I'm keen to pursue opportunities in the Australian software industry."
         />
         <meta
           property="og:image"
-          content="/banner.png"
+          content="https://www.acmahaja.com/banner.png"
         />
+
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.acmahaja.com/" />
         <meta property="twitter:title" content="@acmahaja" />
@@ -72,27 +75,28 @@ export default function Home() {
         />
         <meta
           property="twitter:image"
-          content="/banner.png"
+          content="https://www.acmahaja.com/banner.png"
         />
+
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href="https://www.acmahaja.com/apple-touch-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="https://www.acmahaja.com/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="https://www.acmahaja.com/favicon-16x16.png"
         />
+
         <link rel="manifest" href="/site.webmanifest" />
-       
       </Head>
       <Welcome />
       <About />
