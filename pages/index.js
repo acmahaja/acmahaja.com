@@ -36,14 +36,44 @@ export default function Home() {
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         // Primary Meta Tags
-        <title>@acmahaja</title>
-        <meta name="title" content="@acmahaja"></meta>
+        <meta name="title" content="acmahaja.com" />
         <meta
           name="description"
-          content="I'm a software engineering student at the University of Melbourne experienced in React, Node.js, and Google Cloud. With strong UI/UX skills and business process understanding, I'm seeking graduate and career opportunities in the Australian software engineering industry. "
-        ></meta>
+          content="I'm a software engineering student at the University of Melbourne, passionate about crafting human-centric applications. Proficient in React, Node.js, and Google Cloud with a strong UI/UX background, I'm keen to pursue opportunities in the Australian software industry."
+        />
+        <meta
+          name="keywords"
+          content="Anjaney C Mahajan, Software Engineer, Full-stack applications,Melbourne, Australia, Computer Engineering, The University of Melbourne, Portfolio website, Next.js, Typescript, MongoDB, Google Cloud, Technical skills, Embedded System Programming, AutoCAD"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <meta name="author" content="Anjaney C Mahajan" />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:image" content="/android-chrome-192x192.png"></meta>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.acmahaja.com/" />
+        <meta property="og:title" content="@acmahaja" />
+        
+        <meta
+          property="og:description"
+          content="I'm a software engineering student at the University of Melbourne, passionate about crafting human-centric applications. Proficient in React, Node.js, and Google Cloud with a strong UI/UX background, I'm keen to pursue opportunities in the Australian software industry."
+        />
+        <meta
+          property="og:image"
+          content="/banner.png"
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.acmahaja.com/" />
+        <meta property="twitter:title" content="@acmahaja" />
+        <meta
+          property="twitter:description"
+          content="I'm a software engineering student at the University of Melbourne, passionate about crafting human-centric applications. Proficient in React, Node.js, and Google Cloud with a strong UI/UX background, I'm keen to pursue opportunities in the Australian software industry."
+        />
+        <meta
+          property="twitter:image"
+          content="/banner.png"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
