@@ -54,29 +54,7 @@ export default function Home() {
           property="og:image"
           content="https://www.acmahaja.com/banner.png"
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.acmahaja.com/" />
-        <meta property="og:title" content="@acmahaja" />
-        <meta
-          property="og:description"
-          content="I'm a software engineering student at the University of Melbourne, passionate about crafting human-centric applications. Proficient in React, Node.js, and Google Cloud with a strong UI/UX background, I'm keen to pursue opportunities in the Australian software industry."
-        />
-        <meta
-          property="og:image"
-          content="https://www.acmahaja.com/banner.png"
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.acmahaja.com/" />
-        <meta property="twitter:title" content="@acmahaja" />
-        <meta
-          property="twitter:description"
-          content="I'm a software engineering student at the University of Melbourne, passionate about crafting human-centric applications. Proficient in React, Node.js, and Google Cloud with a strong UI/UX background, I'm keen to pursue opportunities in the Australian software industry."
-        />
-        <meta
-          property="twitter:image"
-          content="https://www.acmahaja.com/banner.png"
-        />
+        // TODO: RE-ADD FACEBOOK AND TWITTER META TAGS 
 
         <link
           rel="apple-touch-icon"
