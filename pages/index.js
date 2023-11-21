@@ -4,6 +4,7 @@ import Welcome from "@/sections/Welcome";
 import About from "@/sections/About";
 import Projects from "@/sections/Projects";
 import Resume from "@/sections/Resume";
+import {Analytics} from "@vercel/analytics/react";
 
 export default function Home() {
   useEffect(() => {
@@ -76,6 +77,7 @@ export default function Home() {
 
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
+      <Analytics />
       <Welcome />
       <About />
       <Projects />
