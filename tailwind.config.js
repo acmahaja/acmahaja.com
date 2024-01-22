@@ -7,7 +7,11 @@ export default {
       'sans-serif': ['Roboto Flex', 'sans-serif'],
       'serif': ['Roboto Serif', 'serif'],
       'mono': ['Roboto Mono', 'monospace'],
-
+    },
+    colors: {
+      'primary': '#A6E200',
+      'black': 'black',
+      'white': 'white'
     }
   },
   plugins: [],
