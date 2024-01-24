@@ -12,6 +12,7 @@
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.0.1",
     "@tsconfig/svelte": "^5.0.2",
+    "@types/animejs": "^3.1.12",
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.33",
     "svelte": "^4.2.8",
