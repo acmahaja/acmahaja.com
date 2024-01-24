@@ -20,8 +20,8 @@ import NavBar from "./components/NavBar.svelte";
 
 <NavBar />
 <Sidebar on:change={togglePushDown} />
-<main id="main" class="flex items-center justify-center h-screen bg-green">
-    <h1 class="font-roboto text-4xl font-bold text-green-300">
+<main id="main" class="bg-primary h-screen">
+    <h1 class="text-black font-roboto text-4xl font-bold">
       acmahaja.com
     </h1>
 </main>
