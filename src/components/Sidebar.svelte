@@ -25,7 +25,7 @@
 
 <nav class="flex flex-row justify-between items-center fixed w-screen h-16 px-5 bg-black sm:hidden">
     <p class="font-mono font-semibold text-white leading-[0px] hover:underline hover:cursor-pointer hover:underline-offset-4">@acmahaja</p>
-    <button id="toggleSideBarButton" class="bg-[url('/double_arrow.svg')] w-4 h-4 bg-no-repeat bg-center" on:click={toggleSideBar}></button>
+    <button id="toggleSideBarButton" class="bg-[url('/double_arrow.svg')] p-4 size-4 bg-no-repeat bg-center" on:click={toggleSideBar}></button>
 </nav>
 
 <div id="sidebar" class="bg-black h-0 w-dvw fixed top-16 overflow-hidden">
