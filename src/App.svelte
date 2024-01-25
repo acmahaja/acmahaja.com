@@ -1,7 +1,8 @@
 <script lang="ts">
   import anime from "animejs";
-import NavBar from "./components/NavBar.svelte";
+  import NavBar from "./components/NavBar.svelte";
   import Sidebar from "./components/Sidebar.svelte";
+  import Header from "./sections/Header.svelte";
 
   let pushDown:boolean = false;
 
@@ -12,7 +13,7 @@ import NavBar from "./components/NavBar.svelte";
 
     anime({
       targets : '#main',
-      paddingTop: pushDown ? "8.75rem" : "0rem",
+      paddingTop: pushDown ? "12.75rem" : "4rem",
       autoplay: true,
     })
   }
@@ -20,8 +21,6 @@ import NavBar from "./components/NavBar.svelte";
 
 <NavBar />
 <Sidebar on:change={togglePushDown} />
-<main id="main" class="bg-primary h-screen">
-    <h1 class="text-black font-roboto text-4xl font-bold">
-      acmahaja.com
-    </h1>
+<main id="main" class="bg-background min-h-screen h-full flex flex-col pt-16 sm:bg-black">
+    <Header />
 </main>
