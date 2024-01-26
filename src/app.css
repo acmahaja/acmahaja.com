@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .green-gradient {
+    background: linear-gradient(rgb(197, 255, 50), transparent 50%)
+      no-repeat;
+  }
+}

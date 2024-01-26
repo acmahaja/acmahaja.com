@@ -23,7 +23,7 @@
     }
 </script>
 
-<nav class="flex flex-row justify-between items-center fixed w-screen h-16 px-5 bg-black sm:hidden">
+<nav class="z-50 flex flex-row justify-between items-center fixed w-screen h-16 px-5 bg-black sm:hidden">
     <p class="font-mono font-semibold text-white leading-[0px] hover:underline hover:cursor-pointer hover:underline-offset-4">@acmahaja</p>
     <button id="toggleSideBarButton" class="bg-[url('/double_arrow.svg')] p-4 size-4 bg-no-repeat bg-center" on:click={toggleSideBar}></button>
 </nav>

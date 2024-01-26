@@ -3,6 +3,7 @@
   import NavBar from "./components/NavBar.svelte";
   import Sidebar from "./components/Sidebar.svelte";
   import Header from "./sections/Header.svelte";
+  import About from "./sections/About.svelte";
 
   let pushDown:boolean = false;
 
@@ -21,6 +22,9 @@
 
 <NavBar />
 <Sidebar on:change={togglePushDown} />
-<main id="main" class="bg-background min-h-screen h-full flex flex-col pt-16 sm:bg-black">
+<main id="main" class="z-0 bg-background min-h-screen h-full flex flex-col pt-16 sm:bg-black">
     <Header />
+    <About />
+    <div class="w-full h-fit flex flex-col">s
+    </div>
 </main>
