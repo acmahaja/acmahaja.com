@@ -12,7 +12,8 @@ export default {
       'background': '#F3EFE7',
       'primary': '#A6E200',
       'black': 'black',
-      'white': 'white'
+      'white': 'white',
+      'green': '#E9F4C4'
     }
   },
   plugins: [],
