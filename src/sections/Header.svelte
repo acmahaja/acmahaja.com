@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Arrow from "../components/Arrow.svelte";
   import Social from "../components/Social.svelte";
   import Links from "../data/Links";
   import Icon from '@iconify/svelte';
@@ -31,7 +32,7 @@
     })  }
 </script>
 
-<header class="flex flex-col gap-5 w-full p-8">
+<header class="relative flex flex-col gap-5 w-full p-8 pb-14">
     <h1 class="font-flex text-black text-3xl font-bold">
         Hi, I'm Anjaney Mahajan
       </h1>
@@ -50,8 +51,9 @@
           rotate={1}
           class="CV-hover translate-x-[-24px] opacity-0" />
 
-        <p class="CV-hover translate-x-[-24px]">
+        <a href="/CV_Anjaney_C_Mahajan.pdf" class="CV-hover translate-x-[-24px]">
           Download my CV
-        </p>
+        </a>
       </a>
+      <Arrow />
 </header>
