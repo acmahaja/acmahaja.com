@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@types/react-icons": "^3.0.0",
-    "animejs": "^3.2.2"
+    "animejs": "^3.2.2",
+    "axios": "^1.6.7"
   }
 }

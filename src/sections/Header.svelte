@@ -51,7 +51,7 @@
           rotate={1}
           class="CV-hover translate-x-[-24px] opacity-0" />
 
-        <a href="/CV_Anjaney_C_Mahajan.pdf" class="CV-hover translate-x-[-24px]">
+        <a href="/CV/CV_Anjaney_C_Mahajan.pdf" class="CV-hover translate-x-[-24px]">
           Download my CV
         </a>
       </a>

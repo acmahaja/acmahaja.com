@@ -1,4 +1,7 @@
-<script lang="ts"></script>
+<script lang="ts">
+  import GithubCurrentProject from "../components/GithubCurrentProject.svelte";
+
+</script>
 
 <section class="green-gradient w-full min-h-80 h-fit p-8 pt-14 gap-3">
     <div id="browser" class="w-full h-fit border-solid border-black border-[1px] rounded-lg bg-green">
@@ -8,7 +11,7 @@
             <div class="circleButton size-4 opacity-30 bg-black rounded-full"></div>
         </div>
         <div id="descriptionList" class="p-3 flex flex-col">
-            
+            <GithubCurrentProject />
         </div>
     </div>
 </section>
