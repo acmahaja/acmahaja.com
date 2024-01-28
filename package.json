@@ -26,6 +26,7 @@
   "dependencies": {
     "@types/react-icons": "^3.0.0",
     "animejs": "^3.2.2",
-    "axios": "^1.6.7"
+    "axios": "^1.6.7",
+    "svelte-cloudinary": "^1.2.1"
   }
 }

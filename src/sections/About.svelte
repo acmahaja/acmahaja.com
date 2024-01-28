@@ -1,7 +1,7 @@
 <script lang="ts">
   import AboutMe from "../components/AboutMe.svelte";
   import GithubCurrentProject from "../components/GithubCurrentProject.svelte";
-
+    import PhotoCarousel from "../components/PhotoCarousel.svelte";
 </script>
 
 <section id="about" class="green-gradient w-full min-h-80 h-fit p-8 pt-14 gap-3">
@@ -14,6 +14,7 @@
         <div id="descriptionList" class="p-3 flex flex-col gap-4">
             <GithubCurrentProject />
             <AboutMe />
+            <PhotoCarousel />
         </div>
     </div>
 </section>
