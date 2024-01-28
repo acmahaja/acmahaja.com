@@ -25,8 +25,6 @@
             translateX: 4,
             translateY: -4,
             autoplay: true,
-            easing: 'linear',
-            duration: 200,
             boxShadow: '-5px 5px black'
 
         })
@@ -39,11 +37,10 @@
             translateY: 0,
             color: '#000',
             autoplay: true,
-            easing: 'linear',
-            duration: 200,
             boxShadow: '0px 0px black'
         })
     }
+
 
 </script>
 
@@ -58,9 +55,9 @@
         <p class="text-xl font-medium">{repo.name}</p>
         <p>{repo.description}</p>
         <hr class="">
-        <div class="flex flex-row gap-2 py-1">
+        <div class="flex flex-row flex-wrap gap-2 py-1">
             {#each repo.topics as topic}
-                <Icon class="size-6" icon="devicon:{topic}" />
+            <Icon class="size-6" icon="devicon:{topic}"/>
             {/each}
         </div>
     </a>
