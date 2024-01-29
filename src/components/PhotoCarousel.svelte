@@ -15,9 +15,9 @@
         let:loaded
         >
         {#each images as src, imageIndex (src)}
-            <div class="img-container">
+            <div class="img-container z-10">
             {#if loaded.includes(imageIndex)}
-                <img {src} class="h-fit aspect-square object-cover" alt="nature" />
+                <img {src} crossorigin="anonymous" class="h-fit z-10 aspect-square object-cover" alt="nature" />
             {/if}
             </div>
         {/each}

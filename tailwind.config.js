@@ -11,9 +11,9 @@ export default {
     colors: {
       'background': '#F3EFE7',
       'primary': '#A6E200',
-      'black': 'black',
-      'white': 'white',
-      'green': '#E9F4C4'
+      'black': '#000',
+      'white': '#fff',
+      'green': '#E9F4C4',
     }
   },
   plugins: [],
