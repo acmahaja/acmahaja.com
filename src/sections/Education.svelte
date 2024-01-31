@@ -5,7 +5,7 @@
 
 </script>
 
-<section id="education" class="w-full min-h-fit h-fit p-8 py-4  flex flex-col gap-4">
+<section id="background" class="w-full min-h-fit h-fit p-8 py-4  flex flex-col gap-4">
     <h3 class="font-flex font-semibold text-3xl">Education</h3>
     {#each Education as Ed}
         <div class="bg-white p-2 grid grid-rows-3 gap-x-3 grid-flow-col items-center border-black border-2 rounded-lg">

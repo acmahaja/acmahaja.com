@@ -32,7 +32,7 @@
     })  }
 </script>
 
-<header class="relative flex flex-col gap-5 w-full p-8 pb-14">
+<header class=" z-20 relative flex flex-col gap-5 w-full p-8 pb-14">
     <h1 class="font-flex text-black text-3xl font-bold">
         Hi, I'm Anjaney Mahajan
       </h1>

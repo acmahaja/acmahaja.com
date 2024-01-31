@@ -28,10 +28,10 @@
     <button id="toggleSideBarButton" class="bg-[url('/double_arrow.svg')] p-4 size-4 bg-no-repeat bg-center" on:click={toggleSideBar}></button>
 </nav>
 
-<div id="sidebar" class="bg-black h-0 w-dvw fixed top-16 overflow-hidden">
+<div id="sidebar" class="z-50 bg-black h-0 w-dvw fixed top-16 overflow-hidden">
     <ul class="w-full max-w-[70rem] flex flex-col align-middle text-right p-4 gap-4 border-t-[1px] border-t-white">
-        <li class="font-mono font-medium text-primary hover:underline hover:cursor-pointer hover:underline-offset-4">About</li>
-        <li class="font-mono font-medium text-primary hover:underline hover:cursor-pointer hover:underline-offset-4">Background</li>
-        <li class="font-mono font-medium text-primary hover:underline hover:cursor-pointer hover:underline-offset-4">Projects</li>
+        <li class="font-mono font-medium text-primary hover:underline hover:cursor-pointer hover:underline-offset-4"><a href="#about">About</a></li>
+        <li class="font-mono font-medium text-primary hover:underline hover:cursor-pointer hover:underline-offset-4"><a href="#background">Background</a></li>
+        <li class="font-mono font-medium text-primary hover:underline hover:cursor-pointer hover:underline-offset-4"><a href="#projects">Projects</a></li>
     </ul>
 </div>
