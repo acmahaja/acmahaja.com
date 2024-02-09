@@ -2,8 +2,8 @@
     import type { Link } from "../types/Link";
     import anime  from "animejs/lib/anime";
 
-    export let socialLink:Link;
     import Icon from '@iconify/svelte';
+    export let socialLink:Link;
 
     function onHoverEnter() {
         anime({
@@ -35,6 +35,6 @@
     }
 </script>
 
-<a href="{socialLink.URL}" id={socialLink.name} on:mouseenter={onHoverEnter} on:mouseleave={onHoverExit} class="Social size-14 border-black border-solid border-2 rounded-md bg-white grid place-items-center">
+<a href="{socialLink.URL}" id={socialLink.name} on:mouseenter={onHoverEnter} on:mouseleave={onHoverExit} class="Social size-14 aspect-square border-black border-solid border-2 rounded-md bg-white grid place-items-center">
     <Icon class="size-7" icon="{socialLink.icon}" />
 </a>

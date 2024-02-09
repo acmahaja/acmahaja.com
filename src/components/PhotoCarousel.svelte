@@ -12,16 +12,15 @@
         <Carousel
         autoplay
         autoplayDuration={2000}
-        let:loaded
-        >
-        {#each images as src, imageIndex (src)}
-            <div class="img-container z-10">
-            {#if loaded.includes(imageIndex)}
-                <img {src} crossorigin="anonymous" class="h-fit z-10 aspect-square object-cover" alt="nature" />
-            {/if}
-            </div>
-        {/each}
+        let:loaded        >
+            {#each images as src, imageIndex (src)}
+                <div class="img-container z-10">
+                {#if loaded.includes(imageIndex)}
+                    <img {src} crossorigin="anonymous" class="z-10 aspect-square object-cover" alt="nature" />
+                {/if}
+                </div>
+            {/each}
         </Carousel>
-    </div>
 
+    </div>
 </div>

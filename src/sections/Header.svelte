@@ -36,16 +36,16 @@
     <h1 class="font-flex text-black text-3xl font-bold">
         Hi, I'm Anjaney Mahajan
       </h1>
-      <h2 class="font-flex text-black text-2xl font-medium">
+      <h2 class="font-flex text-black text-xl font-medium">
         Graduate Software Engineer currently based in Melbourne, Australia.
       </h2>
-      <p class="font-flex text-black text-2xl font-normal">Contact me!</p>
-      <div class="contact-list flex flex-row justify-start items-center gap-4">
+      <p class="font-flex text-black text-xl font-normal">Contact me!</p>
+      <div class="contact-list flex flex-row flex-wrap justify-start items-center gap-2">
         {#each Links as Link}
           <Social socialLink={Link} />
         {/each}
       </div>
-      <a on:mouseenter={animateCVLinkHoverEnter} on:mouseleave={animateCVLinkHoverExit} class="w-fit flex flex-row items-center font-flex text-black text-2xl font-semibold" href="/CV_Anjaney C Mahajan.pdf">
+      <a on:mouseenter={animateCVLinkHoverEnter} on:mouseleave={animateCVLinkHoverExit} class="w-fit flex flex-row items-center font-flex text-black text-xl font-semibold" href="/CV_Anjaney C Mahajan.pdf">
         <Icon id="CV-arrow"
           icon="mingcute:arrow-up-fill"
           rotate={1}

@@ -6,7 +6,8 @@
   import About from "./sections/About.svelte";
   import Education from "./sections/Education.svelte";
   import Experience from "./sections/Experience.svelte";
-
+  import Technologies from "./sections/Technologies.svelte";
+  import Projects from "./sections/Projects.svelte";
   let pushDown:boolean = false;
 
   function togglePushDown() {
@@ -30,5 +31,7 @@
       <About />
       <Education />
       <Experience />
+      <Technologies />
+      <Projects/>
     </div>
 </main>

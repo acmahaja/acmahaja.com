@@ -4,16 +4,16 @@ const Experience:ExperienceType[] = [
     {
         company: 'Choppies Botswana',
         role: 'Intern Software Developer',
-        description: "Independently developed a Rebate Management Application for Choppies Botswana's Accounting, which integrated with their existing Microsoft SQL Server database systems. Conducted thorough requirement analysis and user acceptance testing with key stakeholders. Designed a user-friendly interface prioritizing ease-of-use and efficiency for accountants. Implemented a cohesive solution that replaced multiple disparate systems, streamlining the process of generating rebates for the company's suppliers.",
+        description: "Developed a Rebate Management Application for Choppies Botswana, seamlessly integrating with their Microsoft SQL Server database systems. Conducted thorough requirement analysis and user acceptance testing, ensuring alignment with stakeholders. Designed a user-friendly interface and implemented a cohesive solution, streamlining rebate generation for suppliers by replacing disparate systems.",
         startDate: new Date("Dec 2021"),
         endDate: new Date("Feb 2022"),
         brandColour: "#00994c",
-        technologies: ["django", "python", "html", "css", "microsoftsqlserver"]
+        technologies: ["djangorest", "python", "html5", "css3", "microsoftsqlserver"]
     },
     {
         company: 'NC State Engineering Village',
         role: 'Engineering Mentor',
-        description: "Facilitated a holistic experience for 50 First Year Students, harmonizing co-curricular and academic endeavors. Exemplified strong leadership and academic performance, fostering inclusivity and diversity within the Engineering Village. Orchestrated community-building events and team activities to cultivate collaboration among first-year students. Delivered relatable advice and strategies for success, drawing from personal academic journey to support student growth and development.",
+        description: "Led 50 First Year Students in the Engineering Village, fostering inclusivity and academic success through community-building events and collaborative activities. Demonstrated strong leadership and academic performance, offering relatable advice to support student development. Harmonized co-curricular and academic pursuits to create a holistic and enriching experience for students.",
         startDate: new Date("Aug 2017"),
         endDate: new Date("May 2018"),
         brandColour: "#cc0000",
