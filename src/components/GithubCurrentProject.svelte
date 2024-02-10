@@ -46,14 +46,14 @@
 
 
 {#if repo}
-    <a href={`https://www.github.com/${repo.full_name}`} id="currentProject" on:mouseenter={onHoverEnter} on:mouseleave={onHoverExit} class="w-full min-h-fit bg-white p-3 font-flex font-medium border-solid border-black border-[1px] rounded-md flex flex-col gap-2">
+    <a href={`https://www.github.com/${repo.full_name}`} id="currentProject" on:mouseenter={onHoverEnter} on:mouseleave={onHoverExit} class="w-full min-h-fit bg-white p-3 font-flex font-medium border-solid border-black border-[1px] rounded-md flex flex-col gap-2 lg:w-[43%]">
         <div class="flex flex-row justify-between items-center">
             <p class="">What am I currently working on?</p>
             <Icon class="size-8" icon="devicon:github" />
         </div>
         <hr class="">
         <p class="text-xl font-medium">{repo.name}</p>
-        <p>{repo.description}</p>
+        <p class=" line-clamp-3">{repo.description}</p>
         <hr class="">
         <div class="flex flex-row flex-wrap gap-2 py-1">
             {#each repo.topics as topic}

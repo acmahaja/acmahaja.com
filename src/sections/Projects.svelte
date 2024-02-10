@@ -34,7 +34,7 @@
 
 </script>
 
-<section id="Projects" class="w-full min-h-fit h-fit p-8 py-4  flex flex-col gap-4">
+<section id="projects" class="w-full min-h-fit h-fit p-8 py-4  flex flex-col gap-4">
     <h3 class="font-flex font-semibold text-2xl">Projects</h3>
     {#each projects as project, index}
       <Project {project} {index} />

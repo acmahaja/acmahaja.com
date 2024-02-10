@@ -27,9 +27,9 @@
 
 <NavBar />
 <Sidebar on:change={togglePushDown} />
-<main id="main" class="z-0 bg-background min-h-screen h-full flex flex-col pt-16 sm:bg-black scroll-smooth focus:scroll-auto">
+<main id="main" class="z-0 bg-background w-full min-h-screen h-full flex flex-col pt-16 lg:flex-row lg:items-start lg:justify-center">
     <Header />
-    <div class="z-0 w-full h-fit flex flex-col gap-4">
+    <div class="z-0 w-full h-fit flex flex-col gap-4 lg:w-8/12 lg:max-w-[66rem] ">
       <About />
       <Education />
       <Experience />

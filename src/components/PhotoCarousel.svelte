@@ -3,7 +3,7 @@
     import images from '../data/Images';
 </script>
 
-<div id="PhotoCarousel" class="w-full min-h-fit bg-background font-flex font-medium border-solid border-black border-[1px] rounded-md flex flex-col ">
+<div id="PhotoCarousel" class="w-full min-h-fit bg-background font-flex font-medium border-solid border-black border-[1px] rounded-md flex flex-col lg:w-[55%]">
     <div id="PhotoCarousel" class=" h-fit border-solid size-8 p-2 w-full border-black border-b-[1px] px-3 bg-[#D3FF5C] flex items-center">
         <p class="font-mono bg-black text-white p-1 px-4 rounded-xl">Images</p>
     </div>
