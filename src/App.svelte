@@ -8,6 +8,8 @@
   import Experience from "./sections/Experience.svelte";
   import Technologies from "./sections/Technologies.svelte";
   import Projects from "./sections/Projects.svelte";
+  import Footer from "./sections/Footer.svelte";
+
   let pushDown:boolean = false;
 
   function togglePushDown() {
@@ -35,3 +37,4 @@
       <Projects/>
     </div>
 </main>
+<Footer />
