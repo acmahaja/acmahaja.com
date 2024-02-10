@@ -1,9 +1,9 @@
 <script lang="ts">
-    import type { Link } from "../types/Link";
+    import type { LinkType } from "../types/Link";
     import anime  from "animejs/lib/anime";
 
     import Icon from '@iconify/svelte';
-    export let socialLink:Link;
+    export let socialLink:LinkType;
 
     function onHoverEnter() {
         anime({

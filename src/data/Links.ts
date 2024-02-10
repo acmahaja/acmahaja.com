@@ -1,6 +1,6 @@
-import type { Link } from "../types/Link";
+import type { LinkType } from "../types/Link";
 
-const Links:Link[] = [
+const Links:LinkType[] = [
     {
         name: 'email',
         URL: 'mailto: acmahaja@gmail.com',
