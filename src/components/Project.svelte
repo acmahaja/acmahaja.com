@@ -14,7 +14,7 @@
         <Icon class="size-6" icon="devicon:github" />
     </div>
     <img src={project.image} alt="project screenshot" class="object-cover aspect-square w-[95%] h-auto rounded-md" />
-    <p class="w-full text-start">{project.description}</p>
+    <p class="w-full h-auto line-clamp-4 ">{project.description}</p>
     <div class="w-full h-auto flex flex-row flex-wrap items-start justify-start gap-2 py-1">
         {#each project.technologies as technology}
           <Icon class="size-8" icon="devicon:{technology}"/>
