@@ -36,8 +36,8 @@
 
 <section id="Projects" class="w-full min-h-fit h-fit p-8 py-4  flex flex-col gap-4">
     <h3 class="font-flex font-semibold text-2xl">Projects</h3>
-    {#each projects as project}
-      <Project {project} />
+    {#each projects as project, index}
+      <Project {project} {index} />
     {/each}
 
     <a on:mouseenter={animateProjectLinkHoverEnter} on:mouseleave={animateProjectLinkHoverExit} class="w-fit flex flex-row items-center font-flex text-black text-xl font-semibold gap-2" href="/projects">
