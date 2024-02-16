@@ -1,5 +1,6 @@
 <script lang="ts">
     import anime  from "animejs/lib/anime";
+    import DropDownArrow from "$lib/double_arrow.svg";
     import { createEventDispatcher } from 'svelte';
 
     const dispatch = createEventDispatcher();
@@ -25,7 +26,9 @@
 
 <nav class="z-50 flex flex-row justify-between items-center fixed w-screen h-16 px-5 bg-black sm:hidden">
     <p class="font-mono font-semibold text-white leading-[0px] hover:underline hover:cursor-pointer hover:underline-offset-4">@acmahaja</p>
-    <button id="toggleSideBarButton" class="bg-[url('/double_arrow.svg')] p-4 size-4 bg-no-repeat bg-center" on:click={toggleSideBar}></button>
+    <button id="toggleSideBarButton" class="size-4 bg-no-repeat bg-center" on:click={toggleSideBar}>
+        <img src={DropDownArrow} alt="dropdown">
+    </button>
 </nav>
 
 <div id="sidebar" class="z-50 bg-black h-0 w-dvw fixed top-16 overflow-hidden">

@@ -1,9 +1,9 @@
-import type { GitHubEvent, Commit, Payload, LanguageStats, Repository } from '../types/githubTypes';
+import type { GitHubEvent, LanguageStats, Repository } from '../types/githubTypes';
 import axios from "axios";
 
 export async function getLatestCommit(): Promise<GitHubEvent> {
     try {
-        const { data, status } = await axios.get<GitHubEvent[]>(
+        const { data } = await axios.get<GitHubEvent[]>(
             'https://api.github.com/users/acmahaja/events/public',
             {
                 headers: {
@@ -14,9 +14,8 @@ export async function getLatestCommit(): Promise<GitHubEvent> {
         const eventList:GitHubEvent[] = data;
         return eventList[0];
     } catch (error) {
-        console.log("Failed to get Repo");
+        throw Error("Failed to get Repo");
     }
-    throw new Error("Failed to get Repo");
 }
 
 export async function getRepoDetails(repoName: string): Promise<Repository> {
