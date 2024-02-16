@@ -31,7 +31,7 @@
 </script>
 
 <header
-  class=" z-20 relative flex flex-col gap-5 w-full p-8 pb-14 lg:w-4/12 lg:max-w-[33rem] lg:px-0 lg:pr-4"
+  class=" z-20 relative flex flex-col gap-5 w-full p-8 pb-14 lg:w-4/12 lg:max-w-[33rem] lg:px-8 lg:pr-4"
 >
   <h1 class="font-flex text-black text-3xl font-bold lg:text-4xl">
     Hi, I'm Anjaney Mahajan

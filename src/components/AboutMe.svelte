@@ -1,6 +1,6 @@
 <script lang="ts"></script>
 
-<div id="AboutDescription" class="w-full min-h-fit bg-white font-flex font-medium border-solid border-black border-[1px] rounded-md flex flex-col lg:w-[43%]">
+<div id="AboutDescription" class="w-full min-h-fit bg-white font-flex font-medium border-solid border-black border-[1px] rounded-md flex flex-col 2xl:w-[43%]">
     <div id="AboutTitlebar" class=" h-fit border-solid size-8 p-2 w-full border-black border-b-[1px] px-3 bg-[#D3FF5C] flex items-center">
         <p class="font-mono bg-black text-white p-1 px-4 rounded-xl">About</p>
     </div>

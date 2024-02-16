@@ -11,7 +11,7 @@
             <div class="circleButton size-4 opacity-30 bg-black rounded-full"></div>
             <div class="circleButton size-4 opacity-30 bg-black rounded-full"></div>
         </div>
-        <div id="descriptionList" class="p-3 flex flex-col gap-4 lg:h-[60vh] lg:max-h-[35.5rem] lg:flex lg:flex-col lg:flex-wrap lg:gap-x-0">
+        <div id="descriptionList" class="p-3 flex flex-col gap-4 2xl:h-[60vh] 2xl:max-h-[35.5rem] 2xl:flex 2xl:flex-col 2xl:flex-wrap 2xl:gap-x-0">
             <GithubCurrentProject />
             <AboutMe />
             <PhotoCarousel />
