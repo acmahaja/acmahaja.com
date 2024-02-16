@@ -27,7 +27,7 @@ const Links:LinkType[] = [
     },
     {
         name: 'discord',
-        URL: 'https://discord.com/users/349311189454553092',
+        URL: 'https://discord.com/users/acmahaja',
         icon: 'ic:baseline-discord',
         socialColor : '#5661f5',
     }
