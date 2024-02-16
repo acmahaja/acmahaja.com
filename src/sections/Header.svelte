@@ -4,7 +4,7 @@
 	import Links from '../data/Links';
 	import Icon from '@iconify/svelte';
 	import anime from 'animejs/lib/anime';
-  import CV from "$lib/CV/CV_Anjaney_C_Mahajan.pdf"
+	import CV from "$lib/CV/CV_Anjaney_C_Mahajan.pdf"
 
 	function animateCVLinkHoverEnter() {
 		anime({
