@@ -29,9 +29,9 @@
 
 </script>
 
-<a href={project.githubLink} id={`project-${index}`} class="w-full h-auto p-2 bg-white flex flex-col items-center gap-2 rounded-lg border-2 border-black border-solid" on:mouseenter={onHoverEnter} on:mouseleave={onHoverExit}>
+<a href={project.githubLink} id={`project-${index}`} class="max-w-xl dw-full h-auto p-2 bg-white flex flex-col items-center gap-2 rounded-lg border-2 border-black border-solid" on:mouseenter={onHoverEnter} on:mouseleave={onHoverExit}>
     <div class=" w-full h-auto flex flex-row align-middle justify-between">
-        <p class="text-md font-medium">{project.name}</p>
+        <p class="text-md font-medium md:text-2xl">{project.name}</p>
         <Icon class="size-6" icon="devicon:github" />
     </div>
     <img src={project.image} alt="project screenshot" class="object-cover aspect-square w-[95%] h-auto rounded-md" />
