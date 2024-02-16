@@ -14,8 +14,9 @@ export async function getLatestCommit(): Promise<GitHubEvent> {
         const eventList:GitHubEvent[] = data;
         return eventList[0];
     } catch (error) {
-        throw Error("Failed to get Repo");
+        console.error('Error:', error);
     }
+    throw new Error('Failed to get Repo');
 }
 
 export async function getRepoDetails(repoName: string): Promise<Repository> {

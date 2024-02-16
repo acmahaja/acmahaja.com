@@ -7,17 +7,11 @@
 	import Projects from '../sections/Projects.svelte';
 </script>
 
-<div
->
-
-	<Header />
-	<div class="z-0 w-full h-fit flex flex-col gap-2 lg:w-8/12 lg:max-w-[66rem]">
-		<About />
-		<Education />
-		<Experience />
-		<!-- <Technologies /> -->
-		<!-- <Projects /> -->
-	</div>
+<Header />
+<div class="z-0 w-full h-fit flex flex-col gap-2 lg:w-8/12 lg:max-w-[66rem]">
+	<About />
+	<Education />
+	<Experience />
+	<Technologies />
+	<Projects />
 </div>
-
-

@@ -10,13 +10,17 @@
 	let topics: string[];
 
 	getLatestCommit().then(async (result: GitHubEvent) => {
-		await getRepoDetails(result.repo.name).then((result: Repository) => {
-			repo = result;
-		});
+		try {
+			await getRepoDetails(result.repo.name).then((result: Repository) => {
+				repo = result;
+			});
 
-		await getLanguagesList(result.repo.name).then((result: string[]) => {
-			languages = result;
-		});
+			await getLanguagesList(result.repo.name).then((result: string[]) => {
+				languages = result;
+			});
+		} catch (error) {
+			console.log(error);
+		}
 	});
 
 	function onHoverEnter() {
@@ -64,5 +68,20 @@
 		</div>
 	</a>
 {:else}
-	<img src={loader} alt="" srcset="" />
+	<!-- svelte-ignore a11y-no-static-element-interactions -->
+	<a
+		id="currentProject"
+		on:mouseenter={onHoverEnter}
+		on:mouseleave={onHoverExit}
+		class="w-full min-h-fit bg-white p-3 font-flex font-medium border-solid border-black border-[1px] rounded-md flex flex-col gap-2 2xl:w-[43%]"
+	>
+		<div class="flex flex-row justify-between items-center">
+			<p class="">What am I currently working on?</p>
+			<Icon class="size-8" icon="devicon:github" />
+		</div>
+		<hr class="" />
+		<img src={loader} alt="" srcset="" />
+
+		<hr class="" />
+	</a>
 {/if}

@@ -3,8 +3,6 @@
 
 	import Carousel from 'svelte-carousel';
 	import images from '../data/Images';
-
-	import loader from '$lib/loader.svg';
 </script>
 
 <div
@@ -33,8 +31,6 @@
 					</div>
 				{/each}
 			</Carousel>
-		{:else}
-			<img src={loader} alt="" srcset="" />
 		{/if}
 	</div>
 </div>

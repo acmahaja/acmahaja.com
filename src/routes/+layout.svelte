@@ -19,9 +19,12 @@
 		});
 	}
 </script>
+
 <NavBar />
 <Sidebar on:change={togglePushDown} />
-<main id="main" 	class="z-0 bg-background w-full min-h-screen h-full flex flex-col pt-16 lg:flex-row lg:items-start lg:justify-center"
+<main
+	id="main"
+	class="z-0 bg-background w-full min-h-screen h-full flex flex-col pt-16 lg:flex-row lg:items-start lg:justify-center"
 >
 	<slot />
 </main>
