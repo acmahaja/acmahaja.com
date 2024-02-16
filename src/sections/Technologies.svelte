@@ -6,10 +6,10 @@
 
 <section
   id="technologies"
-  class="w-full max-w-[85%] min-h-fit h-fit p-8 py-4 flex flex-col gap-4"
+  class="w-full min-h-fit h-fit p-8 py-4 flex flex-col gap-4"
 >
   <hr
-    class="w-full max-w-4xl h-[1.5px] border-none bg-gradient-to-r from-background to-[#76726e]"
+    class="w-full h-[1.5px] border-none bg-gradient-to-r from-background to-[#76726e]"
   />
 
   <h3 class="font-flex font-semibold text-2xl md:text-4xl md:font-semibold">
