@@ -33,7 +33,7 @@
 	<hr class="w-full h-[1.5px] border-none bg-gradient-to-r from-background to-[#76726e]" />
 
 	<h3 class="font-flex font-semibold text-2xl md:text-4xl md:font-semibold">Projects</h3>
-	{#each projects.slice(0, 2) as project, index}
+	{#each projects.slice(0, 3) as project, index}
 		<Project {project} {index} />
 	{/each}
 

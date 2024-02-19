@@ -175,6 +175,20 @@ export const githubTech: TechnologyType = {
   hoverColor: '#000'
 }
 
+export const viteTech = {
+  name: 'Vite',
+  iconifyLogo: 'vitejs',
+  color: '#646CFF',
+  hoverColor: '#fff'
+};
+
+
+export const expressjsTech = {
+  name: 'Express.js',
+  iconifyLogo: 'express',
+  color: '#04af2f',
+  hoverColor: '#fff'
+};
 
 const Technologies = [
   reactTech,
@@ -182,9 +196,10 @@ const Technologies = [
   javaTech,
   javaVertxTech,
   javascriptTech,
-  typescriptTech, // Moved TypeScript near JavaScript
+  typescriptTech,
   pythonTech,
   nodejsTech,
+  expressjsTech,
   djangoTech,
   mongodbTech,
   figmaTech,

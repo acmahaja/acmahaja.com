@@ -35,7 +35,7 @@
 	on:mouseenter={onHoverEnter}
 	on:mouseleave={onHoverExit}
 >
-	<div class=" w-full h-auto flex flex-row align-middle justify-between">
+	<div class=" w-full h-auto px-3 flex flex-row align-middle justify-between">
 		<p class="text-md font-medium md:text-2xl">{project.name}</p>
 		<Icon class="size-6" icon="devicon:github" />
 	</div>
@@ -44,11 +44,10 @@
 		alt="project screenshot"
 		class="object-cover aspect-square w-[95%] h-auto rounded-md"
 	/>
-	<p class="w-full h-auto line-clamp-4">{project.description}</p>
-	<div class="w-full h-auto flex flex-row flex-wrap items-start justify-start gap-2 py-1">
-		{#each project.technologies as technology}
-			<Icon class="size-8" icon="devicon:{technology}" />
+	<p class="w-full h-auto px-3 line-clamp-4">{project.description}</p>
+	<div class="w-full h-auto px-3 flex flex-row flex-wrap items-start justify-start gap-2 py-1">
+		{#each project.technologies as tech}
+			<Icon class="size-7" icon={`devicon:${tech.iconifyLogo}`} />
 		{/each}
 	</div>
 </a>
-
