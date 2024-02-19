@@ -8,7 +8,7 @@
 
 	function onHoverEnter() {
 		anime({
-			targets: `#tech-${tech.name}`,
+			targets: `#tech-${tech.iconifyLogo}`,
 			translateX: 4,
 			translateY: -4,
 			autoplay: true,
@@ -19,7 +19,7 @@
 			boxShadow: '-5px 5px black'
 		});
 		anime({
-			targets: `#tech-${tech.name} > svg`,
+			targets: `#tech-${tech.iconifyLogo} > svg`,
 			filter: 'drop-shadow(0 0 5px rgba(0, 0, 0, 0.8)) brightness(1.25)',
 			easing: 'linear',
 			duration: 200
@@ -28,7 +28,7 @@
 
 	function onHoverExit() {
 		anime({
-			targets: `#tech-${tech.name}`,
+			targets: `#tech-${tech.iconifyLogo}`,
 			translateX: 0,
 			translateY: 0,
 			color: '#000',
@@ -39,7 +39,7 @@
 			boxShadow: '0px 0px black'
 		});
 		anime({
-			targets: `#tech-${tech.name} > svg`,
+			targets: `#tech-${tech.iconifyLogo} > svg`,
 			filter: 'drop-shadow(0 0 0px rgba(0, 0, 0, 0.8)) brightness(1)',
 			easing: 'linear',
 			duration: 200
@@ -48,7 +48,7 @@
 </script>
 
 <div
-	id={`tech-${tech.name}`}
+	id={`tech-${tech.iconifyLogo}`}
 	class={size === 'large'
 		? 'p-2 px-4 w-fit flex flex-row gap-2 items-center bg-white rounded-full border-solid border-black border-2 cursor-alias'
 		: 'p-1 px-2 text-sm bg-green w-fit flex flex-row gap-2 items-center bg-white rounded-full border-solid border-black border-2 cursor-alias'}
