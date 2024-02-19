@@ -31,6 +31,8 @@
 					</div>
 				{/each}
 			</Carousel>
+		{:else}
+			<div class="aspect-square w-[475px]"></div>
 		{/if}
 	</div>
 </div>
