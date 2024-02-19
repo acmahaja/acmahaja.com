@@ -1,13 +1,7 @@
 <script lang="ts">
 	import { ProjectsList } from '../../data/Projects';
 	import ProjectsTable from '../../components/ProjectsTable.svelte';
-	console.log(ProjectsList);
 </script>
-
-<svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
-</svelte:head>
 
 <section class="w-full p-8 flex flex-row justify-center items-start">
 	<div class="w-full max-w-[100rem] flex flex-col gap-4">

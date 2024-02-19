@@ -43,12 +43,12 @@
 		class="w-fit flex flex-row items-center font-flex text-black text-xl font-semibold gap-2 my-4"
 		href="/projects"
 	>
-		<p class="projects-link-hover">View Full Project Backlog</p>
-		<Icon
-			id="projects-arrow"
-			icon="mingcute:arrow-up-fill"
-			rotate={1}
-			class="projects-link-hover"
-		/>
+		<!-- <p class="projects-link-hover">View Full Project Backlog</p> -->
+		<!-- <Icon -->
+		<!-- 	id="projects-arrow" -->
+		<!-- 	icon="mingcute:arrow-up-fill" -->
+		<!-- 	rotate={1} -->
+		<!-- 	class="projects-link-hover" -->
+		<!-- /> -->
 	</a>
 </section>
