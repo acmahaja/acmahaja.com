@@ -20,6 +20,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>@acmahaja</title>
+</svelte:head>
+
 <NavBar />
 <Sidebar on:change={togglePushDown} />
 <main
