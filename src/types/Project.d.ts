@@ -1,7 +1,11 @@
+import type { TechnologyType } from "./Technologies";
+
 export type ProjectType = {
     name: string,
     image: string,
     description: string,
     githubLink: string,
-    technologies: string[]
+    liveLink?: string,
+    date: Date,
+    technologies: TechnologyType[]
 };
