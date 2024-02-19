@@ -1,6 +1,7 @@
 import type { TechnologyType } from "./Technologies";
 
 export type ProjectType = {
+    owner: string,
     name: string,
     image: string,
     description: string,

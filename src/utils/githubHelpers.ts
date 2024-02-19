@@ -1,4 +1,4 @@
-import type { GitHubEvent, LanguageStats, Repository } from '../types/githubTypes';
+import type { FileCommit, GitHubEvent, LanguageStats, Repository } from '../types/githubTypes';
 import axios from "axios";
 
 export async function getLatestCommit(): Promise<GitHubEvent> {
@@ -7,11 +7,11 @@ export async function getLatestCommit(): Promise<GitHubEvent> {
             'https://api.github.com/users/acmahaja/events/public',
             {
                 headers: {
-                Accept: 'application/json',
+                    Accept: 'application/json',
                 },
             },
         );
-        const eventList:GitHubEvent[] = data;
+        const eventList: GitHubEvent[] = data;
         return eventList[0];
     } catch (error) {
         console.error('Error:', error);
@@ -65,3 +65,25 @@ export async function getLanguagesList(repoName: string): Promise<string[]> {
 
     throw new Error('Failed to get Repo languages');
 }
+
+export async function getRepoREADME(ownerName: string, repoName: string): Promise<FileCommit> {
+    try {
+        const { data } = await axios.get<FileCommit>(
+            `https://api.github.com/repos/${ownerName}/${repoName}/contents/README.md`,
+            {
+                headers: {
+                    Accept: 'application/vnd.github.object+json',
+                    "X-GitHub-Api-Version": "2022-11-28"
+                },
+            },
+        );
+        return data;
+    } catch (error) {
+        console.error('Error:', error);
+    }
+    throw new Error('Failed to get Repo');
+}
+
+
+
+

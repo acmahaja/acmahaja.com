@@ -1,6 +1,16 @@
 <script lang="ts">
+	import { marked } from 'marked';
+
+	import { ProjectsList } from '../../../data/Projects.js';
+	import type { ProjectType } from '../../../types/Project.js';
+	import type { FileCommit } from '../../../types/githubTypes.js';
+	import { getRepoREADME } from '../../../utils/githubHelpers';
 	export let data;
-	console.log(atob("IVtBc3RybyBBZ2VuZGEgQmFubmVyXSgvZG9jcy9Bc3Ryb0FnZW5kYSUyMC0l\nMjBCYW5uZXIucG5nKQoKCiMgQXN0cm9BZ2VuZGE6IFNtYXJ0IENhbGVuZGFy\nIGFuZCBUby1EbyBMaXN0IEFwcAoKIyMgSW50cm9kdWN0aW9uCkFzdHJvQWdl\nbmRhIGlzIGFuIGRlc2lnbiBhbmQgcHJvZHVjdGl2aXR5IGZvY3VzZWQgYXV0\nb21hdGVkIGNhbGVuZGFyIGFwcGxpY2F0aW9uLiBJdCBpbmNsdWRlcyBzbWFy\ndCBjYWxlbmRhciB3aXRoIGEgY29tcHJlaGVuc2l2ZSB0by1kbyBsaXN0LCBh\nbiBhdXRvbWF0ZWQgc3lzdGVtIHRvIG1hbmFnZSBzY2hlZHVsZXMsIGV2ZW50\ncywgYW5kIHRhc2tzLiAKCiMjIEZlYXR1cmVzCi0gKipHb29nbGUgQ2FsZW5k\nYXIgSW50ZWdyYXRpb24qKjogU3luYyBhbmQgbWFuYWdlIHlvdXIgR29vZ2xl\nIENhbGVuZGFyIGV2ZW50cy4KLSAqKkF1dG9tYXRlZCBUYXNrIFNjaGVkdWxp\nbmcqKjogQXV0by1zY2hlZHVsZSB0YXNrcyBiYXNlZCBvbiBwcmlvcml0aWVz\nIGFuZCBkZWFkbGluZXMuCi0gKipUby1EbyBMaXN0IEludGVncmF0aW9uKio6\nIExpbmsgdG8tZG8gbGlzdHMgdG8gY2FsZW5kYXIgZXZlbnRzIG9yIG1hbmFn\nZSBhcyBzdGFuZGFsb25lIHRhc2tzLgotICoqUmVhbC1UaW1lIEFsZXJ0cyBh\nbmQgTm90aWZpY2F0aW9ucyoqOiBTdGF5IHVwZGF0ZWQgd2l0aCB0aW1lbHkg\ncmVtaW5kZXJzIGZvciB5b3VyIHRhc2tzIGFuZCBldmVudHMuCi0gKipVc2Vy\nLUZyaWVuZGx5IEludGVyZmFjZSoqOiBBIGNsZWFuIGFuZCBpbnR1aXRpdmUg\nVUkvVVggZm9yIGVhc3kgbmF2aWdhdGlvbiBhbmQgdXNhZ2UuCgojIyBUZWNo\nbm9sb2d5IFN0YWNrCi0gKipCYWNrZW5kKio6IEphdmEgU3ByaW5nIEJvb3QK\nLSAqKkZyb250ZW5kKio6IFJlYWN0IAotICoqRGF0YWJhc2UqKjogUG9zdGdy\nZVNRTAotICoqU3R5bGluZyoqOiBDdXN0b20gQ1NTCgoKIyMgRGV2ZWxvcG1l\nbnQgUHJvZ3Jlc3MKVG8gbW9uaXRvciB0aGUgb25nb2luZyBkZXZlbG9wbWVu\ndCBhbmQgcHJvZ3Jlc3Mgb2YgQXN0cm9BZ2VuZGEsIHBsZWFzZSB2aXNpdCB0\naGUgW05vdGlvbiBQYWdlXShodHRwczovL2FjbWFoYWphLm5vdGlvbi5zaXRl\nL0FzdHJvQWdlbmRhLWQzMTE0MTVjZGZlMTQwNGY4YTliZDE4MDk2Y2ZhOGE3\nP3B2cz00KS4K\n"))
+	let projectDescription: any = '';
+	const currentProject: ProjectType = ProjectsList[Number(data.params.id)];
+	getRepoREADME(currentProject.owner, currentProject.name).then((result: FileCommit) => {
+		projectDescription = result;
+	});
 </script>
 
 <svelte:head>
@@ -8,4 +18,4 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<div class="text-column">{JSON.stringify(data)}</div>
+<div class="text-column">{@html marked(projectDescription)}</div>
