@@ -25,7 +25,9 @@
 					<p class="text-sm italic md:text-md">{Ed.degree}</p>
 				</div>
 				<p class="w-fit text-sm font-light italic opacity-80 md:text-right md:pr-2">
-					{moment(Ed.startDate).format('MMM YYYY')} - {moment(Ed.endDate).format('MMM YYYY')}
+					{moment(Date.parse(Ed.startDate.toString())).format('MMM YYYY')} - {moment(
+						Date.parse(Ed.endDate.toString())
+					).format('MMM YYYY')}
 				</p>
 			</div>
 		</div>
