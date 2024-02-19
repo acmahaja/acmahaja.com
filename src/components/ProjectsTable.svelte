@@ -30,7 +30,7 @@
 			{project.name}
 		</div>
 		<div
-			class="p-[0.6rem] hidden border-b border-solid border-black border-opacity-30 md:flex md:col-span-5 md:flex-row md:flex-wrap"
+			class="p-[0.6rem] hidden border-b border-solid border-black border-opacity-30 md:flex md:col-span-5 md:flex-row md:flex-wrap md:gap-2"
 		>
 			{#each project.technologies as tech}
 				<Technology {tech} size={'small'} />
