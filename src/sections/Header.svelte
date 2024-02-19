@@ -4,7 +4,7 @@
 	import Links from '../data/Links';
 	import Icon from '@iconify/svelte';
 	import anime from 'animejs/lib/anime';
-	import CV from "$lib/CV/CV_Anjaney_C_Mahajan.pdf"
+	import CV from '$lib/CV/CV_Anjaney_C_Mahajan.pdf';
 
 	function animateCVLinkHoverEnter() {
 		anime({
@@ -57,12 +57,9 @@
 			class="CV-hover translate-x-[-24px] opacity-0"
 		/>
 
-		<a
-			href={CV}
-			class="CV-hover translate-x-[-24px] underline underline-offset-2 lg:text-xl"
-		>
+		<a href={CV} class="CV-hover translate-x-[-24px] underline underline-offset-2 lg:text-xl">
 			Download my CV
 		</a>
 	</a>
-	<Arrow />
+	<!-- <Arrow /> -->
 </header>
