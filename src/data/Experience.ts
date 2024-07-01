@@ -6,8 +6,8 @@ const Experience: ExperienceType[] = [
         role: 'Intern Software Engineer',
         description:
             'I contributed to the development of the Sindy assessment platform, developing and maintaining frontend features that prioritized performance, responsiveness, and a enjoyable user experience for educators and students.  I collaborated closely with the backend team to integrate the front and back ends for the platform.  Through code reviews, troubleshooting, and participation in new feature development, to ensure an exceptional user experience for the Sindy AI platform.  Furthermore, I helped bridge the gap between frontend and UI/UX teams, ensuring consistency and ensuring requirements were perfectly aligned.',
-        startDate: new Date('Dec 2021'),
-        endDate: new Date('Feb 2022'),
+        startDate: new Date('Apr 2024'),
+        endDate: new Date('Jun 2024'),
         brandColour: '#00994c',
         technologies: ['nextjs', 'tailwindcss', 'python', 'fastapi', 'postgresql', 'chatgpt']
     },
