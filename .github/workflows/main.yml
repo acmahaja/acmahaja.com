@@ -20,7 +20,6 @@ jobs:
 
       # run any `bun` or `bunx` command
       - run: bun install
-      - run: bun index.ts
       - run: bun run build
 
       # Step 5: Deploy to GitHub Pages
