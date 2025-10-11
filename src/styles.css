@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-beige: #fff0e5;
+  --font-display: "Aptos", monospace, serif;
+}
+
+@font-face {
+  font-family: "Aptos";
+  src: url("/fonts/Aptos-Mono.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-display {
+  font-family: "Aptos", monospace, serif;
+}
