@@ -4,7 +4,7 @@
 set -e
 
 # build
-npm run build
+bun run build
 
 # navigate into the build output directory
 cd dist
@@ -13,10 +13,10 @@ cd dist
 echo > .nojekyll
 
 # if you are deploying to a custom domain
-echo 'www.acmahaja.com' > CNAME
+# echo 'www.acmahaja.com' > CNAME
 
 git init
-git checkout -B main
+git checkout -B 2026-wip
 git add -A
 git commit -m 'deploy'
 
@@ -24,6 +24,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:acmahaja/acmahaja.com.git main:gh-pages
+git push -f git@github.com:acmahaja/acmahaja.com.git 2026-wip:gh-pages
 
 cd -
