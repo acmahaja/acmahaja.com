@@ -2,8 +2,12 @@ import { FaDiscord, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 function App() {
+
   return (
     <div className="max-w-lg w-11/12 h-auto font-display text-lg space-y-2 bg-beige p-8 rounded-4xl border-2 border-black transition duration-300">
+      <p>
+        <img src="/logo.svg" alt="Website logo" className="h-16 mx-auto p-1 mb-8 border border-2 border-black rounded-2xl" />
+      </p>
       <p>Hi — I'm currently working on the <a href="https://github.com/acmahaja/acmahaja.com" className=" underline underline-offset-4">2025-26 version</a> of my portfolio.</p>
       <p>
         The site is temporarily down, but I'm available on socials and by email.
